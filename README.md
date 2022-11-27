@@ -1,5 +1,5 @@
 # CS-E4740 - Federated Learning 
-## offered during spring 2023 at [Aalto University](www.aalto.fi) and to adult learners via [Finnish Network Universtiy](fitech.io] 
+## course offered during spring 2023 at [Aalto University](www.aalto.fi) and to adult learners via [Finnish Network University](fitech.io)
 
 ## Abstract
 
