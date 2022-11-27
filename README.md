@@ -1,10 +1,10 @@
-# FederatedLearning
-CS-E4740 - Federated Learning 
+# CS-E4740 - Federated Learning 
+## offered during spring 2023 at [Aalto University](www.aalto.fi) and to adult learners via [Finnish Network Universtiy](fitech.io] 
 
-##Abstract
+## Abstract
 
 Many application domains of machine learning (ML), such as numerical weather prediction, generate decentralized 
-collections of local datasets. A naive application of basic ML methods [1,2] would require collecting these local datasets 
+collections of local datasets. A naive application of basic ML methods [[1]](#1) would require collecting these local datasets 
 at a central point. However, this approach might be unfavorable for several reasons, including inefficient use of 
 computational infrastructure and lack of privacy protection.
 
@@ -23,4 +23,6 @@ determines these methods' computational and statistical properties.
 - [Federated learning: Basics and application to the mobile keyboard (ML Tech Talks)](https://www.youtube.com/watch?v=IXI1AjimfmE)
 
 
-
+## References
+<a id="1">[1]</a> 
+A. Jung, "Machine Learning. The Basics," Springer, Singapore, 2022 
