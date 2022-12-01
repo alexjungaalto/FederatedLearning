@@ -17,12 +17,11 @@ This course uses an optimization perspective to study some widely used FL models
 discuss total variation minimization as a unifying design principle for FL methods. The geometry of total variation 
 determines these methods' computational and statistical properties. 
 
-
-## Background Material 
-
-- [Federated learning: Basics and application to the mobile keyboard (ML Tech Talks)](https://www.youtube.com/watch?v=IXI1AjimfmE)
-
-
 ## References
 <a id="1">[1]</a> 
 A. Jung, "Machine Learning. The Basics," Springer, Singapore, 2022 
+
+## Additional Material
+
+- [Federated learning: Basics and application to the mobile keyboard (ML Tech Talks)](https://www.youtube.com/watch?v=IXI1AjimfmE)
+- [Network Flows in Federated Learning (slides for an IEEE Seminar Talk)](/slides/IEEE_Finland_CSS_RAS_SMCS.pdf)
