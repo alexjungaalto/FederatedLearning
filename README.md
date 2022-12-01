@@ -19,7 +19,7 @@ determines these methods' computational and statistical properties.
 
 ## References
 <a id="1">[1]</a> 
-A. Jung, "Machine Learning. The Basics," Springer, Singapore, 2022 
+A. Jung, "Machine Learning. The Basics," Springer, Singapore, 2022. available via Aalto library [here](https://primo.aalto.fi/discovery/search?query=any,contains,machine%20learning%20the%20basics&tab=LibraryCatalog&search_scope=MyInstitution&vid=358AALTO_INST:VU1&lang=en&offset=0). [preprint](https://mlbook.cs.aalto.fi). 
 
 ## Additional Material
 
