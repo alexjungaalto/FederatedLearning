@@ -1,8 +1,8 @@
 | Calendar Week '23| Topic                 | Lecture Notes | Lecture Hall |
 |-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |
-| Mon. 27.2. | Welcome to the Course |               |              |
-| Wed. 1.3  | ML Design Principle |               |              |
+|    Mon. 27.2.   | Welcome to the Course |               |              |
+|   Wed. 1.3.     | ML Design Principle |               |              |
 |Week 10    |                       |               |              |
 | Mon. 6.3. | Regularization |               |              |
 | Wed. 8.3. | Gradient Descent  |               |              |
