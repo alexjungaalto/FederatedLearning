@@ -1,5 +1,5 @@
 | Calendar Week '23| Topic                 | Lecture Notes | Lecture Hall |
-|:---------:|-----------------------|---------------|--------------|
+|-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |
 | Mon. 27.2. | Welcome to the Course |               |              |
 | Wed. 1.3  | ML Design Principle |               |              |
