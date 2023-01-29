@@ -17,4 +17,4 @@
 | Wed. 29.3. | Trustworthy AI |               |              |
 |Week 14    |                       |               |              |
 | Mon. 3.4. | Privacy in FL |               |              |
-| Wed. 5.4. | Backdoor Attacks |               |              |
+| Wed. 5.4. | Data Poisoning |               |     <a href="https://www.youtube.com/watch?v=MLjK-SC7JSY">Video</a>         |
