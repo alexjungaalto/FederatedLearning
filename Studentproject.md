@@ -8,5 +8,5 @@ The project requires to formulate an application of their choice as a federated 
 
 You can find a template for the project report here:  <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>
 
-Submission deadline for your report: whenever you want to finish the course, but not later than 31.08.2023. 
+**Submission Deadline.** Whenever you want to finish the course, but no later than 31.08.2023. 
 
