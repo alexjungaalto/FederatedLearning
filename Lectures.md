@@ -1,7 +1,7 @@
-| Calendar Week '23| Topic                 | Lecture Notes |  YouTube  |
+| Calendar Week '23| Topic                 | Lecture Notes |  YouTube  |  Lecture  |
 |-----------------|-----------------------|---------------|--------------|
-|Week 9    |                       |               |              |
-|    Mon. 27.2.   | Welcome to the Course |               |              |
+|Week 9    |                       |               |              |              |
+|    Mon. 27.2.   | Welcome to the Course |        Sec. 1       |              |      16.15 in TU1 (TUAS)        |
 |   Wed. 1.3.     | ML Design Principle |   Sec. 2,3            |   <a href="https://youtube.com/playlist?list=PLrbn2dGrLJK_Uix6FM4mOrIcE5m1fZaX3">Playlist</a>         |
 |Week 10    |                       |               |              |
 | Mon. 6.3. | Regularization |        Sec. 4       |  <a href="https://youtu.be/94tlSrs9ZNo">Video</a>             |
