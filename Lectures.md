@@ -1,4 +1,4 @@
-| Calendar Week '23| Topic                 | Lecture Notes | Lecture.  |
+| Calendar Week '23| Topic                 | Lecture Notes |  YouTube  |
 |-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |
 |    Mon. 27.2.   | Welcome to the Course |               |              |
