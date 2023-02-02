@@ -19,6 +19,6 @@
 | Mon. 3.4. | Privacy in FL |               |              |         |
 | Wed. 5.4. | Data Poisoning |               |     <a href="https://www.youtube.com/watch?v=MLjK-SC7JSY">Video</a>         |         |
 
-[^1]: lecture hall TU1 (Saab) in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> maps </a> 
+[^1]: lecture hall TU1 (Saab) in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> maps </a>. lectures will be recorded and made available timely. 
 
 
