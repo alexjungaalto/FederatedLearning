@@ -10,8 +10,8 @@
 | Mon. 13.3. | Network Models |               |              |         |
 | Wed. 15.3. | FL Design Principle |               |              |         |
 |Week 12    |                       |               |              |         |
-| Mon. 20.3. | FL Main Flavours |               |              |         |
-| Wed. 22.3. | FL Algorithms |               |              |         |
+| Mon. 20.3. | FL Algorithms  |               |              |         |
+| Wed. 22.3. |  FL Main Flavours |               |              |         |
 |Week 13    |                       |               |              |         |
 | Mon. 27.3. | Graph Learning |               |              |         |
 | Wed. 29.3. | Trustworthy AI |               |              |         |
