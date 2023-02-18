@@ -1,6 +1,10 @@
 # CS-E4740 - Federated Learning 
 ## course offered during spring 2023 at [Aalto University](https://www.aalto.fi/en) and to adult learners via [Finnish Network University](https://fitech.io/en/)
 
+If you have not registered for this course via your university course enrolment system (such as sisu.aalto.fi) or fitech.io (Finnish adult learners), you 
+can also register via this google form: <a href="https://forms.gle/tFTtsC48J8RFJTNw7"> **Registration for Externals** </a> 
+
+
 <a href="Lectures.md"> **Lectures** </a>   *** <a href="FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="Assignments.md"> **Assignments** </a> *** <a href="Studentproject.md"> **FL Project** </a>
 
 ## Abstract
