@@ -5,7 +5,7 @@ If you have not registered for this course via your university course enrolment 
 can also register via this google form: <a href="https://forms.gle/tFTtsC48J8RFJTNw7"> **Registration for Externals** </a> 
 
 
-<a href="Lectures.md"> **Lectures** </a>   *** <a href="FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="Assignments.md"> **Assignments** </a> *** <a href="Studentproject.md"> **FL Project** </a>
+<a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
 
 ## Abstract
 
