@@ -1,6 +1,6 @@
 * Lectures will take place in hall TU1 (Saab) in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> (see map) </a>. 
 
-* Lectures can be followed remotely via this <a href="https://aalto.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2b75751c-8bfa-4946-ab67-afac007a34dd"> webcast </a>. The lecture recordings will be made available timely. 
+* Lectures can be attended in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. The lecture recordings will be made available timely. 
 
 
 
