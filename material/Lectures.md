@@ -13,17 +13,17 @@
 | Mon. 6.3. | Regularization |        Sec. 4       |  <a href="https://youtu.be/94tlSrs9ZNo">Video</a>             |     16.15-17.30    |
 | Wed. 8.3. | Gradient Methods  |     Sec. 5     |              |    16.15-17.30    |
 |Week 11    |                       |               |              |         |
-| Mon. 13.3. | Network Models |     Sec. 6          |              |   16.15-17.30      |
-| Wed. 15.3. | FL Design Principle |    Sec. 7           |              |   16.15-17.30      |
+| Mon. 20.3. | Network Models |     Sec. 6          |              |   16.15-17.30      |
+| Wed. 22.3. | FL Design Principle |    Sec. 7           |              |   16.15-17.30      |
 |Week 12    |                       |               |              |         |
-| Mon. 20.3. | FL Algorithms  |        Sec. 9       |              |   16.15-17.30      |
-| Wed. 22.3. |  FL Main Flavours |     Sec. 8     |              |   16.15-17.30      |
+| Mon. 27.3. | FL Algorithms  |        Sec. 9       |              |   16.15-17.30      |
+| Wed. 29.3. |  FL Main Flavours |     Sec. 8     |              |   16.15-17.30      |
 |Week 13    |                       |               |              |         |
-| Mon. 27.3. | Graph Learning |    Sec. 6.4.        |              |    16.15-17.30     |
-| Wed. 29.3. | Trustworthy AI |   Sec. 10          |              |    16.15-17.30     |
+| Mon. 3.4. | Graph Learning |    Sec. 6.4.        |              |    16.15-17.30     |
+| Wed. 5.4. | Trustworthy AI |   Sec. 10          |              |    16.15-17.30     |
 |Week 14    |                       |               |              |         |
-| Mon. 3.4. | Privacy in FL |     Sec. 11     |              |   16.15-17.30      |
-| Wed. 5.4. | Data Poisoning |    Sec. 12     |     <a href="https://www.youtube.com/watch?v=MLjK-SC7JSY">Video</a>         |   16.15-17.30      |
+| TBA | Privacy in FL |     Sec. 11     |              |   16.15-17.30      |
+| TBA | Data Poisoning |    Sec. 12     |     <a href="https://www.youtube.com/watch?v=MLjK-SC7JSY">Video</a>         |   16.15-17.30      |
 
 
 
