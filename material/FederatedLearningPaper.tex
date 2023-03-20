@@ -87,7 +87,7 @@
 \maketitle
 %
 \begin{abstract}
-This paper studies the following aspects fo federated learning ...
+This paper studies federated learning methods for high-precision weather forecasting. 
 \end{abstract}
 %
 \begin{keywords}
@@ -107,9 +107,10 @@ Federated Learning, Networks, Personalized Machine Learning, Trustworthy AI
 \label{sec:pf}
 
 \begin{itemize} 
-\item Formalise your application an a FL problem along the lines of the lecture notes (``A Design Principle for FL''). 
-\item Provide a precise definition (choice for) the local datasets, their data points, features and labels of this FL problem. 
-\item Explain the source of the data. 
+\item Formulate your application as an instance of GTV minimization \cite[Sec. 7]{lecnotesfl} 
+\item Discuss you choice/construction of the empirical graph whose nodes carry local datasets and local models. 
+\item Provide a precise definition of the local datasets, their data points, features and labels. 
+\item Explain the source of the data used in your project. 
 \end{itemize} 
 
 \section{Methods} 
@@ -119,9 +120,8 @@ Federated Learning, Networks, Personalized Machine Learning, Trustworthy AI
 \item Clearly state the number of datapoints in each local dataset. 
 \item Mention any specific characteristics of data and clearly state if any data preprocessing has been implemented.
 \item Explain your feature selection process (no theoretical justification needed).
-\item Describe and explain (why?) your choice of networked model(s)/hypothesis
-space(s), e.g., linear predictors, etc.
-\item Describe and explain which FL algorithm you have used to train the networked model (see Section ``FL Algorithms'' of lecture notes)
+\item Describe and explain (why?) your choice of local models. 
+\item Describe and explain which FL algorithm you have used to train the local models \cite[Sec. 9]{lecnotesfl}
 \item Describe and explain (why?) your choice of loss function(s), e.g., logistic loss
 \item Explain the process of model validation - how did you split the data into training, validation and test sets. What are the sizes of each set and why did
 you make such design choice.
@@ -131,9 +131,9 @@ you make such design choice.
 \label{sec_results} 
 
 \begin{itemize} 
-	\item Compare and discuss the training and validation errors. 
+	\item Compare and discuss the training and validation errors obtained for each node of the empirical graph. 
 	\item Which is the final chosen method and why?
-	\item What is the test error of the final chosen method?
+	\item What is the test error (for each node) of the final chosen method?
 \end{itemize} 
 
 \section{Conclusion}
