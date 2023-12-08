@@ -12,7 +12,7 @@ The lecture recordings will be made available timely.
 | Calendar Week '24| Topic                 | Location  |  Lecture Notes  |
 |-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |            
-|    Mon. 26.2.   |   no lecture |       - 1       |              |        
+|    Mon. 26.2.2024   |   no lecture |       -        |              |        
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |   Sec. 1     |       
 |Week 10    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |    Sec. 2,3,4          |  
