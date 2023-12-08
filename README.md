@@ -3,8 +3,8 @@
 
 You can formally enrol this course as 
 - university (of applied science) student in Finland (contact your study administrator for details) 
-- adult learning in Finland via fitech.io 
-- student at Chalmers, KTH Stockholm (Sweden), NTNU (Norway), DTU (Denmark) via this google form: <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Externals** </a> 
+- adult learner in Finland via <a href="https://fitech.io/en/studies/federated-learning/">  FiTech  </a> 
+- student at Chalmers, KTH (Sweden), NTNU (Norway), DTU (Denmark) via <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Externals** </a> 
 
 
 <a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
