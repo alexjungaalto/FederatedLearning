@@ -1,8 +1,8 @@
 * Unless stated otherwise, each lecture starts at 16:15 pm (local Helsinki time) and ends no later than 18:00 pm. 
 
-* Lectures will take place in four different lecture halls
--  TU1 (Saab) and AS1 in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> (see map) </a>. 
--  Y122 Hall D and U271 U9 in the undergraduate learning centre. 
+* On-iste lectures will take place in four different lecture halls
+** TU1 (Saab) and AS1 in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> (see map) </a>. 
+** Y122 Hall D and U271 U9 in the undergraduate learning centre. 
 
 * Each lectures can also be attended in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. 
 The lecture recordings will be made available timely. 
@@ -10,7 +10,7 @@ The lecture recordings will be made available timely.
 
 
 | Calendar Week '24| Topic                 | Location  |  Lecture Notes  |
-|-----------------|-----------------------|---------------|--------------|--------------|
+|-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |            
 |    Mon. 26.2.   |   no lecture |       - 1       |              |        
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |   Sec. 1     |       
