@@ -1,11 +1,11 @@
 * Unless stated otherwise, each lecture starts at 16:15 pm (local Helsinki time) and ends no later than 18:00 pm. 
 
-* On-site lectures will take place in four different lecture halls
+* The on-site lectures will take place in four different lecture halls: 
   -  TU1 (Saab) and AS1 in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> (see map) </a>. 
    -  Y122 Hall D and U271 U9 in the undergraduate learning centre. 
 
-* Each lectures can also be attended in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. 
-The lecture recordings will be made available timely. 
+* You can attend each lecture also in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. 
+The lecture recordings will be made available in a timely fashion on my <a href="https://www.youtube.com/channel/UC_tW4Z_GfJ2WCnKDtwMuDUA"> Youtube channel  </a>.
 
 
 
