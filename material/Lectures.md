@@ -9,23 +9,23 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 
 
 
-| Calendar Week '24| Topic                 | Location  |  Lecture Notes  |
+| Calendar Week '24| Topic                 | Location  |  Notes  |
 |-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |            
 |    Mon. 26.2.2024   |   no lecture |       -        |              |        
-|   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |   Sec. 1     |       
+|   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |       
 |Week 10    |                       |               |              |          
-| Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |    Sec. 2,3,4          |  
-| Mon. 6.3. |  FL Design Principle       |     R037/1018 AS1     |    Sec. 6,7        |  
+| Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |          |  
+| Mon. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
 |Week 11    |                       |               |              |          
-| Mon. 11.3. | Gradient Methods   |    virtual only  |      Sec. 5        |  
-| Mon. 13.3. | FL Algorithms    |      virtual only    |     Sec. 9      |   
+| Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
+| Mon. 13.3. | FL Algorithms    |      virtual only    |      |   
 |Week 12    |                       |               |              |         
 | Mon. 18.3. |  no lecture  | - |    -     |   
-| Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |    Sec. 8     |             
+| Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |             
 |Week 13    |                       |               |              |         
-| Mon. 25.3. | Graph Learning |  R037/1017 TU1        |     Sec. 6.4.           |   
-| Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |       Sec. 10         |   
+| Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   
+| Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   
 |Week 17   |          |               |              |        
-| Mon. 22.04.   |   Privacy-Protection in FL |     R001/U271 U9 | Sec. 11 | 
-|  Wed. 24.04.   |   Data Poisoning in FL  |    R001/Y122 Hall D | Sec. 12 | 
+| Mon. 22.04.   |   Privacy-Protection in FL |     R001/U271 U9 | | 
+|  Wed. 24.04.   |   Data Poisoning in FL  |    R001/Y122 Hall D | | 
