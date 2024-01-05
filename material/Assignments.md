@@ -5,8 +5,8 @@ The basic variant (5 credits) of the course consists of lectures and correspondi
 | Calendar Week '24| Assignment                 | Quiz Opens  |  Quiz Closes  |
 |-----------------|-----------------------|---------------|--------------|
 |Week 9    |                       |               |              |            
-|    Mon. 26.2.2024   |   no lecture |       -        |              |        
-|   Wed. 28.2.     | Welcome and Intro | TBA      |        |       
+|    Mon. 26.2.2024   |  -|       -        |              |        
+|   Wed. 28.2.     | - |  -    |        |       
 |Week 10    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        TBA |          |  
 | Mon. 6.3. |  FL Design Principle       |     TBA     |          |  
