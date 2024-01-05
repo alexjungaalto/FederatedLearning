@@ -1,12 +1,12 @@
-The basic variant (5 credits) of the course consists of lectures and corresponding assignments. Each assignment requires you to implement concepts from the lecture using Python programming language. 
+The basic variant (5 credits) of the course consists of lectures and corresponding assignments.
+ Each assignment requires you to implement concepts from the lecture using Python programming language. 
+After implementing your solutions, you have to answer related quiz questions. The quizzes will be 
+offered on the MyCourses page of the course. 
 
 
 
 | Calendar Week '24| Assignment                 | Quiz Opens  |  Quiz Closes  |
 |-----------------|-----------------------|---------------|--------------|
-|Week 9    |                       |               |              |            
-|    Mon. 26.2.2024   |  -|       -        |              |        
-|   Wed. 28.2.     | - |  -    |        |       
 |Week 10    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        TBA |          |  
 | Mon. 6.3. |  FL Design Principle       |     TBA     |          |  
