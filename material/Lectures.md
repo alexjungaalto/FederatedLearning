@@ -1,8 +1,8 @@
-* Unless stated otherwise, each lecture starts at 16:15 pm (local Helsinki time) and ends no later than 18:00 pm. 
+* Unless stated otherwise, each lecture starts at 16:15 (local Helsinki time) and ends no later than 18:00. 
 
 * The on-site lectures will take place in four different lecture halls: 
-  -  TU1 (Saab) and AS1 in TUAS building, Maarintie 8 <a href="https://goo.gl/maps/u9UvHHs1huHbf8wm7"> (see map) </a>. 
-   -  Y122 Hall D and U271 U9 in the undergraduate learning centre. 
+  -  TU1 (Saab) and AS1 in TUAS building, Maarintie 8 <a href="https://maps.app.goo.gl/B8HBKVaDoSsEBV448"> (see map) </a>. 
+  -  Y122 Hall D and U271 U9 in the undergraduate learning centre. 
 
 * You can attend each lecture also in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. 
 The lecture recordings will be made available in a timely fashion on my <a href="https://www.youtube.com/channel/UC_tW4Z_GfJ2WCnKDtwMuDUA"> Youtube channel  </a>.
@@ -16,10 +16,10 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |       
 |Week 10    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |          |  
-| Mon. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
+| Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
 |Week 11    |                       |               |              |          
 | Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
-| Mon. 13.3. | FL Algorithms    |      virtual only    |      |   
+| Wed. 13.3. | FL Algorithms    |      virtual only    |      |   
 |Week 12    |                       |               |              |         
 | Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only |    https://flower.dev/     |   
 | Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |             

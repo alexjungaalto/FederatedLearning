@@ -9,10 +9,10 @@ offered on the MyCourses page of the course.
 |-----------------|-----------------------|---------------|--------------|
 |Week 10    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        TBA |          |  
-| Mon. 6.3. |  FL Design Principle       |     TBA     |          |  
+| Wed. 6.3. |  FL Design Principle       |     TBA     |          |  
 |Week 11    |                       |               |              |          
 | Mon. 11.3. | Gradient Methods   |    TBA  |            |  
-| Mon. 13.3. | FL Algorithms    |      TBA    |      |   
+| Wed. 13.3. | FL Algorithms    |      TBA    |      |   
 |Week 12    |                       |               |              |         
 | Mon. 18.3. |  no lecture  | - |    -     |   
 | Wed. 20.3. |  FL Main Flavours    |  TBA    |       |             
