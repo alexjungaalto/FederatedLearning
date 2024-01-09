@@ -26,6 +26,9 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 |Week 13    |                       |               |              |         
 | Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   
 | Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   
+|Week 15    |                       |               |              |         
+| Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
+| Wed. 10.4. |-  |   -        |               |   
 |Week 17   |          |               |              |        
-| Mon. 22.04.   |   Privacy-Protection in FL |     R001/U271 U9 | | 
-|  Wed. 24.04.   |   Data Poisoning in FL  |    R001/Y122 Hall D | | 
+| Mon. 22.4.   |   Privacy-Protection in FL |     R001/U271 U9 | | 
+|  Wed. 24.4.   |   Data Poisoning in FL  |    R001/Y122 Hall D | | 
