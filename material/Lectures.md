@@ -11,24 +11,24 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 
 | Calendar Week '24| Topic                 | Location  |  Notes  |
 |-----------------|-----------------------|---------------|--------------|
-|Week 9    |                       |               |              |            
+|**Week 9**    |                       |               |              |            
 |    Mon. 26.2.2024   |   no lecture |       -        |              |        
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |       
-|Week 10    |                       |               |              |          
+|**Week 10**    |                       |               |              |          
 | Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |          |  
 | Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
-|Week 11    |                       |               |              |          
+|**Week 11**    |                       |               |              |          
 | Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
 | Wed. 13.3. | FL Algorithms    |      virtual only    |      |   
-|Week 12    |                       |               |              |         
+|**Week 12**  |                       |               |              |         
 | Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only |    https://flower.dev/     |   
 | Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |             
-|Week 13    |                       |               |              |         
+|**Week 13**   |                       |               |              |         
 | Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   
 | Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   
-|Week 15    |                       |               |              |         
+|**Week 15**  |                       |               |              |         
 | Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
 | Wed. 10.4. |-  |   -        |               |   
-|Week 17   |          |               |              |        
+|**Week 17**   |          |               |              |        
 | Mon. 22.4.   |   Privacy-Protection in FL |     R001/U271 U9 | | 
 |  Wed. 24.4.   |   Data Poisoning in FL  |    R001/Y122 Hall D | | 
