@@ -1,14 +1,18 @@
-The course CS-E4740 is offered in two variants: a basic variant worth 5 credits and an extended variant which is worth 10 credits. 
-The basic variant consists of lectures and corresponding assignments (see  <a href="Assignments.md"> here </a>). 
-For the extended variant, students have to complete an **individual student project**. 
+We offer the course CS-E4740 in two variants: a basic variant **worth five credits** and an extended 
+variant **worth ten credits**. The basic variant consists of <a href="Lectures.md"> lectures </a> and 
+corresponding <a href="Assignments.md"> assignments </a>. 
 
-The project requires to formulate an application of your choice as an instance of GTVMin and solve it using some 
-of the FL algorithms taught in this course. You have to document your project work in the form of a project report 
-(report template <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>). 
+The project requires you to formulate an application of your choice as an instance of GTVMin (see Lecture "FL Design Principle") 
+and solve it using some of the FL Algorithms taught in this course (e.g., in Lecture "FL Algorithms"). You have to document 
+your project work in the form of a project report (report template <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>). 
+
+We will organize a peer review during which students review each other's project reports. After this peer review, the 
+students must revise their project report according to the reviewer's comments. The ultimate deliverable for the 
+student projects is the revised report and a response letter (letter template <a href="Response_Letter_Demo.pdf"> **pdf** </a>,  <a href="Response_Letter_Demo.tex"> **Latex source** </a>).
 
 We will organize a peer review during which students review each other's project reports. After this peer review, the 
 students must revise your project report according to the reviewer comments. The ultimate deliverable for the student projects is 
-the revised project report along with a response letter (template <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>) that explains how the reviewer comments have been taken into account.  
+the revised project report along with a response letter (template <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>). This response letter must explain how you used reviewer comments to improve the report.  
 
 ** Submission Deadline for First Version of Project Reports.** TBA 
 
