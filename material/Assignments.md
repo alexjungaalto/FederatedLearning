@@ -1,7 +1,7 @@
 The basic variant (5 credits) of the course consists of lectures and corresponding assignments.
  Each assignment requires you to implement concepts from the lecture using Python programming language. 
 After implementing your solutions, you have to answer related quiz questions. The quizzes will be 
-offered on the MyCourses page of the course. 
+offered on the MyCourses page of the course (<a href="https://mycourses.aalto.fi/course/view.php?id=41947&section=1"> click me</a>). 
 
 
 
