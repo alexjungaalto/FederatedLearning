@@ -15,7 +15,7 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 |    Mon. 26.2.2024   |   no lecture |       -        |              |        
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |       
 |**Week 10**    |                       |               |              |          
-| Mon. 4.3. |   ML Basics       |        R037/1017 TU1 |          |  
+| Mon. 4.3. |   ML Basics       |       R037/1018 AS1  |          |  
 | Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
 |**Week 11**    |                       |               |              |          
 | Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
