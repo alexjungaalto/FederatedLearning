@@ -28,7 +28,7 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 | Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   
 |**Week 15**  |                       |               |              |         
 | Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
-| Wed. 10.4. | Lecture Prof. Vassio (Polit. Torino)  |   -        |               |   
+| Wed. 10.4. | Lecture Prof. Vassio (Polit. Torino)  |   R037/1018 AS1         |               |   
 |**Week 17**   |          |               |              |        
-| Mon. 22.4.   |   Privacy-Protection in FL |     R001/U271 U9 | | 
-|  Wed. 24.4.   |   Data Poisoning in FL  |    R001/Y122 Hall D | | 
+| Mon. 22.4.   |   Privacy-Protection  |     R001/U271 U9 | | 
+|  Wed. 24.4.   |   Data and Model Poisoning  |    R001/Y122 Hall D | | 
