@@ -21,7 +21,7 @@ The lecture recordings will be made available in a timely fashion on my <a href=
 | Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
 | Wed. 13.3. | FL Algorithms    |      virtual only    |      |   
 |**Week 12**  |                       |               |              |         
-| Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only |    https://flower.dev/     |   
+| Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   
 | Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |             
 |**Week 13**   |                       |               |              |         
 | Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   
