@@ -14,11 +14,11 @@ You can formally enrol this course as
 Federated learning (FL) enables decentralized training of machine learning models, eliminating the need to 
 collect local datasets at a central location. This course teaches the application of linear algebra and calculus to 
 analyze and design FL systems, addressing real-world applications such as weather prediction and healthcare. 
-You will learn to formulate FL applications as optimization probems and solve them with distributed algorithms. 
+You will learn to formulate FL applications as optimization problems and solve them with distributed algorithms. 
 Students have the option to extend the course to 10 credits by completing a student project. This student project 
 might be used to pilot ideas (e.g., for your doctoral research) and get peer feedback on them. 
 
- To get a more concrete idea of what to expect, have a look at the  <a href="material/FL_LectureNotes.pdf"> draft for the lecture notes. </a> 
+To get a more concrete idea of what to expect, have a look at the  <a href="material/FL_LectureNotes.pdf"> draft for the lecture notes. </a> 
 
 ## References
 <a id="1">[1]</a> 
