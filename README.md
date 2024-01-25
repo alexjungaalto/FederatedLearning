@@ -4,7 +4,9 @@
 You can formally enrol this course as 
 - university (of applied science) student in Finland (contact your study administrator for details) 
 - adult learner in Finland via <a href="https://www.aalto.fi/en/admission-services/non-degree-studies-exchange-studies-studies-under-the-flexible-study-right-agreement-joo#0-non-degree-studies/">  Non-Degree Studies at Aalto University </a> 
-- student at Chalmers, KTH (Sweden), NTNU (Norway), DTU (Denmark) via <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Externals** </a> 
+- student at Chalmers, KTH (Sweden), NTNU (Norway), DTU (Denmark) via <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Nordic Tech Five** </a> 
+
+Anybody interested in following the course (without formal enrolment) <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **register for the mailing list** </a> 
 
 
 <a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
