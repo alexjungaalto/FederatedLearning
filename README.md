@@ -3,7 +3,7 @@
 
 You can formally enrol this course as 
 - university (of applied science) student in Finland (contact your study administrator for details) 
-- adult learner in Finland via <a href="https://fitech.io/en/studies/federated-learning/">  FiTech  </a> 
+- adult learner in Finland via <a href="https://www.aalto.fi/en/admission-services/non-degree-studies-exchange-studies-studies-under-the-flexible-study-right-agreement-joo#0-non-degree-studies/">  Non-Degree Studies at Aalto University </a> 
 - student at Chalmers, KTH (Sweden), NTNU (Norway), DTU (Denmark) via <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Externals** </a> 
 
 
@@ -11,26 +11,13 @@ You can formally enrol this course as
 
 ## Abstract
 
+Federated learning (FL) enables decentralized training of machine learning models, eliminating the need to 
+collect local datasets at a central location. This course teaches the application of linear algebra and calculus to 
+analyze and design FL systems, addressing real-world applications such as weather prediction and healthcare. 
+You will learn to formulate FL applications as optimization probems and solve them with distributed algorithms. 
+Students have the option to extend the course to 10 credits by completing a student project. This student project 
+might be used to pilot ideas (e.g., for your doctoral research) and get peer feedback on them. 
 
-Many machine learning (ML) application domains, such as numerical weather prediction, generate decentralized 
-collections of local datasets. A naive application of basic ML methods [[1]](#1) would require collecting these local datasets 
-at a central point. However, this approach might be unfavourable for several reasons, including inefficient use of 
-computational infrastructure or the need for more privacy.
-
-Federated learning (FL) aims to train ML models in a decentralized and collaborative fashion. 
-FL methods require only the exchange of model parameter updates instead of raw data. These methods 
-are appealing computationally and from a privacy protection perspective. Indeed, FL methods leverage 
-distributed computational resources and minimize the leakage of private information irrelevant 
-to the learning task.
-
-This course teaches you how to apply concepts from linear algebra (arrays of numbers)
- and calculus (smooth curves) to analyze and design federated learning (FL) systems. You will
- learn to formulate "real-world" applications, ranging from high-precision weather forecasting
- to personalized health care, as optimization problems and solve them using distributed
- optimization algorithms. We offer the courses in a basic variant (5 credits) that you extend to an 
- extended variant (10 credits) by completing a student project. This student project allows you to 
- pilot (get feedback for) ideas for your thesis or current research.
- 
  To get a more concrete idea of what to expect, have a look at the  <a href="material/FL_LectureNotes.pdf"> draft for the lecture notes. </a> 
 
 ## References
