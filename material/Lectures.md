@@ -7,28 +7,31 @@
 * You can attend each lecture also in the <a href="https://aalto.zoom.us/j/61924584460?pwd=MXJDSHFyemdCOS91aFJxMmhqdXJwQT09"> virtual lecture hall </a>. 
 The lecture recordings will be made available in a timely fashion on my <a href="https://www.youtube.com/channel/UC_tW4Z_GfJ2WCnKDtwMuDUA"> Youtube channel  </a>.
 
+* We will test your understanding of lecture contents via small quizzes. 
+The quizzes will be offered on the MyCourses page of the course (<a href="https://mycourses.aalto.fi/course/view.php?id=41947&section=1"> click me</a>). 
 
 
-| Calendar Week '24| Topic                 | Location  |  Notes  |
-|-----------------|-----------------------|---------------|--------------|
-|**Week 9**    |                       |               |              |            
-|    Mon. 26.2.2024   |   no lecture |       -        |              |        
-|   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |       
-|**Week 10**    |                       |               |              |          
-| Mon. 4.3. |   ML Basics       |       R037/1018 AS1  |          |  
-| Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  
-|**Week 11**    |                       |               |              |          
-| Mon. 11.3. | Gradient Methods   |    virtual only  |            |  
-| Wed. 13.3. | FL Algorithms    |      virtual only    |      |   
-|**Week 12**  |                       |               |              |         
-| Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   
-| Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |             
-|**Week 13**   |                       |               |              |         
-| Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   
-| Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   
-|**Week 15**  |                       |               |              |         
-| Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
-| Wed. 10.4. | Lecture Prof. Vassio (Polit. Torino)  |   R037/1018 AS1         |               |   
-|**Week 17**   |          |               |              |        
-| Mon. 22.4.   |   Privacy-Protection  |     R001/U271 U9 | | 
-|  Wed. 24.4.   |   Data and Model Poisoning  |    R001/Y122 Hall D | | 
+
+| Calendar Week '24| Topic                 | Location  |  Notes  | Quiz |
+|-----------------|-----------------------|---------------|--------------|--------------|
+|**Week 9**    |                       |               |              |            |
+|    Mon. 26.2.2024   |   no lecture |       -        |              |   |      
+|   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |     |  
+|**Week 10**    |                       |               |              |          |
+| Mon. 4.3. |   ML Basics       |       R037/1018 AS1  |          |   4.3. 18:00 - 8.3.   |
+| Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |          |  |
+|**Week 11**    |                       |               |              |          |
+| Mon. 11.3. | Gradient Methods   |    virtual only  |            | |  
+| Wed. 13.3. | FL Algorithms    |      virtual only    |      |   |
+|**Week 12**  |                       |               |              |         |
+| Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   |
+| Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |         |    
+|**Week 13**   |                       |               |              |         |
+| Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   |
+| Wed. 27.3. | Trustworthy AI |   R037/1018 AS1         |               |   | 
+|**Week 15**  |                       |               |              |         |
+| Mon. 8.4. | Guest Talk Nokia |   TBA      |               |      |
+| Wed. 10.4. | Lecture Prof. Vassio (Polit. Torino)  |   R037/1018 AS1         |               |       |
+|**Week 17**   |          |               |              |         |
+| Mon. 22.4.   |   Privacy-Protection  |     R001/U271 U9 | |     |
+|  Wed. 24.4.   |   Data and Model Poisoning  |    R001/Y122 Hall D | |      |
