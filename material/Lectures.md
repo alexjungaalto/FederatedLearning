@@ -1,4 +1,4 @@
-* Unless stated otherwise, each lecture starts at 16:15 (local Helsinki time, (<a href="https://www.google.com/search?client=firefox-b-d&q=what+is+current+time+in+helsinki"> check here</a>) and ends by 18:00.
+* Unless stated otherwise, each lecture starts at 16:15 (local Helsinki time, <a href="https://www.google.com/search?client=firefox-b-d&q=what+is+current+time+in+helsinki"> check here </a>) and ends by 18:00.
 
 * The on-site lectures will take place in four different lecture halls:  
   -   AS1 and TU1 (Saab) in TUAS building, Maarintie 8 <a href="https://maps.app.goo.gl/WymneLDPXe1WU2cg9"> (see map). </a> 
