@@ -1,4 +1,4 @@
-* Unless stated otherwise, each lecture starts at 16:15 (local Helsinki time) and ends no later than 18:00. 
+* Unless stated otherwise, each lecture starts at 16:15 (local Helsinki time, (<a href="https://www.google.com/search?client=firefox-b-d&q=what+is+current+time+in+helsinki"> check here</a>) and ends by 18:00.
 
 * The on-site lectures will take place in four different lecture halls:  
   -   AS1 and TU1 (Saab) in TUAS building, Maarintie 8 <a href="https://maps.app.goo.gl/WymneLDPXe1WU2cg9"> (see map). </a> 
@@ -8,7 +8,7 @@
 The lecture recordings will be made available in a timely fashion on my <a href="https://www.youtube.com/channel/UC_tW4Z_GfJ2WCnKDtwMuDUA"> Youtube channel  </a>.
 
 * We will test your understanding of lecture contents via small quizzes. 
-The quizzes will be offered on the MyCourses page of the course (<a href="https://mycourses.aalto.fi/course/view.php?id=41947&section=1"> click me</a>). 
+We offer the quizzes on the MyCourses page of the course (<a href="https://mycourses.aalto.fi/course/view.php?id=41947&section=1"> click me</a>). 
 
 
 
