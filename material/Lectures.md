@@ -18,11 +18,11 @@ We offer the quizzes on the MyCourses page of the course (<a href="https://mycou
 |    Mon. 26.2.2024   |   no lecture |       -        |              |   |      
 |   Wed. 28.2.     | Welcome and Intro | R037/1018 AS1      |        |     |  
 |**Week 10**    |                       |               |              |          |
-| Mon. 4.3. |   ML Basics       |       R037/1018 AS1  |          |   4.3. 18:00 - 8.3.   |
-| Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |        |   6.3. 18:00  - 8.3.   |
+| Mon. 4.3. |   ML Basics       |       R037/1018 AS1  |          |   4.3. 18:00 - 10.3.   |
+| Wed. 6.3. |  FL Design Principle       |     R037/1018 AS1     |        |   6.3. 18:00  - 10.3.   |
 |**Week 11**    |                       |               |              |          |
-| Mon. 11.3. | Gradient Methods   |    virtual only  |            |  11.3. 18:00 - 15.3.  |  
-| Wed. 13.3. | FL Algorithms    |      virtual only    |      |   13.3. 18:00  - 15.3. |
+| Mon. 11.3. | Gradient Methods   |    virtual only  |            |  11.3. 18:00 - 17.3.  |  
+| Wed. 13.3. | FL Algorithms    |      virtual only    |      |   13.3. 18:00  - 17.3. |
 |**Week 12**  |                       |               |              |         |
 | Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   |
 | Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |         |    
