@@ -11,9 +11,9 @@ students must revise their project report according to the reviewer's comments. 
 student projects is the revised report and a response letter (letter template <a href="Response_Letter_Demo.pdf"> **pdf** </a>,  <a href="Response_Letter_Demo.tex"> **Latex source** </a>). This response letter must explain how you used reviewer comments to improve the report. Here are three examples for such a final submission from the previous 
 course edition: <a href="FLProject_Sample1.pdf"> **Example 1** </a>, <a href="FLProject_Sample2.pdf"> **Example 2** </a>, <a href="FLProject_Sample3.pdf"> **Example 3** </a>. 
 
-** Submission Deadline for First Version of Project Reports.** TBA 
+Submission Deadline for First Version of Project Reports: *31-May-2024*
 
-** Submission Deadline for Peer Reviews.** TBA 
+Submission Deadline for Peer Reviews: *30-June-2024*
 
-** Submission Deadline for Revised Project Reports.** Whenever you want to finish the course, but no later than 31.07.2024. 
+Submission Deadline for Revised Project Reports:  Whenever you want to finish the course, but no later than *30-Sept-2024*
 
