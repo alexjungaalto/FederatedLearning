@@ -9,7 +9,7 @@ You can formally enrol this course as
 Anybody interested in following the course (without formal enrolment) <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **register for the mailing list** </a> 
 
 
-<a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/FL_LectureNotes.pdf"> **Lecture Notes** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
+<a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/ResponseStudentFeedback2023.pdf"> **What's New?** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
 
 ## Abstract
 
