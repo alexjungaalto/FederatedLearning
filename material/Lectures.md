@@ -24,7 +24,7 @@ We offer the quizzes on the MyCourses page of the course (<a href="https://mycou
 | Mon. 11.3. | Gradient Methods   |    virtual only  |            |  11.3. 18:00 - 17.3.  |  
 | Wed. 13.3. | FL Algorithms    |      virtual only    |      |   13.3. 18:00  - 17.3. |
 |**Week 12**  |                       |               |              |         |
-| Mon. 18.3. |  Guest Talk Flowers Lab   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   |
+| Mon. 18.3. |  Guest Talk Flower Labs   | virtual only | <a href="GuestLectureFlower.md"> more info  </a>     |   |
 | Wed. 20.3. |  FL Main Flavours    |  R037/1018 AS1    |       |         |    
 |**Week 13**   |                       |               |              |         |
 | Mon. 25.3. | Graph Learning |  R037/1017 TU1        |               |   |

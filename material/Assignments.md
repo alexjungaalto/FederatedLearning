@@ -13,7 +13,7 @@ the quizzes on the MyCourses page of the course (<a href="https://mycourses.aalt
 | Mon. 11.3. | Gradient Methods   |    11.3., 18:00  |   17.3., 23:59      |  
 | Wed. 13.3. | FL Algorithms    |    13.3., 18:00    |  17.3., 23:59    |   
 |Week 12    |                       |               |              |         
-| Mon. 18.3. |  no lecture  | - |    -     |   
+| Mon. 18.3. |  Guest Talk Flowers | - |    -     |   
 | Wed. 20.3. |  FL Main Flavours    |  20.3., 18:00    |   24.3., 23:59    |             
 |Week 13    |                       |               |              |         
 | Mon. 25.3. | Graph Learning | 25.3., 18:00        |    7.4., 23:59         |   
