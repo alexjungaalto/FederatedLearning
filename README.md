@@ -1,5 +1,5 @@
 # CS-E4740 - Federated Learning 
-## course offered during spring 2024 at [Aalto University](https://www.aalto.fi/en))
+## course offered during spring 2024 at [Aalto University](https://www.aalto.fi/en) 
 
 You can formally enrol this course as 
 - university (of applied science) student in Finland (contact your study administrator for details) 
