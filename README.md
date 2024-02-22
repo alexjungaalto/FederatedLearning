@@ -1,12 +1,12 @@
 # CS-E4740 - Federated Learning 
-## course offered during spring 2024 at [Aalto University](https://www.aalto.fi/en) and to adult learners via [Finnish Network University](https://fitech.io/en/)
+## course offered during spring 2024 at [Aalto University](https://www.aalto.fi/en))
 
 You can formally enrol this course as 
 - university (of applied science) student in Finland (contact your study administrator for details) 
 - adult learner in Finland via <a href="https://www.aalto.fi/en/admission-services/non-degree-studies-exchange-studies-studies-under-the-flexible-study-right-agreement-joo#0-non-degree-studies/">  Non-Degree Studies at Aalto University </a> 
 - student at Chalmers, KTH (Sweden), NTNU (Norway), DTU (Denmark) via <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Registration for Nordic Tech Five** </a> 
 
-Anybody interested in following the course (without formal enrolment) <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **register for the mailing list** </a> 
+Anybody interested in following the course (without formal enrolment) <a href="https://forms.gle/uSK2Uw71aLVqnymWA"> **Subscribe to the course mailing list** </a> 
 
 
 <a href="material/Lectures.md"> **Lectures** </a>   *** <a href="material/ResponseStudentFeedback2023.pdf"> **What's New?** </a> *** <a href="material/Assignments.md"> **Assignments** </a> *** <a href="material/Studentproject.md"> **FL Project** </a>
