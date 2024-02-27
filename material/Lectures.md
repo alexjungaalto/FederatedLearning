@@ -32,6 +32,9 @@ We offer the quizzes on the MyCourses page of the course (<a href="https://mycou
 |**Week 15**  |                       |               |              |   
 | Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
 | Wed. 10.4. | Prof. Vassio (Polit. Torino)  |   R037/1018 AS1         |               | 
+|**Week 16**  |                       |               |              |   
+| Mon. 15.4. | Guest Talk Scaleout |   virtual only      |    <a href="https://www.scaleoutsystems.com/"> more info  </a>           |   
+| Wed. 17.4. |-  |  -       |               | 
 |**Week 17**   |          |               |              |   
 | Mon. 22.4.   |   Privacy-Protection  |     R001/U271 U9 | |  
 |  Wed. 24.4.   |   Data and Model Poisoning  |    R001/Y122 Hall D | | 
