@@ -1,0 +1,324 @@
+% Generic syms
+
+\newcommand\strongconvparam[1]{\alpha^{(#1)}}
+\newcommand\lipschitzparam[1]{\beta^{(#1)}}
+\newcommand\clusteropterr[1]{\varepsilon^{(#1)}}
+\newcommand{\wupdate}{\mathcal{WU}}
+\newcommand{\zupdate}{\mathcal{ZU}}
+\newcommand\globalparams[1]{\overline{\weights}\left[ #1 \right]} 
+\newcommand\hypothesis{h} 
+\newcommand\hypothesisparam[1]{h^{(#1)}} 
+\newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1)}_{#2}}
+\newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1)}_{#2}}
+\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1)}_{#2}}
+\newcommand\estparams[1]{\widehat{\weights}_{#1}}
+\newcommand\localmodel[1]{\hypospace^{(#1)}} 
+\newcommand\localhypothesis[1]{\hypothesis^{(#1)}} 
+\newcommand\learntlocalhypothesis[1]{\widehat{\hypothesis}^{(#1)}} 
+\newcommand\discrepancy[2]{d^{(#1,#2)}}
+
+\newcommand\defeq{:=}
+\newcommand{\Tt}[0]{\boldsymbol{\theta}}
+\newcommand{\XX}[0]{{\cal X}}
+\newcommand{\ZZ}[0]{{\cal Z}}
+\newcommand{\vx}[0]{{\bf x}}
+\newcommand{\vv}[0]{{\bf v}}
+\newcommand{\vu}[0]{{\bf u}}
+\newcommand{\vs}[0]{{\bf s}}
+\newcommand{\vm}[0]{{\bf m}}
+\newcommand{\vq}[0]{{\bf q}}
+\newcommand{\mX}[0]{{\bf X}}
+\newcommand{\mC}[0]{{\bf C}}
+\newcommand{\mA}[0]{{\bf A}}
+\newcommand{\mL}[0]{{\bf L}}
+\newcommand{\fscore}[0]{F_{1}}
+\newcommand{\sparsity}{s}
+\newcommand{\mW}[0]{{\bf W}}
+\newcommand{\mM}[0]{{\bf M}}
+\newcommand{\incidencemtx}[0]{{\bf D}}
+\newcommand{\mZ}[0]{{\bf Z}}
+\newcommand{\vw}[0]{{\bf w}}
+\newcommand{\D}[0]{{\mathcal{D}}}
+\newcommand{\mP}{\mathbf{P}}
+\newcommand{\mI}{\mathbf{I}}
+\newcommand{\mT}{\mathbf{T}}
+\newcommand{\mS}{\mathbf{S}}
+\newcommand{\mQ}{\mathbf{Q}}
+\newcommand{\mU}{\mathbf{U}}
+\newcommand{\mV}{\mathbf{V}}
+\newcommand{\E}[0]{{\mathbb{E}}}
+\newcommand{\vy}[0]{{\bf y}}
+\newcommand{\va}[0]{{\bf a}}
+\newcommand{\ve}[0]{{\bf e}}
+\newcommand{\vn}[0]{{\bf n}}
+\newcommand{\vb}[0]{{\bf b}}
+\newcommand{\vr}[0]{{\bf r}}
+\newcommand{\vz}[0]{{\bf z}}
+\newcommand{\N}[0]{{\mathcal{N}}}
+\newcommand{\vc}[0]{{\bf c}}
+\newcommand{\vg}[0]{{\bf g}}
+
+% Statistics and Probability Theory 
+
+
+\newcommand{\errprob}{p_{\rm err}} 
+\newcommand{\prob}[1]{p({#1})} 
+\newcommand{\pdf}[1]{p({#1})} 
+\newcommand{\meanvec}[1]{{\bm \mu}^{(#1)}} 
+\newcommand{\covmtx}[1]{\mathbf{C}^{(#1)}} 
+\newcommand{\samplemeanvec}[1]{\widehat{{\bm \mu}}^{(#1)}} 
+\newcommand{\samplecovmtx}[1]{\widehat{\mathbf{C}}^{(#1)}} 
+\def \expect {\mathbb{E} }
+
+
+% Machine Learning Symbols 
+
+
+
+\newcommand{\biasterm}{B}
+\newcommand{\varianceterm}{V}
+\newcommand{\neighbourhood}[1]{\mathcal{N}^{(#1)}}
+\newcommand{\nrfolds}{k}
+\newcommand{\mseesterr}{E_{\rm est}}
+\newcommand{\bootstrapidx}{b}
+%\newcommand{\modeldim}{r}
+\newcommand{\modelidx}{l}
+\newcommand{\nrbootstraps}{B}
+\newcommand{\sampleweight}[1]{q^{(#1)}}
+\newcommand{\nrcategories}{K} 
+\newcommand{\splitratio}[0]{{\rho}}
+
+\newcommand{\norm}[1]{\Vert  {#1} \Vert}
+\newcommand{\normgeneric}[2]{\left\Vert  {#1} \right\Vert_{#2}}
+\newcommand{\sqeuclnorm}[1]{\left\Vert  {#1} \right\Vert^{2}_{2}}
+\newcommand{\bmx}[0]{\begin{bmatrix}}
+\newcommand{\emx}[0]{\end{bmatrix}}
+\newcommand{\T}[0]{\text{T}}
+\DeclareMathOperator*{\rank}{rank}
+%\newcommand\defeq{:=}
+\newcommand\eigvecS{\hat{\mathbf{u}}} 
+\newcommand\eigvecCov{\mathbf{u}} 
+\newcommand\eigvecCoventry{u}
+\newcommand{\featuredim}{d}
+\newcommand{\nrfeatures}{\featuredim}
+\newcommand{\featurelenraw}{\featuredim'}
+\newcommand{\featurelen}{\featuredim}
+\newcommand{\samplingset}{\mathcal{M}}
+\newcommand{\trainingset}{\samplingset}
+\newcommand{\samplesize}{m}
+\newcommand{\sampleidx}{r} 
+\newcommand{\nractions}{A} 
+\newcommand{\datapoint}{\vz} 
+\newcommand{\actionidx}{a} 
+\newcommand{\clusteridx}{c} 
+\newcommand{\sizehypospace}{D}
+\newcommand{\nrcluster}{k} 
+\newcommand{\nrseeds}{s} 
+\newcommand{\featureidx}{j} 
+\newcommand{\clustermean}{{\bm \mu}} 
+\newcommand{\clustercov}{{\bm \Sigma}} 
+\newcommand{\target}{y}
+\newcommand{\error}{E}
+\newcommand{\augidx}{b}
+\newcommand{\task}{\mathcal{T}}
+\newcommand{\nrtasks}{T}
+\newcommand{\taskidx}{t}
+\newcommand\truelabel{y}
+\newcommand{\polydegree}{r}
+\newcommand\labelvec{\vy}
+\newcommand\featurevec{\vx}
+\newcommand{\transformedfeaturevec}{\vz}
+\newcommand\feature{x}
+\newcommand\predictedlabel{\hat{\truelabel}}
+\newcommand\dataset{\mathcal{D}}
+\newcommand\trainset{\dataset^{(\rm train)}}
+\newcommand\valset{\dataset^{(\rm val)}}
+\newcommand\realcoorspace[1]{\mathbb{R}^{\text{#1}}}
+\newcommand\effdim[1]{d_{\rm eff} \left( #1 \right)}
+\newcommand{\inspace}{\mathcal{X}}
+\newcommand{\sigmoid}{\sigma}
+\newcommand{\learnthypothesis}{\hat{\hypothesis}}
+\newcommand{\outspace}{\mathcal{Y}}
+\newcommand{\hypospace}{\mathcal{H}}
+\newcommand\netmodel[1]{\mathcal{H}^{(#1)}}
+\newcommand{\emperror}{\widehat{L}}
+\newcommand\emprisk[2]{\widehat{L}\big(#1|#2\big)}
+\newcommand\risk[1]{\bar{L} \big( #1 \big) } %\expect \big \{ \loss{(\featurevec,\truelabel)}{#1} \big\}}
+\newcommand{\featurespace}{\mathcal{X}}
+\newcommand{\labelspace}{\mathcal{Y}}
+\newcommand{\rawfeaturevec}{\mathbf{z}}
+\newcommand{\rawfeature}{z}
+\newcommand{\condent}{H}
+\newcommand{\explanation}{e}
+\newcommand{\explainset}{\mathcal{E}}
+\newcommand{\user}{u}
+\newcommand{\actfun}{\sigma}
+\newcommand{\noisygrad}{g}
+\newcommand{\reconstrmap}{r}
+\newcommand{\predictor}{h}
+\newcommand{\eigval}[1]{\lambda_{#1}}
+\newcommand{\eigvalgen}{\lambda}
+\newcommand{\regparam}{\alpha}
+\newcommand{\maxeigvallocalQ}{\lambda_{\rm max}} % maximum eigenvalue of Grammian of local feature matrix (GTVMin for local linreg)
+\newcommand{\avgmineigvallocalQ}{\bar{\lambda}_{\rm min}} % averge of min eigenvalues of Grammian of local feature matrix (GTVMin for local linreg)
+\newcommand{\lrate}{\eta}
+\newcommand{\upperboundeigval}{U}
+\newcommand{\lowerboundeigval}{L}
+\newcommand{\generror}{E}
+\DeclareMathOperator{\supp}{supp}
+%\newcommand{\loss}[3]{L({#1},{#2},{#3})} 
+\newcommand{\loss}[2]{L\left({#1},{#2}\right)} 
+\newcommand{\gtvloss}[3]{L^{(\rm d)} \left({#1},{#2},{#3} \right)} 
+\newcommand{\clusterspread}[2]{L^{2}_{\clusteridx}\big({#1},{#2}\big)} 
+\newcommand{\determinant}[1]{{\rm det}\left( #1 \right)} 
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\newcommand{\itercntr}{k}
+\newcommand{\state}{s} 
+\newcommand{\statespace}{\mathcal{S}} 
+\newcommand{\timeidx}{t} 
+\newcommand{\optpolicy}{\pi_{*}} 
+\newcommand{\appoptpolicy}{\hat{\pi}} 
+\newcommand{\dummyidx}{j} 
+\newcommand{\gridsizex}{K}
+\newcommand{\gridsizey}{L}
+\newcommand{\reward}{r}
+\newcommand{\cumreward}{G}
+\newcommand{\return}{\cumreward}
+\newcommand{\action}{a}
+\newcommand\actionset{\mathcal{A}}
+\newcommand{\obstacles}{\mathcal{B}}
+\newcommand{\valuefunc}[1]{v_{#1}}
+\newcommand{\gridcell}[2]{\langle #1, #2 \rangle}
+\newcommand{\mdp}[5]{\langle #1, #2, #3, #4, #5 \rangle}
+\newcommand{\actionvalue}[1]{q_{#1}}
+\newcommand{\transition}{\mathcal{T}}
+\newcommand{\policy}{\pi}
+\newcommand{\charger}{c}
+\newcommand{\itervar}{k}
+\newcommand{\iteridx}{k}
+\newcommand{\discount}{\gamma}
+\newcommand{\rumba}{Rumba}
+\newcommand{\actionnorth}{\rm N} 
+\newcommand{\actionsouth}{\rm S} 
+\newcommand{\actioneast}{\rm E} 
+\newcommand{\actionwest}{\rm W}
+\newcommand{\chargingstations}{\mathcal{C}}
+\newcommand{\basisfunc}{\phi}
+\newcommand{\augparam}{B}
+\newcommand{\valerror}{E_{v}}
+\newcommand{\trainerror}{E_{t}}
+\newcommand{\foldidx}{b}
+\newcommand{\testset}{\dataset^{(\rm test)} }
+\newcommand{\testerror}{E^{(\rm test)}}
+\newcommand{\nrmodels}{M}
+\newcommand{\benchmarkerror}{E^{(\rm ref)}}
+\newcommand{\lossfun}{L}
+\newcommand{\datacluster}[1]{\mathcal{C}^{(#1)}} 
+\newcommand{\cluster}{\mathcal{C}}
+\newcommand{\bayeshypothesis}{h^{*}}
+\newcommand{\featuremtx}{\mX}
+\newcommand{\weight}{w}
+\newcommand{\weights}{\vw}
+\newcommand{\regularizer}[1]{\mathcal{R}\big\{ #1 \big\}}
+\newcommand{\decreg}[1]{\mathcal{R}_{#1}}
+\newcommand{\naturalnumbers}{\mathbb{N}}
+\newcommand{\featuremapvec}{{\bf \Phi}}
+\newcommand{\featuremap}{\phi}
+\newcommand{\batchsize}{B}
+\newcommand{\batch}{\mathcal{B}}
+\newcommand{\foldsize}{B}
+\newcommand{\nriter}{R}
+\newcommand{\opttol}{\varepsilon^{(\rm tol)}}
+\newcommand{\bd[1]}{\left| \partial #1\right|}
+
+% Convex Analysis 
+
+\newcommand{\proxoperator}[2]{{\rm\bf prox}_{#1}(#2)} 
+\newcommand{\proximityop}[3]{{\rm\bf prox}_{#1,#3}(#2)} 
+
+
+% Machine Learning from Networked Data 
+
+\newcommand{\localloss}[3]{L_{#1}\left(#2,#3 \right)}
+\newcommand{\locallossfunc}[2]{L_{#1}\left(#2 \right)}
+\newcommand{\perturbedlocallossfunc}[2]{\tilde{L}_{#1}\left(#2 \right)}
+\newcommand{\conjlocallossfunc}[2]{L^{*}_{#1}\left(#2 \right)}
+\newcommand{\localpenalty}[2]{\phi^{(#1)} \left(#2 \right)}
+\newcommand{\localdataset}[1]{\mathcal{D}^{(#1)}}
+\newcommand{\edges}{\mathcal{E}}
+\newcommand{\nodesigvec}{\mathbf{u}} 
+\newcommand{\edgesigvec}{\mathbf{f}} 
+\newcommand{\edgesig}{f} 
+\newcommand{\edgedir}[2]{\left(#1,#2 \right)}
+\newcommand{\edgeweight}{A}
+\newcommand{\edgeweights}{\mA}
+\newcommand{\genericnodeset}{\mathcal{A}}
+\newcommand{\edgeidx}{e}
+\newcommand{\edgesigs}{\mathbb{R}^{\edges \times \featuredim}}
+\newcommand{\graph}{\mathcal{G}}
+\newcommand{\nodes}{\mathcal{V}}
+\newcommand{\LapMat}[1]{\mL^{(#1)}}
+\newcommand{\LapMatEntry}[3]{L^{(#1)}_{#2,#3}}
+\newcommand{\indsubgraph}[2]{#1^{(#2)}}
+\newcommand{\nodedegree}[1]{d^{(#1)}}
+\newcommand{\degreemtx}{\mathbf{D}}
+%\newcommand{\incidencemtx}{\mathbf{B}}
+\newcommand{\maxnodedegree}{d_{\rm max}}
+\newcommand{\nodeidx}{i}
+\newcommand{\nrnodes}{n}
+\newcommand{\nodesigs}{\mathbb{R}^{\nodes \times \featuredim }}
+\newcommand{\nodespace}{\mathcal{W}}
+\newcommand{\edgespace}{\mathcal{U}}
+\newcommand{\naturalspace}{\mathcal{P}}
+\newcommand{\gindex}[1][i]{^{(#1)}}
+\newcommand{\gsignal}{\vw}
+\newcommand{\trueweights}{\overline{\vw}}
+\newcommand{\vt}{\mathbf{t}}
+\newcommand{\FIM}{\mathbf{F}}
+\newcommand{\FIMentry}{F}
+\newcommand{\edge}[2]{\{#1,#2\}}
+\newcommand{\directededge}[2]{\left(#1,#2\right)}
+\newcommand{\Laplacian}{\mathbf{L}}
+\newcommand{\NormLaplacian}{\mathbf{L}^{({\rm sym})}}
+\newcommand{\mvnormal}[2]{\mathcal{N}\left(#1,#2\right)}
+\newcommand{\gtvpenalty}{\phi} 
+\newcommand{\gtv}[1]{{\rm GTV}\left\{#1\right\}} 
+\newcommand{\partition}{\mathcal{P}}
+\newcommand{\boundary}{\partial \partition}
+\newcommand{\localsamplesize}[1]{m_{#1}}
+\newcommand{\localsampleidx}{r}
+\newcommand{\dimlocalmodel}{d}
+\newcommand{\pair}[2]{\left( #1,#2 \right)}
+\newcommand{\localparams}[1]{\mathbf{w}^{(#1)}}
+\newcommand{\localparamsiter}[2]{\mathbf{w}^{(#1,#2)}}
+\newcommand{\localflowvec}[1]{\mathbf{u}^{(#1)}}
+\newcommand{\optlocalflowvec}[1]{\widehat{\mathbf{u}}^{(#1)}}
+\newcommand{\optlocalflowvecclusteredg}[1]{\widetilde{\vu}^{(#1)}}
+\newcommand{\estlocalparamsclusteredg}[1]{\widetilde{\vw}^{(#1)}}
+\newcommand{\flowvec}{\mathbf{u}}
+\newcommand{\estlocalparams}[1]{\widehat{\mathbf{w}}^{(#1)}}
+\newcommand{\localobj}[2]{f^{(#1)}\left( #2 \right)}
+\newcommand{\clusterobj}[2]{f^{(#1)}\left( #2 \right)}
+\newcommand{\locallipsch}[1]{\beta^{(#1)}}
+\newcommand{\netparams}{\mathbf{w}}
+\newcommand{\nodeweight}[1]{\rho_{#1}}
+\newcommand{\mutualinformation}[2]{I \left( #1;#2\right)}
+\newcommand{\primalupdate}{\mathcal{PU}}
+\newcommand{\dualupdate}{\mathcal{DU}}
+\newcommand{\clusterwideopt}[1]{\overline{\weights}^{(#1)}}
+\newcommand{\demand}[1]{\mathbf{d}^{(#1)}}
+\newcommand{\demandbound}[1]{\delta^{(#1)}}
+\newcommand{\adversarynodes}{\mathcal{A}}
+\newcommand{\linmodel}[1]{\hypospace^{(#1)}}
+\newcommand{\divergence}[2]{D\big( #1,#2 \big)}
+\newcommand{\kld}[2]{D^{(\rm KL)}\big( #1,#2 \big)}
+\newcommand{\estdivergence}[2]{\widehat{D}\big( #1,#2 \big)}
+\newcommand{\testsetgtv}{\dataset^{(\rm test)}}
+\newcommand{\projection}[2]{P_{#1}\big( #2\big) }
+\newcommand{\perturbation}[1]{{\bm \varepsilon}^{(#1)}}
+\newcommand{\gdcontract}[2]{\kappa^{(#1)} \left(#2\right)}
+\newcommand{\randidx}{\hat{l}}
+
+
+%\hypospace^{(\nrfeatures)}  
