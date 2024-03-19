@@ -1,6 +1,6 @@
 # Flower Tutorial
 
-> This tutorial includes the code presented in Flower Labs guest lecture that you can watch [on YouTube](https://youtu.be/Qw8uisfsBC8?si=pcLH53h0bT8V982h). The section talking about the code begins at 1h:14min.
+> This tutorial includes the code presented in Flower Labs guest lecture that you can watch [on YouTube](https://youtu.be/Qw8uisfsBC8?si=pcLH53h0bT8V982h). The section talking about the code begins approximately after 1h:14min.
 
 
 This tutorial covers the basics of 🌼[Flower](https://flower.ai/). You'll learn how to design a typical client+server FL pipeline for image classification using FedAvg. This tutorial uses PyTorch and [Flower Datasets](https://flower.ai/docs/datasets/). Just like in the lectures, this tutorial is split into three parts:
@@ -95,7 +95,7 @@ INFO flwr 2024-03-19 07:42:44,381 | app.py:230 | app_fit: metrics_centralized {}
 
 In our example, the line `metrics_distributed {'accuracy': [(1, 0.825), (2, 0.93875), (3, 0.966875)]}` is the most relevant, as it tells us what was the performance of the global model when evaluated on each client's validation set and averaging that over the number of clients sampled. We can see that after just three rounds the model reached close to 97% accuracy.
 
-## Part-B: Simulation of 1000 Clients
+## Part-B: FLower Simulation with 1000 Clients
 
 Let's do something more exciting than just running two clients. We'll be using Flower's Simulation Engine to run a federation of 1K clients (but you can use more if you want). To launch our simulation we don't need of any fundamental change to the code and only need a minimal "launch" script to start the simulation. If you inspect `sim.py` you'll see we reuse most of the components designed in Part-A but instead of manually starting clients and server, we delegate that functionality to the Simulation Engine. One of the key concepts to keep in mind with the Simulation Engine is that: as long as your system can run a single client, you can run a simulation as large as you want since the spawning of clients is performed in a resource-aware fashion.
 
@@ -123,7 +123,7 @@ python sim_global_eval.py
 
 You can read more about Flower's Simulation Engine in [the documentation](https://flower.ai/docs/framework/how-to-run-simulations.html). Simulations are also the preferred way of using Flower in Notebooks such as those in Google Colab. You can find a few notebooks in [Flower's Github](https://github.com/adap/flower).
 
-## Part-C: Running clients on a Raspberry Pi
+## Part-C: Flower clients on Raspberry Pi devices
 
 One of the many strengths of Flower is its versatility. The same code we used in Part-A can be used for large simulations (as done in Part-B) and now we'll see how to use it on IoT devices like Raspberry Pi. As far as the code is concerned, no changes are needed. This part of the tutorial first walks you through the steps I follow to setup a Raspberry Pi. As of today (March 2024) a Raspberry Pi 5 costs ~70 Euros and a Raspberry Pi Zero 2 ~20 Euros.
 
