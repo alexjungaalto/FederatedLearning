@@ -1,6 +1,6 @@
 # Flower Tutorial
 
-> This tutorial includes the code presented in Flower Labs guest lecture that you can watch [on YouTube](https://youtu.be/Qw8uisfsBC8?si=pcLH53h0bT8V982h). The section talking about the code begins approximately after 1h:14min.
+> This tutorial includes the code presented in Flower Labs guest lecture that you can watch [on YouTube](https://youtu.be/Qw8uisfsBC8?si=pcLH53h0bT8V982h). The section talking about the code begins approximately after 1h:18min.
 
 
 This tutorial covers the basics of 🌼[Flower](https://flower.ai/). You'll learn how to design a typical client+server FL pipeline for image classification using FedAvg. This tutorial uses PyTorch and [Flower Datasets](https://flower.ai/docs/datasets/). Just like in the lectures, this tutorial is split into three parts:
