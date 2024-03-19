@@ -96,6 +96,9 @@ Let's do something more exciting than just running two clients. We'll be using F
 
 
 ### Running the code
+
+> This example does not make use of the most optimal hyperparameter values (e.g. learning rates, number of epochs, etc). It's here just for demonstration purposes
+
 To start the simulation, simply run `sim.py`:
 ```bash
 # With default settings, 100 clients will be sampled on each round
