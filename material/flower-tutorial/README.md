@@ -2,13 +2,15 @@
 
 This tutorial covers the basics of 🌼[Flower](https://flower.ai/). You'll learn how to design a typical client+server FL pipeline for image classification using FedAvg. This tutorial uses PyTorch and [Flower Datasets](https://flower.ai/docs/datasets/). Just like in the lectures, this tutorial is split into three parts:
 
-- **Part-A**: Running server + 2x clients in the terminal: this is the preferred setup when you are starting or when you are in the early phases of prototyping your application.
+- **Part-A: Running server with 2x clients in the terminal**: this is the preferred setup when you are starting or when you are in the early phases of prototyping your application.
 
-- **Part-B**: Running a simulation with 1k clients: We'll take the exact same client + strategy used in part-A and show how simple it is to scale such system to thousands of clients using Flower's Simulation Engine.
+- **Part-B: Running a simulation with 1k clients**: We'll take the exact same client + strategy used in part-A and show how simple it is to scale such system to thousands of clients using Flower's Simulation Engine.
 
-- **Part-C**: Running clients on Raspberry Pi devices: Flower let's you run your FL workloads on real devices. We'll take the same clients designed in part-A and run them on a Raspberry Pi while the server remains on your development machine (e.g your laptop).
+- **Part-C: Running Raspberry Pi devices as Flower clients**: Flower let's you run your FL workloads on real devices. We'll take the same clients designed in part-A and run them on a Raspberry Pi while the server remains on your development machine (e.g your laptop).
 
 > If you enjoy this material don't forget to give a ⭐️ to the [Flower Github repository](https://github.com/adap/flower)!
+
+If you have questions about Flower, ask them on [discuss.flower.ai](https://discuss.flower.ai) or join the [Flower Slack](https://flower.ai/join-slack/) for other general topics.
 
 ## Environmnet setup
 
@@ -88,7 +90,7 @@ INFO flwr 2024-03-19 07:42:44,381 | app.py:229 | app_fit: losses_centralized []
 INFO flwr 2024-03-19 07:42:44,381 | app.py:230 | app_fit: metrics_centralized {}
 ```
 
-In our example, the line `metrics_distributed {'accuracy': [(1, 0.825), (2, 0.93875), (3, 0.966875)]}` is the most relevant, as it tells us what was the performance of the global model when evaluated on each client's validation set and averaging that over the number of clients sampled.
+In our example, the line `metrics_distributed {'accuracy': [(1, 0.825), (2, 0.93875), (3, 0.966875)]}` is the most relevant, as it tells us what was the performance of the global model when evaluated on each client's validation set and averaging that over the number of clients sampled. We can see that after just three rounds the model reached close to 97% accuracy.
 
 ## Part-B: Simulation of 1000 Clients
 
@@ -122,6 +124,10 @@ You can read more about Flower's Simulation Engine in [the documentation](https:
 
 One of the many strengths of Flower is its versatility. The same code we used in Part-A can be used for large simulations (as done in Part-B) and now we'll see how to use it on IoT devices like Raspberry Pi. As far as the code is concerned, no changes are needed. This part of the tutorial first walks you through the steps I follow to setup a Raspberry Pi. As of today (March 2024) a Raspberry Pi 5 costs ~70 Euros and a Raspberry Pi Zero 2 ~20 Euros.
 
+![](diagram_rpi.png)
+
+> You can run this part of the tutorial even with a single Raspberry Pi but you'll need a at least another client connected to the server. You could simply run one as shown in Part-A.
+
 1. Flash a uSD card with Raspberry Pi OS using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/). I used `Raspberry Pi OS (64 bit) Lite` which doesn't come with a graphical interface. But feel free to use a different one. Using `Ubuntu` should also work.
 
 2. Connect via `ssh` to your Raspberry Pi.There are many guides online showing how to do this ([here](https://www.raspberrypi.com/documentation/computers/remote-access.html), [here](https://raspberrypi-guide.github.io/networking/connecting-via-ssh), and [here](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/)). If you pre-configure the access to your Wifi, the Raspberry Pi should be able to connect automatically, then you should be able to `ssh` directly to it via `ssh <name>.local`, where `name` is the device name you specified in the configuration step before flashing your uSD card.
@@ -150,7 +156,7 @@ One of the many strengths of Flower is its versatility. The same code we used in
     source ~/.bashrc
     ```
 
-    (Optional, not needed for Raspberry Pi 4 or 5): If you are using a device with very little amount of RAM (e.g. a Raspberry Pi Zero 2), you might want to increase the size of your `swap` partition. You can do so like this:
+    (Optional, not needed for Raspberry Pi 4 or 5): If you are using a device with very little amount of RAM (e.g. a Raspberry Pi Zero 2, which comes with jsut 512 MB of RAM), you might want to increase the size of your `swap` partition. You can do so like this:
 
     Finally, install a recent version of Python and Pyenv's virtual environment package:
     ```bash
@@ -186,7 +192,7 @@ One of the many strengths of Flower is its versatility. The same code we used in
 
 ## Additional Content
 
-The Flower GitHub repository contains over [30 examples and tutorials](https://github.com/adap/flower/tree/main/examples) using different ML frameworks and data modalities. Even more learning materials can be found on [flower.ai/docs/framework/](https://flower.ai/docs/framework/) and video tutorials in our [Youtube Channel](https://www.youtube.com/@flowerlabs). Below I list a few examples:
+The Flower GitHub repository contains over [30 examples and tutorials](https://github.com/adap/flower/tree/main/examples) using different ML frameworks and data modalities. Below I list a few examples:
 
 * [Fine-tuning of a Vision Transformer](https://github.com/adap/flower/tree/main/examples/vit-finetune)
 * [Federated Fine-tuning of an LLM](https://github.com/adap/flower/tree/main/examples/llm-flowertune)
@@ -196,3 +202,6 @@ The Flower GitHub repository contains over [30 examples and tutorials](https://g
     * [PyTorch](https://github.com/adap/flower/tree/main/examples/quickstart-pytorch)
     * [TensorFlow](https://github.com/adap/flower/tree/main/examples/quickstart-tensorflow)
     * [XGBoost](https://github.com/adap/flower/tree/main/examples/xgboost-quickstart)
+
+Even more learning materials can be found on [flower.ai/docs/framework/](https://flower.ai/docs/framework/) and video tutorials in our [Youtube Channel](https://www.youtube.com/@flowerlabs).
+
