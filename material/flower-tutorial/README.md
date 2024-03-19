@@ -6,13 +6,13 @@ This tutorial covers the basics of 🌼[Flower](https://flower.ai/). You'll lear
 
 - **Part-B**: Running a simulation with 1k clients: We'll take the exact same client + strategy used in part-A and show how simple it is to scale such system to thousands of clients using Flower's Simulation Engine.
 
-- **Part-C**: Running clients on Rasberry Pi devices: Flower let's you run your FL workloads on real devices. We'll take the same clients designed in part-A and run them on a Raspberry Pi while the server remains on your development machine (e.g your laptop).
+- **Part-C**: Running clients on Raspberry Pi devices: Flower let's you run your FL workloads on real devices. We'll take the same clients designed in part-A and run them on a Raspberry Pi while the server remains on your development machine (e.g your laptop).
 
 > If you enjoy this material don't forget to give a ⭐️ to the [Flower Github repository](https://github.com/adap/flower)!
 
 ## Environmnet setup
 
-To start with this tutorial you'll need to create a Python environment and install some dependencies. The instructions here show you to do this with [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) but feel free to use anyother tool (e.g. `Poetry`, `pyenv` -- we'll use the latter for Part-C).
+To start with this tutorial you'll need to create a Python environment and install some dependencies. The instructions here show you to do this with [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) but feel free to use any other tool (e.g. `Poetry`, `pyenv` -- we'll use the latter for Part-C).
 
 ```bash
 # Create a conda environment named "aalto-fl" that uses python 3.10
@@ -39,7 +39,7 @@ Let's begin with a simple but fairly complete Flower setup comprising just two f
 
 You'll need to open three terminals to run Part-A (maybe this is a good time to give [Tmux](https://github.com/tmux/tmux/wiki) a try!). One for the server and one for each of the two clients.
 
-First start the server:
+First, start the server:
 ```bash
 python server.py
 INFO flwr 2024-03-19 07:44:30,668 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=3, round_timeout=None)
@@ -57,7 +57,7 @@ python client.py --partition-id 0
 python client.py --partition-id 1
 ```
 
-As soon as the second client connects with the server, the first FL round will commence. At the end you should see a log printed by the server like this one (it might look different if you use Flower 1.8 or higher):
+As soon as the second client connects with the server, the first FL round will commence. At the end you should see a log printed by the server like this one (it might in future versions of Flower, 1.8+):
 
 ```bash
 INFO flwr 2024-03-19 07:42:22,936 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=3, round_timeout=None)
@@ -92,7 +92,7 @@ In our example, the line `metrics_distributed {'accuracy': [(1, 0.825), (2, 0.93
 
 ## Part-B: Simulation of 1000 Clients
 
-Let's do something more exciting than just running two clients. We'll be using Flower's Simulation Engine to run a federation of 1K clients (but you can use more if you want). To launch our simulation we don't need of any fundamental change to the code and only need a minimal "launch" script to start the simulation. If you inspect `sim.py` you'll see we reuse most of the components designed in Part-A but instead of manually starting clients and server, we delegate that functionality to the Simulation Engine. One of the key concepts to keep in mind with the Simulation Engine is that: as long as your system can run a single client, you can run a simluation as large as you want since the spawning of clients is performed in a resource-aware fashion.
+Let's do something more exciting than just running two clients. We'll be using Flower's Simulation Engine to run a federation of 1K clients (but you can use more if you want). To launch our simulation we don't need of any fundamental change to the code and only need a minimal "launch" script to start the simulation. If you inspect `sim.py` you'll see we reuse most of the components designed in Part-A but instead of manually starting clients and server, we delegate that functionality to the Simulation Engine. One of the key concepts to keep in mind with the Simulation Engine is that: as long as your system can run a single client, you can run a simulation as large as you want since the spawning of clients is performed in a resource-aware fashion.
 
 
 ### Running the code
@@ -104,7 +104,7 @@ To start the simulation, simply run `sim.py`:
 python sim.py
 ```
 
-As discussed during the lecture, Flower strategies allow for a high degree of customization. In `sim_global_eval.py` we show how to enable centralized evaluation of the model using the whole MNIST dataset. It also shows how to use the History object returned by the simulation and make a simple line plot of _centralized accuracy_ over rounds. Note we are only modifying the strategy, you could therefore have the same functionlatiy in Part-A should you add the additional lines of code needed for _centralized evaluation_.
+As discussed during the lecture, Flower strategies allow for a high degree of customization. In `sim_global_eval.py` we show how to enable centralized evaluation of the model using the whole MNIST dataset. It also shows how to use the History object returned by the simulation and make a simple line plot of _centralized accuracy_ over rounds. Note we are only modifying the strategy, you could therefore have the same functionality in Part-A should you add the additional lines of code needed for _centralized evaluation_.
 
 ```bash
 # With default arguments runs 100 clients per round
@@ -117,11 +117,11 @@ You can read more about Flower's Simulation Engine in [the documentation](https:
 
 ## Part-C: Running clients on a Raspberry Pi
 
-One of the many strenghts of Flower is its versatility. The same code we used in Part-A can be used for large simulations (as done in Part-B) and now we'll see how to use it on IoT devices like Rasberry Pi. As far as the code is concerned, no changes are needed. This part of the tutorial first walks you through the steps I follow to setup a Raspberry Pi. As of today (March 2024) a Raspberry Pi 5 costs ~70 Euros and a Raspberry Pi Zero 2 ~20 Euros.
+One of the many strengths of Flower is its versatility. The same code we used in Part-A can be used for large simulations (as done in Part-B) and now we'll see how to use it on IoT devices like Raspberry Pi. As far as the code is concerned, no changes are needed. This part of the tutorial first walks you through the steps I follow to setup a Raspberry Pi. As of today (March 2024) a Raspberry Pi 5 costs ~70 Euros and a Raspberry Pi Zero 2 ~20 Euros.
 
 1. Flash a uSD card with Raspberry Pi OS using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/). I used `Raspberry Pi OS (64 bit) Lite` which doesn't come with a graphical interface. But feel free to use a different one. Using `Ubuntu` should also work.
 
-2. Connect via `ssh` to your Raspberry Pi.There are many guides online showing how to do this ([here](https://www.raspberrypi.com/documentation/computers/remote-access.html), [here](https://raspberrypi-guide.github.io/networking/connecting-via-ssh), and [here](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/)). If you pre-configure the access to your Wifi, the Raspbery Pi should be able to connect automatically, then you should be able to `ssh` directly to it via `ssh <name>.local`, where `name` is the device name you specified in the configuration step before flashing your uSD card.
+2. Connect via `ssh` to your Raspberry Pi.There are many guides online showing how to do this ([here](https://www.raspberrypi.com/documentation/computers/remote-access.html), [here](https://raspberrypi-guide.github.io/networking/connecting-via-ssh), and [here](https://www.onlogic.com/company/io-hub/how-to-ssh-into-raspberry-pi/)). If you pre-configure the access to your Wifi, the Raspberry Pi should be able to connect automatically, then you should be able to `ssh` directly to it via `ssh <name>.local`, where `name` is the device name you specified in the configuration step before flashing your uSD card.
 
 3. Updating and Installing development packages. All the steps below are not strictly needed, but this will provide you with prettymuch everything you need for Python development on Raspberry Pi:
     ```bash
@@ -179,9 +179,6 @@ One of the many strenghts of Flower is its versatility. The same code we used in
     # for example: --server-address="192.168.1.78:8080" if that's the IP of the
     # machine where you run the server from
     ```
-
-
-
 
 
 ## Additional Content
