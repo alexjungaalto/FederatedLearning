@@ -1,6 +1,6 @@
 # Flower Tutorial
 
-This tutorial covers the basics of :flower:[Flower](https://flower.ai/). You'll learn how to design a typical client+server FL pipeline for image classification using FedAvg. This tutorial uses PyTorch and [Flower Datasets](https://flower.ai/docs/datasets/). Just like in the lectures, this tutorial is split into three parts:
+This tutorial covers the basics of 🌼[Flower](https://flower.ai/). You'll learn how to design a typical client+server FL pipeline for image classification using FedAvg. This tutorial uses PyTorch and [Flower Datasets](https://flower.ai/docs/datasets/). Just like in the lectures, this tutorial is split into three parts:
 
 - **Part-A**: Running server + 2x clients in the terminal: this is the preferred setup when you are starting or when you are in the early phases of prototyping your application.
 
@@ -8,6 +8,7 @@ This tutorial covers the basics of :flower:[Flower](https://flower.ai/). You'll 
 
 - **Part-C**: Running clients on Rasberry Pi devices: Flower let's you run your FL workloads on real devices. We'll take the same clients designed in part-A and run them on a Raspberry Pi while the server remains on your development machine (e.g your laptop).
 
+> If you enjoy this material don't forget to give a ⭐️ to the [Flower Github repository](https://github.com/adap/flower)!
 
 ## Environmnet setup
 
@@ -26,7 +27,7 @@ conda activate aalto-fl
 pip install -r requirements.txt
 ```
 
-## Part-A: Server + 2x Clients
+## Part-A: Server and 2x Clients
 
 Let's begin with a simple but fairly complete Flower setup comprising just two files.
 
