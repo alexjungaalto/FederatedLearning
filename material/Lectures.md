@@ -31,7 +31,7 @@ We offer the quizzes on the MyCourses page of the course (<a href="https://mycou
 | Wed. 27.3. | Trustworthy AI |   <a href="https://usefulaaltomap.fi/#!/select/tuas-1018"> R037/1018 AS1  </a>          |       <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf">  Sec. 8  </a>          | 
 |**Week 15**  |                       |               |              |   
 | Mon. 8.4. | Guest Talk Nokia |   TBA      |               |   
-| Wed. 10.4. | Prof. Vassio (Polit. Torino)  |   <a href="https://usefulaaltomap.fi/#!/select/tuas-1018">  AS1  </a>        |               | 
+| Wed. 10.4. | Prof. Vassio (Polit. Torino)  |   <a href="https://usefulaaltomap.fi/#!/select/tuas-1018">  AS1  </a>        |      <a href="TalkVassio.md"> more info  </a>            | 
 |**Week 16**  |                       |               |              |   
 | Mon. 15.4. | Guest Talk Scaleout |   virtual only      |    <a href="https://www.scaleoutsystems.com/"> more info  </a>           |   
 | Wed. 17.4. |-  |  -       |               | 
