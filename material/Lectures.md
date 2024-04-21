@@ -37,4 +37,4 @@ We offer the quizzes on the MyCourses page of the course (<a href="https://mycou
 | Wed. 17.4. |-  |  -       |               | 
 |**Week 17**   |          |               |              |   
 | Mon. 22.4.   |   Privacy-Protection  |     <a href="https://usefulaaltomap.fi/#!/select/main-U271"> U271 (Otakaari 1)   </a>   |.  <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf">  Sec. 9  </a>   |  
-|  Wed. 24.4.   |   Data and Model Poisoning  |   <a href="https://usefulaaltomap.fi/#!/select/main-Y122""> Y122 (Otakaari 1) </a>    |    <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf">  Sec. 10  </a>   | 
+|  Wed. 24.4.   |   Data and Model Poisoning  |   <a href="https://usefulaaltomap.fi/#!/select/main-Y122"> Y122 (Otakaari 1) </a>    |    <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf">  Sec. 10  </a>   | 
