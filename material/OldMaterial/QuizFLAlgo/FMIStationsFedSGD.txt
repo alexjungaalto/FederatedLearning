@@ -1,8 +1,0 @@
-latitude,longitude,station
-60.37788,22.0964,Turku_Rajakari
-60.20307,24.96131,Helsinki_Kumpula
-61.51757,23.75388,Tampere_Siilinkari
-64.93503,25.3392,Oulu_lentoasema
-68.36,23.43,Enontekio_lentoasema
-68.61335,27.41897,Inari_Ivalo_lentoasema
-
