@@ -21,6 +21,3 @@ the quizzes on the MyCourses page of the course (<a href="https://mycourses.aalt
 |Week 17   |          |               |              |        
 | Mon. 22.04.   |   Privacy-Protection|  <a href="https://github.com/alexjungaalto/FederatedLearning/tree/main/material/Assignments"> click me</a>   | 22.4. - 28.4. | 
 |  Wed. 24.04.   |   Data and Model Poisoning  |   <a href="https://github.com/alexjungaalto/FederatedLearning/tree/main/material/Assignments"> click me</a>   |  24.4. -28.4. | 
-|Week 18   |          |               |              |        
-| -  |   Bonus Task 1  |   <a href="https://github.com/alexjungaalto/FederatedLearning/tree/main/material/Assignments"> click me</a>   |  29.4. - 5.5. | 
-| -   |   Bonus Task 2  |   <a href="https://github.com/alexjungaalto/FederatedLearning/tree/main/material/Assignments"> click me</a>    |  1.5. - 5.5. | 
