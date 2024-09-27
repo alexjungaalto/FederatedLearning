@@ -91,7 +91,7 @@
 \newcommand{\splitratio}[0]{{\rho}}
 \newcommand{\maxnredges}{E_{\rm max}} 
 \newcommand{\privattr}{s}
-
+\newcommand{\sensattr}{s} 
 
 \newcommand{\norm}[1]{\Vert  {#1} \Vert}
 \newcommand{\normgeneric}[2]{\left\Vert  {#1} \right\Vert_{#2}}
@@ -173,10 +173,12 @@
 \DeclareMathOperator{\supp}{supp}
 %\newcommand{\loss}[3]{L({#1},{#2},{#3})} 
 \newcommand{\loss}[2]{L\left({#1},{#2}\right)} 
+\newcommand{\perturbedloss}[2]{\widetilde{L}\left({#1},{#2}\right)} 
 \newcommand{\gtvloss}[3]{L^{(\rm d)} \left({#1},{#2},{#3} \right)} 
 \newcommand{\clusterspread}[2]{L^{2}_{\clusteridx}\big({#1},{#2}\big)} 
 \newcommand{\determinant}[1]{{\rm det}\left( #1 \right)} 
 \DeclareMathOperator*{\argmax}{argmax}
+\newcommand{\uncertset}{\mathcal{U}}
 \DeclareMathOperator*{\argmin}{argmin}
 \newcommand{\itercntr}{k}
 \newcommand{\state}{s} 
