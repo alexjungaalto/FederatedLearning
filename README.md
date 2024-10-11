@@ -2,9 +2,13 @@
 
 ### This master-level course is offered in Spring 2025 at [Aalto University](https://www.aalto.fi/en)
 
-**Finnish University (or University of Applied Sciences) students:** Contact your study administrator for enrolment details.
-**Open Access.**  Anyone interested in following the course without formal enrolment can [subscribe to the course 
-mailing list](https://forms.gle/dDhK1x9BQVra5cm68).
+**Enrollment Options:**
+
+- **Finnish University (or University of Applied Sciences) Students**  
+  Please contact your study administrator for enrollment details.
+
+- **Open Access**  
+  Anyone interested in following the course without formal enrollment can [subscribe to the course mailing list](https://forms.gle/dDhK1x9BQVra5cm68).
 
 ---
 
