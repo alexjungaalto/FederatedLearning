@@ -2,17 +2,16 @@
 
 ### This master-level course is offered in Spring 2025 at [Aalto University](https://www.aalto.fi/en)
 
-**Finnish University (or University of Applied Sciences) Students:** Contact your study administrator for enrolment details.
-
-**Open Access**  
-Anyone interested in following the course without formal enrolment can [subscribe to the course mailing list](https://forms.gle/uSK2Uw71aLVqnymWA).
+**Finnish University (or University of Applied Sciences) students:** Contact your study administrator for enrolment details.
+**Open Access.**  Anyone interested in following the course without formal enrolment can [subscribe to the course 
+mailing list](https://forms.gle/dDhK1x9BQVra5cm68).
 
 ---
 
 ### Course Content
 
 - [Lectures](material/Lectures.md) 
-- [New Updates (2023 Feedback)](material/ResponseStudentFeedback2023.pdf)
+- [New Updates](material/ResponseStudentFeedback2023.pdf)
 - [Assignments](material/Assignments.md)  
 - [Federated Learning Project](material/Studentproject.md)
 
@@ -49,4 +48,4 @@ This material is provided for educational and research purposes. Free use and re
 permitted with appropriate attribution. Please credit **CS-E4740 - Federated Learning, Aalto University** in any shared or derived works.
 
 **Preferred Citation:**  
-A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024
+A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024.
