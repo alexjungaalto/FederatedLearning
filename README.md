@@ -1,9 +1,8 @@
-# Welcome to the site of the course CS-E4740 - Federated Learning
+# Welcome to CS-E4740 - Federated Learning
 
-### This course is offered in Spring 2025 at [Aalto University](https://www.aalto.fi/en)
+### This master-level course is offered in Spring 2025 at [Aalto University](https://www.aalto.fi/en)
 
-**Enrolment Options:**
-- **Finnish University (or University of Applied Sciences) Students:** Contact your study administrator for enrolment details.
+**Finnish University (or University of Applied Sciences) Students:** Contact your study administrator for enrolment details.
 
 **Open Access**  
 Anyone interested in following the course without formal enrolment can [subscribe to the course mailing list](https://forms.gle/uSK2Uw71aLVqnymWA).
@@ -40,7 +39,7 @@ research ideas and obtaining peer feedback.
 ## References
 
 - A. Jung, "Machine Learning: The Basics," Springer, Singapore, 2022. Available via Aalto Library: [here](https://primo.aalto.fi/discovery/search?query=any,contains,machine%20learning%20the%20basics&tab=LibraryCatalog&search_scope=MyInstitution&vid=358AALTO_INST:VU1&lang=en&offset=0). [Preprint](https://mlbook.cs.aalto.fi).
-- A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024. [click me]((material/FL_LectureNotes.pdf)
+- A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024. [click me](material/FL_LectureNotes.pdf)
 ---
 
 ## Copyright and License
@@ -50,4 +49,4 @@ This material is provided for educational and research purposes. Free use and re
 permitted with appropriate attribution. Please credit **CS-E4740 - Federated Learning, Aalto University** in any shared or derived works.
 
 **Preferred Citation:**  
-A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University
+A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024
