@@ -14,10 +14,10 @@
 
 ### Course Content
 
-- [Updates](material/ResponseStudentFeedback2023.pdf)
-- [Lectures](material/Lectures.md) 
-- [Assignments](material/Assignments.md)  
-- [Federated Learning Project](material/Studentproject.md)
+- [Updates].   %(material/ResponseStudentFeedback2023.pdf)
+- [Lectures].   %(material/Lectures.md) 
+- [Assignments].  %(material/Assignments.md)  
+- [Federated Learning Project]. %(material/Studentproject.md)
 
 ---
 
