@@ -14,8 +14,8 @@
 
 ### Course Content
 
+- [Updates](material/ResponseStudentFeedback2023.pdf)
 - [Lectures](material/Lectures.md) 
-- [New Updates](material/ResponseStudentFeedback2023.pdf)
 - [Assignments](material/Assignments.md)  
 - [Federated Learning Project](material/Studentproject.md)
 
