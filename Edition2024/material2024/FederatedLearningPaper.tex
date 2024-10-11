@@ -1,0 +1,175 @@
+% Template for ICASSP-2021 paper; to be used with:
+%          spconf.sty  - ICASSP/ICIP LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{spconf,amsmath,bm,graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}   
+\usepackage{tikz}
+\usepackage{pdfplots}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{shapes}
+\usepackage[symbols,toc,automake,acronym]{glossaries-extra}
+
+
+%\include{mlbpbook_macros}
+ 
+\usepackage{fontawesome5}
+
+\usetikzlibrary{shadows}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+
+
+%% Math fonts, symbols, and formatting; these are usually needed
+\usepackage{amsfonts,amssymb,amsbsy}
+%\DeclareMathOperator*{\argmax}{arg\,max}
+%\DeclareMathOperator*{\argmin}{arg\,min}
+
+\definecolor{pinegreen}{cmyk}{0.92,0,0.59,0.25}
+\definecolor{royalblue}{cmyk}{1,0.50,0,0}
+\definecolor{lavander}{cmyk}{0,0.48,0,0}
+\definecolor{violet}{cmyk}{0.79,0.88,0,0}
+
+\tikzstyle{ncyan}=[circle, draw=cyan!70, thin, fill=white, scale=0.8, font=\fontsize{11}{0}\selectfont]
+\tikzstyle{ngreen}=[circle,  draw=green!70, thin, fill=white, scale=0.8, font=\fontsize{11}{0}\selectfont]
+\tikzstyle{nred}=[circle, draw=red!70, thin, fill=white, scale=0.8, font=\fontsize{11}{0}\selectfont]
+\tikzstyle{ngray}=[circle, draw=gray!70, thin, fill=white, scale=0.55, font=\fontsize{14}{0}\selectfont]
+\tikzstyle{nyellow}=[circle, draw=yellow!70, thin, fill=white, scale=0.55, font=\fontsize{14}{0}\selectfont]
+\tikzstyle{norange}=[circle,  draw=orange!70, thin, fill=white, scale=0.55, font=\fontsize{10}{0}\selectfont]
+\tikzstyle{npurple}=[circle,draw=purple!70, thin, fill=white, scale=0.55, font=\fontsize{10}{0}\selectfont]
+\tikzstyle{nblue}=[circle, draw=blue!70, thin, fill=white, scale=0.55, font=\fontsize{10}{0}\selectfont]
+\tikzstyle{nteal}=[circle,draw=teal!70, thin, fill=white, scale=0.55, font=\fontsize{10}{0}\selectfont]
+\tikzstyle{nviolet}=[circle, draw=violet!70, thin, fill=white, scale=0.55, font=\fontsize{10}{0}\selectfont]
+\tikzstyle{qgre}=[rectangle, draw, thin,fill=green!20, scale=0.8]
+\tikzstyle{rpath}=[ultra thick, red, opacity=0.4]
+\tikzstyle{legend_isps}=[rectangle, rounded corners, thin,fill=gray!20, text=blue, draw]
+
+% Example definitions.
+% --------------------
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+% Title.
+% ------
+\title{Template for Student Project for \\ 
+	CS-E4740 Federated Learning}
+%
+% Single address.
+% ---------------
+\name{N.N. }
+\address{Aalto University, Espoo, Finland}
+%
+% For example:
+% ------------
+%\address{School\\
+%	Department\\
+%	Address}
+%
+% Two addresses (uncomment and modify for two-address case).
+% ----------------------------------------------------------
+%\twoauthors
+%  {A. Author-one, B. Author-two\sthanks{Thanks to XYZ agency for funding.}}
+%	{School A-B\\
+%	Department A-B\\
+%	Address A-B}
+%  {C. Author-three, D. Author-four\sthanks{The fourth author performed the work
+%	while at ...}}
+%	{School C-D\\
+%	Department C-D\\
+%	Address C-D}
+%
+\input{../LectureNotes/ml_macros}
+
+\makeglossaries
+
+\input{../LectureNotes/flnotes_glossary.tex}
+
+\makeglossaries
+
+\begin{document}
+%\ninept
+%
+\maketitle
+
+
+%
+\begin{abstract}
+This paper studies federated learning methods for high-precision weather forecasting. 
+\end{abstract}
+%
+\begin{keywords}
+Federated Learning, Networks, Personalized Machine Learning, Trustworthy AI 
+\end{keywords}
+%
+\section{Introduction}
+\label{sec:intro}
+\begin{itemize}
+\item Explain the background (real-life scenario) of your ML application (see \cite[Ch. 2]{MLBasics}).  
+\item Summarize the relevant literature (state-of-the art). 
+\item Briefly outline the structure of this paper. 
+\end{itemize}
+
+
+\section{Problem Formulation}
+\label{sec:pf}
+
+\begin{itemize} 
+\item Discuss the source of the data used in your project. 
+\item Formulate your application as an instance of \gls{gtvmin} \cite[Sec. 7]{lecnotesfl}: 
+\begin{itemize} 
+	\item Discuss your choice/construction of the \gls{empgraph} whose nodes carry \gls{localdataset}s and \gls{localmodel}s. 
+	\item Provide a precise definition of the \gls{localdataset}s, its \gls{datapoint}s and their \gls{feature}s and \gls{label}s. 
+\end{itemize} 
+\end{itemize} 
+
+\section{Methods} 
+\label{sec_methods} 
+
+\begin{itemize} 
+\item Clearly state the number of \gls{datapoint}s in each \gls{localdataset}. 
+\item Explain your \gls{feature} selection process, which might involve advanced 
+ML methods (``representation learning''). 
+\item Describe your choice of \gls{localmodel}s and the measure for their variation across edges 
+in the \gls{empgraph}. 
+\item Describe the FL algorithms you have used to train the \gls{localmodel}s \cite[Sec. 9]{lecnotesfl}
+\item Describe and explain (why?) your choice of \gls{lossfunc}s, e.g., \gls{logloss}.
+\item Explain the process of model \gls{validation}, e.e., how did you split the data into \gls{trainset}, \gls{valset} and \gls{testset}. 
+\end{itemize} 
+
+\section{Results} 
+\label{sec_results} 
+
+\begin{itemize} 
+	\item Compare and discuss the \gls{trainerr} and \gls{valerr} obtained for each node of the \gls{empgraph}
+	\item What is the final chosen method? A \gls{fl} method consists of a choice for the \gls{empgraph}, 
+	\gls{localmodel}s and measure for their variation as well as a \gls{fl} (=distributed optimization) algorithm. 
+	\item What is the \gls{testset} error (for each node in the \gls{empgraph}) of the final chosen method?
+\end{itemize} 
+
+\section{Conclusion}
+
+\begin{itemize} 
+\item Provide a succinct summary of your findings.
+\item Are the results suggesting that the problem is solved satisfactorily, or might
+there be room for improvement?
+\item Ponder about possible limitations of the considered methods and how they  
+can be further improved (see \cite[Sec. 6.6.]{MLBasics}).
+\end{itemize} 
+
+
+
+\newpage
+
+\bibliographystyle{IEEEbib}
+\bibliography{../LectureNotes/Literature}
+
+%\printglossaries
+
+
+\end{document}
