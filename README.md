@@ -47,7 +47,6 @@ research ideas and obtaining peer feedback.
 
 ## Copyright and License
 
-© 2024 Aalto University. All rights reserved.  
 This material is provided for educational and research purposes. Free use and redistribution are 
 permitted with appropriate attribution. Please credit **CS-E4740 - Federated Learning, Aalto University** in any shared or derived works.
 
