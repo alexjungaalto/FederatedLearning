@@ -172,7 +172,7 @@
 \newcommand{\generror}{E}
 \DeclareMathOperator{\supp}{supp}
 %\newcommand{\loss}[3]{L({#1},{#2},{#3})} 
-\newcommand{\loss}[2]{L\left({#1},{#2}\right)} 
+%\newcommand{\loss}[2]{L\left({#1},{#2}\right)} 
 \newcommand{\perturbedloss}[2]{\widetilde{L}\left({#1},{#2}\right)} 
 \newcommand{\gtvloss}[3]{L^{(\rm d)} \left({#1},{#2},{#3} \right)} 
 \newcommand{\clusterspread}[2]{L^{2}_{\clusteridx}\big({#1},{#2}\big)} 
@@ -220,7 +220,9 @@
 \newcommand{\testerror}{E^{(\rm test)}}
 \newcommand{\nrmodels}{M}
 \newcommand{\benchmarkerror}{E^{(\rm ref)}}
+\newcommand{\loss}{L}
 \newcommand{\lossfun}{L}
+\newcommand{\lossfunc}[2]{L\left(#1,#2 \right)}
 \newcommand{\datacluster}[1]{\mathcal{C}^{(#1)}} 
 \newcommand{\cluster}{\mathcal{C}}
 \newcommand{\bayeshypothesis}{h^{*}}
