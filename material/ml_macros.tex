@@ -9,9 +9,9 @@
 \newcommand\hypothesis{h} 
 \newcommand{\algomap}{\mathcal{A}}
 \newcommand\hypothesisparam[1]{h^{(#1)}} 
-\newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1)}_{#2}}
-\newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1)}_{#2}}
-\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1)}_{#2}}
+\newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1,#2)}}
+\newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1,#2)}}
+\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1,#2)}}
 \newcommand\estparams[1]{\widehat{\weights}_{#1}}
 \newcommand\localmodel[1]{\hypospace^{(#1)}} 
 \newcommand\localhypothesis[1]{\hypothesis^{(#1)}} 
@@ -275,6 +275,7 @@
 \newcommand{\degreemtx}{\mathbf{D}}
 %\newcommand{\incidencemtx}{\mathbf{B}}
 \newcommand{\maxnodedegree}{d_{\rm max}}
+%\newcommand{\maxnodedegree}[1]{d^{(#1)}_{\rm max}}
 \newcommand{\nodeidx}{i}
 \newcommand{\nrnodes}{n}
 \newcommand{\nodesigs}{\mathbb{R}^{\nodes \times \featuredim }}
