@@ -9,9 +9,9 @@
 \newcommand\hypothesis{h} 
 \newcommand{\algomap}{\mathcal{A}}
 \newcommand\hypothesisparam[1]{h^{(#1)}} 
-\newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1,#2)}}
-\newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1,#2)}}
-\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1,#2)}}
+\newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1)}_{#2}}
+\newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1)}_{#2}}
+\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1)}_{#2}}
 \newcommand\estparams[1]{\widehat{\weights}_{#1}}
 \newcommand\localmodel[1]{\hypospace^{(#1)}} 
 \newcommand\localhypothesis[1]{\hypothesis^{(#1)}} 
@@ -92,6 +92,8 @@
 \newcommand{\maxnredges}{E_{\rm max}} 
 \newcommand{\privattr}{s}
 \newcommand{\sensattr}{s} 
+\newcommand{\kernel}{K} 
+\newcommand{\kernelmap}[2]{K\big(#1,#2\big)} 
 
 \newcommand{\norm}[1]{\Vert  {#1} \Vert}
 \newcommand{\normgeneric}[2]{\left\Vert  {#1} \right\Vert_{#2}}
@@ -239,7 +241,8 @@
 \newcommand{\foldsize}{B}
 \newcommand{\nriter}{R}
 \newcommand{\opttol}{\varepsilon^{(\rm tol)}}
-\newcommand{\bd[1]}{\left| \partial #1\right|}
+%\newcommand{\bd[1]}{\left| \partial #1\right|}
+\newcommand{\bd}[1]{\left| \partial #1\right|}
 
 % Convex Analysis 
 
@@ -275,7 +278,6 @@
 \newcommand{\degreemtx}{\mathbf{D}}
 %\newcommand{\incidencemtx}{\mathbf{B}}
 \newcommand{\maxnodedegree}{d_{\rm max}}
-%\newcommand{\maxnodedegree}[1]{d^{(#1)}_{\rm max}}
 \newcommand{\nodeidx}{i}
 \newcommand{\nrnodes}{n}
 \newcommand{\nodesigs}{\mathbb{R}^{\nodes \times \featuredim }}
