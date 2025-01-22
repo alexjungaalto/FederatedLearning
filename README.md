@@ -14,10 +14,7 @@
 
 ### Course Content
 
-- [Updates](material/ResponseStudentFeedback2023.pdf)
-- [Lectures](material/Lectures.md) 
-- [Assignments](material/Assignments.md)  
-- [Federated Learning Project](material/Studentproject.md)
+see the [course site](https://FederatedLearningAalto.github.io) for more info. 
 
 ---
 
@@ -34,15 +31,13 @@ Participants will learn:
 - about key requirements for trustworthy AI
 - to critically evaluate the trustworthiness of FL systems
 
-An optional student project offers an extension to 10 credits. The projects allows you to pilot 
-research ideas and obtaining peer feedback.
 
 ---
 
 ## References
 
 - A. Jung, "Machine Learning: The Basics," Springer, Singapore, 2022. Available via Aalto Library: [here](https://primo.aalto.fi/discovery/search?query=any,contains,machine%20learning%20the%20basics&tab=LibraryCatalog&search_scope=MyInstitution&vid=358AALTO_INST:VU1&lang=en&offset=0). [Preprint](https://mlbook.cs.aalto.fi).
-- A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024. [click me](material/FL_LectureNotes.pdf)
+- A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2024. [click me](material/FLBook.pdf)
 ---
 
 ## Copyright and License
@@ -51,4 +46,4 @@ This material is provided for educational and research purposes. Free use and re
 permitted with appropriate attribution. Please credit **CS-E4740 - Federated Learning, Aalto University** in any shared or derived works.
 
 **Preferred Citation:**  
-A. Jung, "Lecture Notes for CS-E4740 Federated Learning," Aalto University, 2024.
+A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2022.
