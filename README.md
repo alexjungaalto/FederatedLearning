@@ -10,7 +10,7 @@ https://federatedlearningaalto.github.io/
 ## References
 
 - A. Jung, "Machine Learning: The Basics," Springer, Singapore, 2022. Available via Aalto Library: [here](https://primo.aalto.fi/discovery/search?query=any,contains,machine%20learning%20the%20basics&tab=LibraryCatalog&search_scope=MyInstitution&vid=358AALTO_INST:VU1&lang=en&offset=0). [Preprint](https://mlbook.cs.aalto.fi).
-- A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2024. [click me](material/FLBook.pdf)
+- A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2025. [click me](material/FLBook.pdf)
 ---
 
 ## Copyright and License
