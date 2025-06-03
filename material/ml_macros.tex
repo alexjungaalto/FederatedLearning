@@ -11,13 +11,15 @@
 \newcommand\hypothesisparam[1]{h^{(#1)}} 
 \newcommand\estlocalparamsiter[2]{\widehat{\weights}^{(#1)}_{#2}}
 \newcommand\perturbedlocalparamsiter[2]{\widetilde{\weights}^{(#1)}_{#2}}
-\newcommand\estlocalhypositer[2]{\hypothesis^{(#1,#2)}}
+\newcommand\estlocalhypositer[2]{\widehat{\hypothesis}^{(#1)}_{#2}}
 \newcommand\estparams[1]{\widehat{\weights}_{#1}}
 \newcommand\localmodel[1]{\hypospace^{(#1)}} 
 \newcommand\localhypothesis[1]{\hypothesis^{(#1)}} 
 \newcommand\learntlocalhypothesis[1]{\widehat{\hypothesis}^{(#1)}} 
-\newcommand\discrepancy[2]{D\big(#1,#2\big)}
+\newcommand\discrepancy[2]{d^{(#1,#2)}}
 \newcommand\sphere[1]{\mathbb{S}^{(#1)}}
+\newcommand\poisoningrate{\eta}
+\newcommand\thresholdfct{\tau}
 
 \newcommand\defeq{:=}
 \newcommand{\Tt}[0]{\boldsymbol{\theta}}
@@ -43,6 +45,8 @@
 \newcommand{\D}[0]{{\mathcal{D}}}
 \newcommand{\mP}{\mathbf{P}}
 \newcommand{\mI}{\mathbf{I}}
+\newcommand{\mF}{\mathbf{F}}
+\newcommand{\mG}{\mathbf{G}}
 \newcommand{\mT}{\mathbf{T}}
 \newcommand{\mS}{\mathbf{S}}
 \newcommand{\mQ}{\mathbf{Q}}
@@ -233,12 +237,14 @@
 \newcommand{\featuremtx}{\mX}
 \newcommand{\weight}{w}
 \newcommand{\weights}{\vw}
+\newcommand{\localregularizer}[2]{\mathcal{R}^{(#1)}\big\{ #2 \big\}}
 \newcommand{\regularizer}[1]{\mathcal{R}\big\{ #1 \big\}}
 \newcommand{\decreg}[1]{\mathcal{R}_{#1}}
 \newcommand{\naturalnumbers}{\mathbb{N}}
 \newcommand{\featuremapvec}{{\bf \Phi}}
 \newcommand{\featuremap}{\phi}
 \newcommand{\batchsize}{B}
+\newcommand{\maxdelay}{B}
 \newcommand{\batch}{\mathcal{B}}
 \newcommand{\foldsize}{B}
 \newcommand{\nriter}{R}
@@ -252,6 +258,8 @@
 \newcommand{\proximityop}[3]{{\rm\bf prox}_{#1,#3}(#2)} 
 \newcommand{\fixedpointop}{\mathcal{F}} 
 \newcommand{\contractfac}{\kappa}
+
+
 
 % Federated Learning
 
@@ -337,5 +345,8 @@
 \newcommand{\randidx}{\hat{l}}
 \newcommand{\upperboundnormestpar}{R}
 \newcommand{\asyncactiveset}[1]{\mathcal{A}^{(#1)}} 
+\newcommand{\updatetimes}[1]{T^{(#1)}} 
+\newcommand{\trimmedset}{\mathcal{T}}
+
 
 %\hypospace^{(\nrfeatures)}  
