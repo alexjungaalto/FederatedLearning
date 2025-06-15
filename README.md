@@ -34,7 +34,7 @@ approach to training machine learning models on distributed data.
 Enroll via Sisu. Contact your study coordinator for official registration.
 
 ### 🌐 Open Access Learners
-Anyone can follow the course as open educational content. Subscribe to the [course mailing list](mailto:alexander.jung@aalto.fi?subject=Subscribe%20to%20Federated%20Learning%20course) for updates.
+Anyone can follow the course as open educational content. Subscribe to the [course mailing list](https://forms.gle/Gm1vD7XqodsoyNDVA) for updates.
 
 ---
 
@@ -48,7 +48,7 @@ Anyone can follow the course as open educational content. Subscribe to the [cour
 ## 🔗 Related Resources
 
 - [📙 Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-19-8829-0) – Introductory ML textbook by Alexander Jung
-- [🌐 Aalto Machine Learning Group](https://research.aalto.fi/en/persons/alexander-jung)
+- [🌐 My Personal Site](https://MachineLearningforAll.github.io)
 - [📺 YouTube Lectures](https://www.youtube.com/@alexjung111)
 
 ---
