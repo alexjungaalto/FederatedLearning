@@ -1,40 +1,78 @@
-# CS-E4740 — Federated Learning  
-*Spring 2025 · Aalto University*
+# 📡 Federated Learning – CS-E4740 (Spring 2025, Aalto University)
 
-This is the official GitHub material repository for course **CS-E4740 Federated Learning**, a Master's level course 
-offered at Aalto University. The repository contains selected course material, including code examples, assignments, 
-and lecture notes—most notably the Springer textbook *Federated Learning: From Theory to Practice*.
+Welcome to the GitHub repository for **CS-E4740 - Federated Learning**, a master-level course offered every spring at **Aalto University**. 
+This course introduces the foundations and applications of **Federated Learning (FL)**—a privacy-preserving and decentralized 
+approach to training machine learning models on distributed data.
 
-## Course Overview
+> 📘 Lecture notes are published as a Springer textbook:  
+> **Alexander Jung, _Federated Learning: From Theory to Practice_ (Springer, 2025)**, [arxiv preprint](https://arxiv.org/abs/2505.19183)
 
-**Federated Learning (FL)** is a privacy-preserving, decentralized paradigm for training machine learning models 
-without sharing raw data. This course provides a mathematical and practical introduction to FL, combining elements 
-of optimization, machine learning, and systems design.
+---
 
-**Key topics include:**
+## 🧠 What You Will Learn
 
-- Formulating FL applications as optimization problems  
-- Designing algorithms using distributed and federated optimization  
-- Understanding and implementing requirements for **trustworthy AI**  
-- Evaluating privacy, robustness, and fairness in FL systems
+- Formulate federated learning tasks as **distributed optimization problems**
+- Design scalable and privacy-aware **FL algorithms**
+- Understand the role of **non-IID data**, **secure aggregation**, and **trustworthy AI**
+- Apply FL to real-world applications like **weather prediction**, **healthcare**, and **recommendation systems**
 
-Applications discussed include domains such as **weather forecasting** and **personalized healthcare**.
+---
 
-See the [course website](https://federatedlearningaalto.github.io/) for more information.
+## 📖 Course Materials
 
-## References
+- ✅ **Lecture Slides** (based on the Springer textbook)
+- 📓 **Jupyter Notebooks** and Python demos
+- 🧪 **Assignments** and exercises
+- 🧵 **Real-world datasets** for hands-on projects
+- 📚 Additional readings on topics like **differential privacy**, **robustness**, and **personalization**
 
-- A. Jung, *Machine Learning: The Basics*, Springer, Singapore, 2022.  
-  Available via Aalto Library. Preprint also available.
+---
 
-- A. Jung, “Federated Learning: From Theory to Practice”, <i>arXiv e-prints</i>, Art. no. arXiv:2505.19183, 2025. doi:10.48550/arXiv.2505.19183.
+## 🎓 Enrollment Options
 
-## License and Attribution
+### 🏫 Finnish University Students
+Enroll via Sisu. Contact your study coordinator for official registration.
 
-All materials in this repository are provided for **educational and research purposes**.  
-Free to use and redistribute with proper attribution.
+### 🌐 Open Access Learners
+Anyone can follow the course as open educational content. Subscribe to the [course mailing list](mailto:alexander.jung@aalto.fi?subject=Subscribe%20to%20Federated%20Learning%20course) for updates.
 
-**Preferred citation:**
+---
 
-A. Jung, “Federated Learning: From Theory to Practice”, <i>arXiv e-prints</i>, Art. no. arXiv:2505.19183, 2025. doi:10.48550/arXiv.2505.19183.
+## 🚀 Course Schedule (Spring 2026)
 
+
+> 📅 TBA
+
+---
+
+## 🔗 Related Resources
+
+- [📙 Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-19-8829-0) – Introductory ML textbook by Alexander Jung
+- [🌐 Aalto Machine Learning Group](https://research.aalto.fi/en/persons/alexander-jung)
+- [📺 YouTube Lectures](https://www.youtube.com/@alexjung111)
+
+---
+
+## 🧭 How to Contribute or Follow
+
+- 🌟 Star the repo to stay updated
+- 🐛 Open issues for feedback or suggestions
+- 🧠 Want to help? Fork the repo and suggest improvements or new examples
+
+---
+
+## 🏷 Keywords
+
+> `federated-learning` `distributed-learning` `privacy-preserving-ml`  
+> `non-IID` `secure-aggregation` `optimization` `trustworthy-ai`  
+> `springer-textbook` `open-courseware` `decentralized-ai`
+
+---
+
+## 📜 License
+
+All content is released under the **MIT License** unless otherwise specified. Lecture slides and textbook excerpts follow publisher usage policy.
+
+---
+
+**© 2025 Alexander Jung – Aalto University, Department of Computer Science**
