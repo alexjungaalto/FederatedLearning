@@ -1,49 +1,40 @@
-# Welcome to CS-E4740 - Federated Learning
+# CS-E4740 — Federated Learning  
+*Spring 2025 · Aalto University*
 
-### This master-level course is offered in Spring 2025 at [Aalto University](https://www.aalto.fi/en)
+This is the official GitHub material repository for course **CS-E4740 Federated Learning**, a Master's level course 
+offered at Aalto University. The repository contains selected course material, including code examples, assignments, 
+and lecture notes—most notably the Springer textbook *Federated Learning: From Theory to Practice*.
 
-**Enrollment Options:**
+## Course Overview
 
-- **Finnish University (or University of Applied Sciences) Students**  
-  Please contact your study administrator for enrollment details.
+**Federated Learning (FL)** is a privacy-preserving, decentralized paradigm for training machine learning models 
+without sharing raw data. This course provides a mathematical and practical introduction to FL, combining elements 
+of optimization, machine learning, and systems design.
 
-- **Open Access**  
-  Anyone interested in following the course without formal enrollment can [subscribe to the course mailing list](https://forms.gle/dDhK1x9BQVra5cm68).
+**Key topics include:**
 
----
+- Formulating FL applications as optimization problems  
+- Designing algorithms using distributed and federated optimization  
+- Understanding and implementing requirements for **trustworthy AI**  
+- Evaluating privacy, robustness, and fairness in FL systems
 
-### Course Content
+Applications discussed include domains such as **weather forecasting** and **personalized healthcare**.
 
-see the [course site](https://FederatedLearningAalto.github.io) for more info. 
-
----
-
-## Abstract
-
-Federated Learning (FL) is a decentralized approach to training machine learning models, 
-designed to retain local data privacy by training models without centralizing datasets. 
-This course covers the fundamental linear algebra and calculus needed to analyze and design 
-FL systems, focusing on real-world applications like weather forecasting and healthcare.
-
-Participants will learn:
-- to formulate FL applications as optimization problems
-- to design FL algorithms using distributed optimization  
-- about key requirements for trustworthy AI
-- to critically evaluate the trustworthiness of FL systems
-
-
----
+See the [course website](https://federatedlearningaalto.github.io/) for more information.
 
 ## References
 
-- A. Jung, "Machine Learning: The Basics," Springer, Singapore, 2022. Available via Aalto Library: [here](https://primo.aalto.fi/discovery/search?query=any,contains,machine%20learning%20the%20basics&tab=LibraryCatalog&search_scope=MyInstitution&vid=358AALTO_INST:VU1&lang=en&offset=0). [Preprint](https://mlbook.cs.aalto.fi).
-- A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2024. [click me](material/FLBook.pdf)
----
+- A. Jung, *Machine Learning: The Basics*, Springer, Singapore, 2022.  
+  Available via Aalto Library. Preprint also available.
 
-## Copyright and License
+- A. Jung, “Federated Learning: From Theory to Practice”, <i>arXiv e-prints</i>, Art. no. arXiv:2505.19183, 2025. doi:10.48550/arXiv.2505.19183.
 
-This material is provided for educational and research purposes. Free use and redistribution are 
-permitted with appropriate attribution. Please credit **CS-E4740 - Federated Learning, Aalto University** in any shared or derived works.
+## License and Attribution
 
-**Preferred Citation:**  
-A. Jung, "Federated Learning: From Theory to Practice," Aalto University, 2022.
+All materials in this repository are provided for **educational and research purposes**.  
+Free to use and redistribute with proper attribution.
+
+**Preferred citation:**
+
+A. Jung, “Federated Learning: From Theory to Practice”, <i>arXiv e-prints</i>, Art. no. arXiv:2505.19183, 2025. doi:10.48550/arXiv.2505.19183.
+
