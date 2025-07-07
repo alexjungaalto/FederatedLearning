@@ -47,7 +47,7 @@ Anyone can follow the course as open educational content. Subscribe to the [cour
 
 ## 🔗 Related Resources
 
-- [📙 Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-19-8829-0) – Introductory ML textbook by Alexander Jung
+- [📙 Machine Learning: The Basics](https://link.springer.com/book/10.1007/978-981-16-8193-6) – Introductory ML textbook by Alexander Jung
 - [🌐 My Personal Site](https://MachineLearningforAll.github.io)
 - [📺 YouTube Lectures](https://www.youtube.com/@alexjung111)
 
