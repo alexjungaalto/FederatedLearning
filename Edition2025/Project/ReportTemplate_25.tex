@@ -1,0 +1,112 @@
+% !TeX spellcheck = en_GB
+% Template for Federated Learning Course Project Report
+
+\documentclass[9pt]{article}
+\usepackage{spconf,amsmath,bm,graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref, cleveref, tcolorbox}
+\usepackage{algorithm, algorithmic}
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{subcaption, adjustbox}
+
+% Declare Math Operators
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Title
+\title{Federated Learning Project Report Template}
+\name{First Last, \texttt{email@address.com}}
+\address{}
+
+\begin{document}
+	\maketitle
+	
+\noindent\textbf{Instructions (Remove before submission).}
+	Your report must adhere to the following formatting and length requirements:
+	\begin{itemize}
+		\item Use a font size of at least 9 points throughout the report.
+		\item The report must not exceed 5 pages in total. This includes the abstract, all six main sections, and any figures or tables.
+		\item The 5\textsuperscript{th} page must contain only the references.
+	\end{itemize}
+	We strongly recommend using \TeX\ for writing your report. You can get 
+	started by editing the provided template.\footnote{ \url{https://github.com/FederatedLearningAalto/FederatedLearningAalto.github.io/blob/master/project/ReportTemplate_25.tex}}
+	
+	
+
+	\begin{abstract}
+		{\bf Instructions (Remove before submission).} This abstract provides a concise summary of the project, including the FL 
+		application, empirical graph modeling, variation minimization approach, and 
+		the FL algorithms used.
+	\end{abstract}
+	
+	\textbf{Keywords:} Federated learning, networks, personalized machine learning, trustworthy artificial intelligence
+	
+	\section{Introduction}
+	\label{sec:intro}
+	{\bf Instructions (Remove before submission).}
+		Introduce the background and motivation for your FL project:
+		\begin{itemize}
+			\item A real-life scenario motivating your FL application.
+			\item Summary of state-of-the-art methods relevant to your project.
+			\item Brief outline of the structure of your report.
+		\end{itemize}
+	
+	\section{Problem Formulation}
+	\label{sec:pf}
+	{\bf Instructions (Remove before submission).}
+		Model your FL application as an FL network (see \cite[Ch.~3]{Jung2025}). 
+		In particular, clearly define and explain:
+		\begin{itemize}
+			\item Nodes: What real-world devices do they represent?
+			\item Local Models: Describe the ML models used at each node.
+			\item Loss Functions: Specify local loss functions used at each node.
+			\item Edges: How are edges and their weights chosen? See \cite[Ch. 7]{Jung2025} for 
+			data-driven methods to choose the edges of an FL network. 
+		\end{itemize}
+	
+	\section{Methods}
+	\label{sec:methods}
+{\bf Instructions (Remove before submission).}
+	The project requires you to apply GTVMin-based methods to 
+	the FL application modelled in Section \ref{sec:pf}. In this section 
+	you need to clearly state and explain:
+		\begin{itemize}
+			\item Your choice of variation measure, e.g., $\phi(\mathbf{w}^{(i)}-\mathbf{w}^{(i')})$ 
+			for parametric models. 
+			\item Your choice of FL algorithm (i.e., optimization method for solving 
+			GTVMin) and its message passing implementation.
+		\end{itemize}
+	
+	\section{Numerical Experiments}
+	\label{sec:experiments}
+	{\bf Instructions (Remove before submission).}
+	Discuss the following.  
+		\begin{itemize}
+			\item Data sources used. One example of such a source is the Finnish meteorological institute \url{https://en.ilmatieteenlaitos.fi/open-data}. 
+			\item Model validation, selection, and diagnosis methods (see \cite[Sec.~6.6]{Jung2022}).
+			\item Training, validation, and test losses for each node of the FL network. 
+		\end{itemize}
+	
+
+\textbf{Important:} Your submission must include a zip archive containing a single 
+Python script along with any necessary data files. Minimize the use of non-standard 
+Python packages to ensure ease of execution and reproducibility.
+
+	
+	\section{Conclusion}
+	\label{sec:conclusion}
+	{\bf Instructions (Remove before submission).}
+		\begin{itemize}
+			\item Discuss whether the obtained results solve the problem satisfactorily.
+			\item Identify limitations and suggest potential improvements.
+		\end{itemize}
+	
+%	\section*{References}
+	\begin{thebibliography}{9}
+		\bibitem{Jung2025} A. Jung, \textit{Federated Learning: From Theory to Practice}, Aalto, 2025. Available: \url{https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FLBook.pdf}.
+		\bibitem{Jung2022} A. Jung, \textit{Machine Learning: The Basics}, Springer, 2022.
+	\end{thebibliography}
+	{\bf Instructions (Remove before submission).} Please try to follow the IEEE reference guide \url{http://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf}.
+	
+\end{document}
