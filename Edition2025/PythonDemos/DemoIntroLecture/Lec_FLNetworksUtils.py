@@ -187,7 +187,7 @@ coordinates = np.array(list(zip(latitudes, longitudes)))
 #############################
 
 # Determine the sample size (e.g., 10% of all stations)
-sample_size = int(len(coordinates) * 0.08)
+sample_size = int(len(coordinates) * 0.3)
 
 # Apply K-Means clustering to group nearby stations
 kmeans = KMeans(n_clusters=sample_size, random_state=42)
