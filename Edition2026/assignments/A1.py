@@ -55,6 +55,7 @@ import argparse          # For parsing command-line arguments
 import csv               # For reading CSV files
 import math              # For sqrt() and exp()
 from datetime import datetime  # For parsing dates
+import matplotlib.pyplot as plt   # For plotting the FL graph
 
 
 # ============================================================
@@ -336,6 +337,76 @@ def one_collaboration_step(A, local_params):
 
 
 # ============================================================
+# Plot the FL graph (for visualization only)
+# ============================================================
+
+def plot_graph(station_info, A):
+    """
+    Plot the FL graph using (lat, lon) as 2D coordinates.
+
+    Nodes:
+        - plotted as points at (lon, lat)
+
+    Edges:
+        - drawn as straight lines between connected stations
+
+    IMPORTANT:
+        - This plot is only for intuition.
+        - It has NO effect on grading or quiz answers.
+    """
+    # Create a new figure
+    plt.figure(figsize=(7, 7))
+    # --------------------------------------------------------
+    # Plot edges
+    # --------------------------------------------------------
+    for i in A:
+        lat_i, lon_i = station_info[i]
+
+        for j in A[i]:
+            lat_j, lon_j = station_info[j]
+
+            # Draw a line between station i and j
+            plt.plot(
+                [lon_i, lon_j],   # x-coordinates (longitude)
+                [lat_i, lat_j],   # y-coordinates (latitude)
+                color="gray",
+                linewidth=1,
+                alpha=0.7
+            )
+    # --------------------------------------------------------
+    # Plot nodes
+    # --------------------------------------------------------
+    for station, (lat, lon) in station_info.items():
+        # Plot station as a blue dot
+        plt.scatter(
+            lon, lat,
+            color="blue",
+            s=40,
+            zorder=3
+        )
+
+        # Annotate station name (small font)
+        plt.text(
+            lon, lat,
+            station,
+            fontsize=7,
+            ha="left",
+            va="bottom"
+        )
+    # --------------------------------------------------------
+    # Plot formatting
+    # --------------------------------------------------------
+    plt.xlabel("Longitude")
+    plt.ylabel("Latitude")
+    plt.title("FL Graph (Stations connected if distance ≤ threshold)")
+    plt.grid(True)
+    # Make axes equal so distances look reasonable
+    plt.axis("equal")
+    # Show the plot
+    plt.show()
+
+
+# ============================================================
 # Main pipeline
 # ============================================================
 
@@ -358,6 +429,9 @@ def main():
     # (2) Build FL graph
     # --------------------------------------------------------
     A = build_graph(station_info)
+    
+    # Visualize the graph (purely illustrative)
+    plot_graph(station_info, A)
 
     # Count nodes
     n_nodes = len(stations)
