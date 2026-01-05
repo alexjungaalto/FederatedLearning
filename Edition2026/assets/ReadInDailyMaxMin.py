@@ -10,6 +10,7 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, UTC
 import json
+import pandas as pd
 
 
 def parse_xml(xml_string: str) -> dict:
@@ -98,6 +99,8 @@ bbox = "bbox=22.2,60.3,23.0,60.7"  # Smaller bbox around Turku
 
 #bbox = "bbox=25.6088,66.48832,25.709,66.49832"
 
+bbox = "bbox=19.0,59.5,31.6,70.2" #entire finland
+
 # Select past five days
 end = (datetime.now(UTC) - timedelta(hours=24)).strftime("%Y-%m-%dT00:00:00Z")
 start = (datetime.now(UTC) - timedelta(hours=5 * 24)).strftime("%Y-%m-%dT00:00:00Z")
@@ -129,3 +132,38 @@ data = parse_xml(response.content)
 
 json.dump(data, open("daily.json", "w"), indent=2)
 print("Data saved to daily.json")
+
+#data = json.loads(json_text)
+
+# --- Long -> wide: one row per (station, day), columns per parameter (tmin/tmax/...) ---
+df_long = pd.DataFrame(data)
+
+required = {"station", "time", "lat", "lon", "parameter", "value"}
+missing = required - set(df_long.columns)
+if missing:
+    raise KeyError(f"Missing keys in JSON records: {missing}")
+
+# Normalize day column (keeps the original 'time' too if you want)
+df_long["day"] = pd.to_datetime(df_long["time"], utc=True).dt.date.astype(str)
+
+# Pivot
+df_wide = (
+    df_long.pivot_table(
+        index=["station", "lat", "lon", "day"],
+        columns="parameter",
+        values="value",
+        aggfunc="first",
+    )
+    .reset_index()
+)
+
+df_wide.columns.name = None  # drop pandas column index name
+
+# Optional: stable column order (station meta + sorted parameters)
+param_cols = sorted([c for c in df_wide.columns if c not in {"station", "lat", "lon", "day"}])
+df_wide = df_wide[["station", "lat", "lon", "day"] + param_cols]
+
+# --- Save ---
+out_csv = "daily_records.csv"
+df_wide.to_csv(out_csv, index=False)
+print(f"Wrote {len(df_wide)} daily rows to {out_csv}")
