@@ -1,0 +1,82 @@
+[
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2025-12-31T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmin",
+    "value": -25.3
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-01T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmin",
+    "value": -27.8
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-02T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmin",
+    "value": -26.6
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-03T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmin",
+    "value": -30.2
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-04T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmin",
+    "value": -30.3
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2025-12-31T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmax",
+    "value": -20.1
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-01T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmax",
+    "value": -18.4
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-02T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmax",
+    "value": -14.2
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-03T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmax",
+    "value": -25.7
+  },
+  {
+    "station": "Rovaniemi rautatieasema",
+    "time": "2026-01-04T00:00:00Z",
+    "lat": 66.49832,
+    "lon": 25.7088,
+    "parameter": "tmax",
+    "value": -22.6
+  }
+]

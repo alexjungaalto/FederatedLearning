@@ -340,7 +340,7 @@ USAGE EXAMPLES
 
 1) Quick test: last hour for Finland bbox, station-centric timeseries output
 ---------------------------------------------------------------------------
-python download_fmi_multipointcoverage.py \
+python GetFMIData.py \
   --start 2025-12-31T11:00:00Z \
   --end   2025-12-31T12:00:00Z \
   --timeseries \
@@ -349,7 +349,7 @@ python download_fmi_multipointcoverage.py \
 
 2) A full day, chunked into 6-hour queries (recommended for reliability)
 -----------------------------------------------------------------------
-python download_fmi_multipointcoverage.py \
+python GetFMIData.py \
   --start 2025-12-01T00:00:00Z \
   --end   2025-12-02T00:00:00Z \
   --timeseries \
@@ -358,7 +358,7 @@ python download_fmi_multipointcoverage.py \
 
 3) Snapshot mode (time -> stations) for a short window
 ------------------------------------------------------
-python download_fmi_multipointcoverage.py \
+python GetFMIData.py \
   --start 2025-12-31T00:00:00Z \
   --end   2025-12-31T03:00:00Z \
   --out data/fmi_snapshot.csv
