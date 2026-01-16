@@ -1,0 +1,446 @@
+station_id,station,lat,lon
+100539,Kemi Ajos,65.67337,24.51526
+100540,Raahe Lapaluoto,64.6663,24.40708
+100662,Helsinki Kallio 2,60.18739,24.9506
+100669,Porvoo Emäsalo Vaarlahti,60.20579,25.62509
+100683,Porvoo Kilpilahti satama,60.303725,25.549164
+100691,Espoo Leppävaara Läkkisepänkuja,60.22024,24.81133
+100723,Espoo Luukki,60.31439,24.68486
+100742,Helsinki Mannerheimintie,60.16964,24.93924
+100761,Kotka Kuusenkari,60.2721,27.1075
+100762,Helsinki Mäkelänkatu,60.19644,24.95198
+100763,Vantaa Tikkurila Neilikkatie,60.28995,25.03953
+100803,Helsinki Vartiokylä Huivipolku,60.22393,25.10244
+100823,Kaarina Kaarina,60.40831,22.37835
+100824,Naantali keskusta Asematori,60.46744,22.0284
+100845,Turku Ruissalo Saarontie,60.42532,22.09611
+100882,Kuopio Haminalahti,62.8497,27.5288
+100907,Jomala Maarianhamina lentoasema,60.127351,19.900379
+100908,Parainen Utö,59.779094,21.374788
+100909,Lemland Nyhamn,59.959108,19.953736
+100917,Jomala Jomalaby,60.178236,19.986864
+100919,Hammarland Märket,60.30098,19.13142
+100921,Kökar Bogskär,59.504544,20.347475
+100924,Parainen Fagerholm,60.111626,21.698278
+100928,Kumlinge kirkonkylä,60.258229,20.746975
+100929,Maarianhamina Badhusberget,60.100976,19.92564
+100932,Hanko Russarö,59.773633,22.948683
+100934,Kaarina Yltöinen,60.386903,22.551826
+100945,Kemiönsaari Vänö,59.86949,22.193427
+100946,Hanko Tulliniemi,59.808642,22.912464
+100947,Turku Rajakari,60.37788,22.0964
+100949,Turku Artukainen,60.454391,22.178695
+100951,Kemiönsaari Kemiö,60.171231,22.757684
+100953,Hanko Tvärminne,59.843831,23.248587
+100955,Salo Kärkkä,60.373921,23.112918
+100963,Lohja Leppäkorpi,60.491373,23.766286
+100965,Raasepori Jussarö,59.820758,23.57309
+100967,Salo Kiikala lentokenttä,60.464154,23.649757
+100968,Vantaa Helsinki-Vantaan lentoasema,60.329368,24.97274
+100969,Inkoo Bågaskär,59.931136,24.014082
+100971,Helsinki Kaisaniemi,60.17523,24.94459
+100974,Lohja Porla,60.244455,24.049514
+100976,Vihti Maasoja,60.418755,24.398622
+100996,Helsinki Harmaja,60.10512,24.97539
+100997,Kirkkonummi Mäkiluoto,59.919823,24.350229
+101000,Espoo Latokaski,60.17771,24.64009
+101004,Helsinki Kumpula,60.203071,24.961305
+101009,Helsinki Malmi lentokenttä,60.25299,25.04549
+101022,Porvoo Kalbådagrund,59.985683,25.598788
+101023,Porvoo Emäsalo,60.20382,25.62546
+101028,Porvoo Harabacka,60.391715,25.607297
+101030,Kotka Rankki,60.375377,26.958926
+101039,Loviisa Orrengrund,60.274765,26.447587
+101042,Kotka Haapasaari,60.286758,27.184825
+101044,Pori lentoasema,61.460112,21.808395
+101049,Uusikaupunki Itätulli,60.801833,21.424778
+101059,Kustavi Isokari,60.722198,21.02681
+101061,Rauma Kylmäpihlaja,61.14475,21.30273
+101065,Turku lentoasema,60.515647,22.279155
+101068,Kokemäki Rausenkulma,61.26002,22.22752
+101075,Huittinen Sallila,61.02353,22.69863
+101093,Pöytyä Yläne,60.870472,22.386111
+101103,Kokemäki Tulkkila,61.25294,22.34613
+101104,Jokioinen Ilmala,60.813972,23.49825
+101116,Nokia Tottijärvi,61.39648,23.33637
+101118,Pirkkala Tampere-Pirkkala lentoasema,61.419402,23.622561
+101124,Tampere Härmälä,61.465606,23.746783
+101128,Somero Salkola,60.64668,23.80559
+101130,Hyvinkää Hyvinkäänkylä,60.595889,24.802972
+101135,Vihti Hiiskula,60.51583,24.52403
+101143,Hämeenlinna Pirttikoski,61.006648,23.920059
+101149,Nurmijärvi Röykkä,60.508722,24.65375
+101150,Hämeenlinna Katinen,60.999201,24.491625
+101151,Hattula Lepaa,61.114537,24.324488
+101154,Hämeenlinna Lammi Pappila,61.054083,25.038444
+101185,Asikkala Pulkkilanharju,61.26521,25.520206
+101188,Hämeenlinna Kotinen,61.23993,25.06506
+101191,Kouvola Utti lentoasema,60.898392,26.948819
+101194,Kouvola Anjala,60.6965,26.811056
+101196,Heinola Asemantaus,61.200083,26.049667
+101211,Kouvola Voikoski,61.25137,26.77904
+101219,Kouvola Utti Lentoportintie,60.889092,26.929293
+101231,Virolahti Koivuniemi,60.527197,27.672743
+101237,Lappeenranta lentoasema,61.040298,28.129162
+101246,Lappeenranta Konnunsuo,61.038791,28.563954
+101248,Ruokolahti Kotaniemi,61.367507,28.67649
+101252,Lappeenranta Hiekkapakka,61.1982,28.47308
+101254,Parikkala Koitsanlahti,61.444667,29.461083
+101256,Kaskinen Sälgrund,62.333816,21.190813
+101257,Merikarvia Tuorila,61.84847,21.65092
+101258,Isojoki Kärjenkoski,62.130278,21.698722
+101262,Teuva Kauppilankylä,62.492056,21.758472
+101267,Pori Tahkoluoto satama,61.630419,21.376203
+101268,Kristiinankaupunki Majakka,62.20324,21.16983
+101272,Karvia Alkkia,62.183286,22.799827
+101285,Kurikka Hirvijärvi,62.47295,22.909706
+101289,Kauhajoki Kuja-Kokko,62.413445,22.183722
+101291,Kankaanpää Niinisalo lentokenttä,61.838642,22.463678
+101305,Alavus Sulkavankylä,62.44881,23.55334
+101310,Virrat Äijänneva,62.327833,23.542283
+101311,Tampere Siilinkari,61.517566,23.753878
+101315,Jämsä Halli lentoasema,61.855507,24.804592
+101317,Juupajoki Hyytiälä,61.84591,24.286964
+101338,Jämsä Halli Lentoasemantie,61.85959,24.814833
+101339,Jyväskylä lentoasema,62.397585,25.670867
+101342,Sysmä Joutsjärvi,61.485278,25.837361
+101352,Jyväskylä Muuratjärvi,62.156848,25.42166
+101362,Luhanka Judinsalo,61.704484,25.505293
+101363,Multia Pirttiperä,62.410444,25.05035
+101367,Joutsa Savenaho,61.879418,26.094783
+101385,Kangasniemi kirkonkylä,61.978417,26.633528
+101398,Mikkeli lentoasema,61.688597,27.202188
+101418,Juva Partala,61.892296,27.885278
+101421,Varkaus Kosulanniemi,62.322213,27.90785
+101423,Savonlinna Laukansaari,61.79607,28.84608
+101430,Savonlinna lentoasema,61.946382,28.932381
+101436,Rantasalmi Rukkasluoto,62.06302,28.56618
+101441,Savonlinna Punkaharju Laukansaari,61.801861,29.315056
+101446,Enonkoski Simanala,62.052223,29.04213
+101448,Savonlinna Savonranta,62.16897,29.27713
+101450,Rääkkylä kirkonkylä,62.311424,29.629538
+101459,Tohmajärvi Kemie,62.23539,30.34662
+101460,Joensuu Huhtilampi,62.42668,30.40736
+101462,Vaasa lentoasema,63.058578,21.754597
+101464,Mustasaari Valassaaret,63.435083,21.068557
+101474,Mustasaari Riimala,62.970028,21.780556
+101478,Kurikka Pyörni,62.733722,21.960111
+101479,Korsnäs Bredskäret,62.93488,21.18485
+101481,Maalahti Strömmingsbådan,62.978388,20.740078
+101485,Vaasa Klemettilä,63.098706,21.639378
+101486,Seinäjoki Pelmaa,62.938083,22.488778
+101503,Kauhava lentokenttä,63.120333,23.043639
+101520,Ähtäri Inha,62.554614,24.142386
+101528,Halsua Purola,63.44564,24.44422
+101533,Alajärvi Möksy,63.08898,24.26084
+101536,Multia Karhila,62.510444,24.807639
+101537,Viitasaari Haapaniemi,63.082247,25.858617
+101541,Äänekoski Kalaniemi,62.875738,25.861713
+101555,Vesanto kirkonkylä,62.921782,26.424701
+101569,Pielavesi Venetmäki,63.315179,26.97915
+101570,Siilinjärvi Kuopio lentoasema,62.998421,27.808174
+101572,Kuopio Maaninka,63.143426,27.313171
+101577,Lapinlahti Lamminkäyrä,63.384528,27.3745
+101578,Suonenjoki Iisvesi,62.666,27.043833
+101579,Kuopio Karttula,62.851985,27.271073
+101580,Kuopio Ritoniemi,62.79892,27.90495
+101581,Kuopio Vehmasmäki,62.73878,27.5416
+101586,Kuopio Savilahti,62.89256,27.63331
+101587,Kuopio Puijo,62.90954,27.65554
+101589,Heinävesi Palokki,62.57053,28.59248
+101590,Outokumpu Viuruniemi,62.617512,28.942409
+101599,Rautavaara Ala-Luosta,63.271917,28.470333
+101603,Rautavaara Ylä-Luosta,63.37806,28.66166
+101608,Liperi Joensuu lentoasema,62.65695,29.636079
+101609,Juuka Niemelä,63.23236,29.23397
+101610,Joensuu Pyhäselkä,62.51678,29.81092
+101616,Lieksa Koli,63.108389,29.761611
+101628,Liperi Tuiskavanluoto,62.54601,29.66818
+101632,Joensuu Linnunlahti,62.601794,29.727131
+101636,Lieksa Lampela,63.321083,30.045778
+101650,Lieksa Hietajärvi,63.16711,30.71348
+101651,Ilomantsi Mekrijärvi,62.769415,30.974667
+101660,Pietarsaari Kallan,63.75144,22.52282
+101661,Kokkola Tankar,63.95114,22.84537
+101662,Kruunupyy Kokkola-Pietarsaari lentoasema,63.726552,23.143592
+101673,Kalajoki Ulkokalla,64.33073,23.44627
+101675,Kokkola Santahaka,63.838822,23.097148
+101683,Kalajoki Pitkäsenkylä,64.231028,24.016306
+101685,Kalajoki Mehtäkylä,64.273806,24.208306
+101689,Toholampi Laitala,63.821333,24.163233
+101690,Ylivieska lentokenttä,64.05029,24.72468
+101695,Haapavesi Mustikkamäki,64.142631,25.423351
+101705,Pyhäjärvi Ojakylä,63.735886,25.705732
+101712,Kiuruvesi Korpijoki,63.72868,26.36981
+101717,Siikalatva Kestilä,64.355444,26.300333
+101725,Kajaani lentoasema,64.282904,27.671137
+101726,Vieremä Kaarakkala,63.840899,27.220614
+101742,Kajaani Paltaniemi,64.29154,27.63681
+101743,Nurmes Valtimo,63.6673,28.82927
+101753,Ristijärvi Mustavaara,64.476667,28.617389
+101756,Sotkamo Kuolaniemi,64.111972,28.336389
+101763,Nurmes Mujejärvi,63.824807,29.454796
+101771,Kuhmo Apaja,64.068639,29.21975
+101773,Kuhmo Kalliojoki,64.297563,30.170683
+101775,Raahe Nahkiainen,64.611783,23.896737
+101776,Hailuoto Keskikylä,65.01967,24.72758
+101783,Kemi I majakka,65.385078,24.095684
+101784,Hailuoto Marjaniemi,65.03975,24.56118
+101785,Raahe Lapaluoto satama,64.66589,24.40695
+101786,Oulu lentoasema,64.935034,25.339195
+101787,Siikajoki Ruukki,64.684206,25.089192
+101794,Oulu Vihreäsaari satama,65.00637,25.393248
+101800,Vaala Pelso,64.501444,26.423857
+101805,Pudasjärvi lentokenttä,65.40014,26.96311
+101809,Utajärvi Särkijärvi,64.922517,27.25125
+101812,Pudasjärvi Jaurakkajärvi,65.16072,27.64664
+101826,Suomussalmi Pesiö,64.931252,28.746722
+101830,Puolanka Kotila,64.665944,28.029472
+101831,Puolanka Paljakka,64.663925,28.056704
+101840,Kemi Kemi-Tornio lentoasema,65.789444,24.582778
+101846,Kemi Ajos,65.67318,24.515193
+101851,Tornio Kaakkuri,65.868932,24.179364
+101872,Utajärvi Korkiakangas,64.774934,26.318877
+101873,Ranua lentokenttä,65.977172,26.367571
+101877,Pudasjärvi Sarakylä,65.796139,27.339611
+101881,Posio Raistakka,65.978856,28.171238
+101885,Taivalkoski kirkonkylä,65.57489,28.217659
+101886,Kuusamo lentoasema,65.993342,29.22715
+101887,Kuusamo Kiutaköngäs,66.36999,29.31188
+101897,Kuusamo Rukatunturi,66.166138,29.151768
+101899,Kuusamo Juuma,66.320266,29.399672
+101908,Ylitornio Meltosjärvi,66.529518,24.649603
+101913,Kolari Kattilamaa,67.384227,24.011884
+101914,Pello kirkonkylä,66.772783,23.963029
+101920,Rovaniemi lentoasema,66.56236,25.838144
+101927,Rovaniemi Vennivaara,66.549312,25.571064
+101928,Rovaniemi rautatieasema,66.49832,25.7088
+101932,Sodankylä Tähtelä,67.36663,26.62901
+101933,Rovaniemi Apukka,66.579444,26.010944
+101939,Sodankylä Luosto,67.139096,26.896916
+101942,Sodankylä Heikinheimo-masto,67.362466,26.638342
+101947,Pelkosenniemi kirkonkylä,67.10025,27.50995
+101950,Kemijärvi lentokenttä,66.715557,27.159063
+101952,Savukoski kirkonkylä,67.282955,28.178596
+101956,Salla Kelloselkä,66.944351,28.976929
+101958,Pelkosenniemi Pyhätunturi,67.021906,27.218269
+101959,Salla kirkonkylä,66.816596,28.688292
+101966,Salla Naruska,67.162256,29.177655
+101968,Enontekiö Kaaresuvanto,68.442984,22.506126
+101976,Enontekiö lentoasema,68.3614,23.427546
+101980,Kittilä Pulju,68.230135,24.832906
+101982,Muonio Laukukero,68.062835,24.033349
+101983,Muonio Sammaltunturi,67.973281,24.11559
+101985,Kittilä Matorova,67.999959,24.240158
+101986,Kittilä lentoasema,67.69168,24.855379
+101987,Kittilä Kenttärova,67.987215,24.24301
+101990,Kittilä Pakatti,67.669244,24.929268
+101994,Kittilä Pokka,68.169613,25.783163
+102000,Sodankylä Lokka,67.821472,27.745972
+102001,Sodankylä Vuotso,68.084223,27.185006
+102005,Inari Saariselkä matkailukeskus,68.415074,27.413231
+102006,Inari Saariselkä Kaunispää,68.433992,27.445146
+102008,Inari Raja-Jooseppi Kontiojärvi,68.470547,28.315722
+102012,Salla Värriötunturi,67.74858,29.611322
+102016,Enontekiö Kilpisjärvi kyläkeskus,69.039049,20.813788
+102017,Enontekiö Kilpisjärvi Saana,69.042769,20.850908
+102019,Enontekiö Näkkälä,68.603011,23.57595
+102026,Inari Angeli Lintupuoliselkä,68.90296,25.73646
+102033,Inari Ivalo lentoasema,68.61336,27.4189
+102035,Utsjoki Kevo,69.756365,27.006784
+102036,Utsjoki Nuorgam,70.082028,27.8965
+102047,Inari Kaamanen,69.14089,27.26567
+102052,Inari Nellim,68.849278,28.299111
+102055,Inari Kirakkajärvi,69.582499,28.89409
+102102,Kuopio Kasarmipuisto,62.8936,27.66952
+103093,Kuopio Maaherrankatu,62.89334,27.68688
+103094,Kuopio Sorsasalo,62.95529,27.69797
+103095,Kuopio Tasavallankatu,62.88198,27.66093
+103096,Tampere Epila 2,61.50854,23.67583
+103097,Tampere Kaleva,61.4991,23.80221
+103098,Tampere Linja-autoasema,61.49307,23.76938
+103099,Tampere Pirkankatu,61.49873,23.73569
+103100,Varkaus Psaari 2,62.31391,27.88699
+103102,Varkaus Taulumäki (toripaviljonki),62.31788,27.86811
+103103,Vaasa Vesitorni,63.10121,21.60407
+103104,Vaasa keskusta Vaasanpuistikko,63.09515,21.61832
+103105,Kotka Kirjastotalo,60.4655,26.93893
+103107,Kokkola keskusta Pitkänsillankatu,63.83764,23.1316
+103108,Kokkola Ykspihlaja,63.84157,23.04219
+103109,Hämeenlinna Niittykatu,60.99934,24.45538
+103110,Seinäjoki Vapaudentie 6a,62.7782,22.83948
+103112,Kouvola Kuusankoski Urheilukentäntie,60.9072,26.63439
+103113,Rauma Tarvonsaari Hallikatu,61.12986,21.4997
+103115,Lappeenranta Joutsenon keskusta,61.11709,28.49849
+103116,Lappeenranta keskusta 4,61.05576,28.18431
+103117,Lappeenranta Lauritsala,61.07194,28.26409
+103118,Imatra Mansikkala,61.18892,28.77012
+103119,Imatra Pelkolan tulliasema Raja,61.12838,28.83776
+103120,Lappeenranta Pulp,61.12536,28.45078
+103121,Imatra Rautionkylä,61.23807,28.87369
+103122,Imatra Teppanala,61.15304,28.81014
+103123,Lappeenranta Tirilä Pekkasenkatu,61.05748,28.24585
+103124,Oulu Nokela,64.99473,25.47926
+103125,Oulu keskusta 2,65.00997,25.47132
+103126,Oulu Pyykösjärvi,65.04338,25.4979
+103130,Lahti Kisapuisto,60.98781,25.64954
+103131,Lahti Laune Pohjoinen Liipolankatu,60.96704,25.65489
+103132,Lahti Saimaankatu,60.99129,25.66579
+103133,Lahti Satulakatu,60.97907,25.59109
+103134,Lahti Vesku 11,60.98389,25.66218
+103135,Pori Pastuskeri,61.66325,21.45484
+103139,Porvoo Mustijoki,60.36005,25.56605
+103140,Porvoo Nyby,60.31718,25.50183
+103141,Porvoo Svartbäck,60.28726,25.51083
+103142,Harjavalta Kaleva,61.3135,22.135
+103143,Harjavalta Pirkkala,61.33169,22.1433
+103145,Raahe Lapaluoto,64.66769,24.41928
+103147,Raahe keskusta,64.68337,24.48162
+103148,Joensuu Koskikatu 1,62.59909,29.7634
+103149,Mikkeli Porrassalmenkatu,61.68636,27.27334
+103152,Pietarsaari Bottenviksvägen,63.67912,22.71837
+103153,Luoto Vikarholmen,63.70287,22.76473
+103786,Järvenpää Sorto,60.498253,25.067549
+103794,Mäntsälä Hirvihaara,60.627725,25.193422
+103807,Oulu Santapankki,65.234,24.9692
+103808,Kalajoki Maakalla,64.2948,23.5506
+103814,Hollola Kansankatu siirrettävä,60.98746,25.51687
+103816,Rovaniemi Rovakatu,66.50004,25.727
+103943,Helsinki Vuosaari Käärmeniementie,60.21935,25.172675
+103976,Helsinki Suomenlinna aaltopoiju,60.123333,24.972833
+104017,Siilinjärvi Sorakuja,63.0724,27.66115
+104029,Porvoo Mannerheiminkatu,60.39443,25.660691
+104042,Kouvola Kuusankoski Mäkikylä,60.89444,26.591671
+104045,Savonlinna Olavinkatu,61.87059,28.876131
+104053,Helsinki Katajanokka 2,60.16522,24.973811
+104064,Parainen,60.29678,22.299271
+104066,Vantaa Päiväkumpu,60.3235,25.092181
+104074,Helsinki Tapanila,60.26378,25.024061
+104078,Kouvola Kankaan Koulu,60.87045,26.7011
+104083,Vantaa Hämeenlinnanväylä,60.27196,24.87451
+104084,Espoo Lintuvaara 2,60.23942,24.814051
+104085,Vantaa Jätevoimala,60.26459,25.140441
+104089,Helsinki Vuosaaren satama,60.22173,25.179811
+104090,Karkkila,60.5389,24.22266
+104091,Nastola Rakokiventie siirrettävä,60.93642,25.961351
+104092,Lahti Holma,61.00785,25.679131
+104096,Hollola Muovitie,60.99668,25.534771
+104097,Nastola Kukkasen koulu,60.94898,25.908831
+104098,Kuopio Niirala,62.88875,27.653971
+104099,Siilinjärvi Pahkamäki,63.17527,27.7711
+104104,Kerava,60.40231,25.09789
+104108,Pieksämäki Savontie,62.30087,27.1581
+104109,Hailuoto Kujalannurkka,65.00036,24.690661
+104188,Varkaus kaupungintalo,62.31238,27.886721
+104577,Kotka Koulukatu,60.46297,26.93442
+104600,Pori Kaijakari,61.6217,21.3935
+104796,Lahti Sopenkorpi,60.974654,25.620202
+105302,Siuntio Sjundby,60.143328,24.262379
+105392,Sipoo Itätoukki,60.101207,25.194394
+105405,Kauniainen Kauniaistentie,60.20957,24.72994
+105416,Heinola Tiilitehtaankatu,61.20049,26.04694
+105425,Siilinjärvi Musti,63.19622,27.73654
+105427,Rauma Pyynpää,61.136575,21.515178
+106417,Varkaus Kosulanniemi Rantalankatu,62.31728,27.91195
+106418,Savonlinna Haapasalmi,61.86918,28.88585
+106419,Raisio Kaanaa Sakunpiha,60.46574,22.10435
+106420,Pori Paanakedonkatu,61.48226,21.81329
+106435,Muonio Oustajärvi,67.948231,23.707815
+106629,Siilinjärvi Murtomäki,63.13657,27.70455
+106630,Raisio Ihala,60.47038,22.1902
+106631,Uusikaupunki Vekara,60.8678,21.0476
+106796,Jyväskylä Hannikaisenkatu,62.23817,25.74788
+106797,Turku Kauppatori väliaikainen,60.452,22.2668
+106949,Espoo Länsiväylä Friisilä,60.1613,24.71205
+106951,Vantaa Tikkurila Talvikkitie,60.29509,25.03316
+106953,Kirkkonummi keskusta,60.13022,24.42632
+106954,Kuopio Savilahti KYS,62.89553,27.64725
+107026,Siilinjärvi Kuuslahti,63.12723,27.77178
+107029,Pyhtää lentokenttä,60.485947,26.592089
+107033,Maalahti Storskäret,63.1058,20.8196
+107081,Kuusamo Välikangas,65.998102,29.225273
+107113,Sotkamo Tuhkakylä,63.996179,28.059716
+107141,Tornio Näätsaari,65.816056,24.16372
+107142,Tornio Keskusta,65.842961,24.147491
+107147,Lohja Harjula,60.24903,24.06947
+107164,Kotka Mussalo satama/siirrettävä,60.42839,26.9172
+107165,Helsinki Paloheinä,60.25004,24.93942
+107166,Hyvinkää Kruununpuisto,60.61923,24.85786
+107168,Äänekoski Paloasema,62.602285,25.739853
+107201,Tervola Loue,66.153519,24.99031
+107218,Kemi Keskusta,65.733541,24.562148
+107282,Lahti Mustamäenkatu,60.96271,25.64369
+107284,Kemi Biotuotetehdas,65.75865,24.53986
+107379,Lappeenranta Ojala-Tuomela,61.034338,28.212409
+107382,Varkaus Kommila,62.3291,27.8857
+107383,Maarianhamina Lotsberget,60.087643,19.935463
+107392,Heinola Tommola,61.200103,26.049268
+107393,Heinola Vierumäki,61.107559,25.930068
+107399,Espoo Pohjois-Tapiola 2,60.18289,24.79345
+107400,Järvenpää Helsingintie,60.46972,25.08735
+107401,Jyväskylä Jyskä,62.2415,25.8415
+107541,Kuopio Kurkimäki,62.78102,27.49677
+107542,Siilinjärvi Ranta,63.11134,27.76019
+107563,Lappeenranta Ihalainen 2,61.03879,28.17635
+107565,Savukoski Tulppio,67.7687,29.211018
+107569,Turku Kauppatori 2,60.45183,22.26783
+107590,Mikkeli Pitkäaho,61.959222,27.264889
+107622,Kotka Tiutinen,60.46904,26.98261
+107623,Hollola Kuntotie,60.97948,25.53361
+107992,Sotkamo Terrafame Taattola,64.002154,28.107741
+108020,Inkoo Jakobramsjö,59.994639,23.995599
+108036,Virolahti Harju,60.537744,27.558725
+108040,Oulu Kaukovainio,64.99685,25.522333
+108068,Helsinki Teollisuuskatu,60.19512,24.9448
+108069,Helsinki Tapanila 2,60.26477,25.0219
+108070,Kotka Karhula,60.51539,26.93608
+108074,Nokia Välikatu,61.478344,23.514269
+108078,Tampere Lakalaiva,61.45519,23.76355
+108098,Raasepori Karjaa,60.0765,23.68505
+108105,Helsinki Herttoniemi 2,60.19305,25.03704
+108106,Espoo Tapiola 4,60.17513,24.80034
+108107,Vantaa Ilola,60.32733,25.01067
+108123,Siilinjärvi Kolmisoppi,63.15801,27.69186
+108126,Utö Svartbådarna,59.715833,21.368333
+108131,Kokkola Kauppatori,63.8396,23.1333
+108133,Ranua Aho,66.150211,26.107845
+108156,Ranua Suhanko Palovaara,66.149986,26.108551
+108157,Vantaa Kehä III Viinikkala,60.29876,24.89789
+108158,Helsinki Kustaa Vaasan tie,60.20817,24.96779
+108159,Kotka Kirkkokatu,60.46795,26.94619
+108160,Mariehamn Ålandsvägen,60.099425,19.938175
+108297,Kuopio Pirtti,62.8366,27.65946
+108440,Pori Isomäki,61.468147,21.775355
+108495,Loviisa Orrengrund aaltopoiju,60.228333,26.43
+108499,Kemi aaltopoiju,65.48875,24.346467
+126736,Kajaani Petäisenniska,64.216775,27.751937
+126737,Utsjoki Kevo Kevojärvi,69.757,27.012
+129963,Inari Seitalaassa,69.048532,27.756998
+132310,Helsinki Kaivopuisto,60.15363,24.95622
+134220,Pohjois-Itämeri aaltopoiju,59.248167,20.998333
+134221,Suomenlahti aaltopoiju,59.965,25.235
+134223,Vaasa Vaskiluoto,63.0815,21.57118
+134224,Rauma Petäjäs,61.133896,21.442631
+134225,Turku Ruissalo Saaronniemi,60.42828,22.100533
+134246,Selkämeri aaltopoiju,61.8001,20.23267
+134248,Oulu Toppila,65.0403,25.4182
+134250,Pietarsaari Leppäluoto,63.70857,22.68958
+134251,Kaskinen Ådskär,62.34395,21.21483
+134252,Föglö Degerby,60.031883,20.384817
+134253,Hanko Pikku Kolalahti,59.822867,22.976583
+134254,Hamina Pitäjänsaari,60.562767,27.1792
+134266,Pori Mäntyluoto Kallo,61.59438,21.46343
+137188,Ilmajoki Seinäjoki lentoasema,62.685713,22.842723
+137190,Rovaniemi lentoasema AWOS,66.572759,25.848477
+137208,Jyväskylä lentoasema AWOS,62.393322,25.688617
+137228,Perämeri aaltopoiju,64.6841,23.238
+150168,Puumala kirkonkylä,61.52242,28.18491
+151028,Helsinki Vuosaari satama,60.20867,25.1959
+151029,Maarianhamina Länsisatama,60.091359,19.929101
+151048,Lumparland Långnäs satama,60.115843,20.297649
+654900,Hanko Längden,59.7572,23.22
+778135,Kittilä Lompolonvuoma,67.997459,24.209546
+778578,Rauma Sinisaari,61.1247,21.49343
+852678,Espoo Nuuksio,60.291281,24.567815
+855522,Mikkeli Lentoasema AWOS,61.68751,27.20671
+874863,Espoo Tapiola,60.177967,24.787433

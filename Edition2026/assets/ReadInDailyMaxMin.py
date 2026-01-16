@@ -101,9 +101,9 @@ bbox = "bbox=22.2,60.3,23.0,60.7"  # Smaller bbox around Turku
 
 bbox = "bbox=19.0,59.5,31.6,70.2" #entire finland
 
-# Select past five days
+# Select past ten days
 end = (datetime.now(UTC) - timedelta(hours=24)).strftime("%Y-%m-%dT00:00:00Z")
-start = (datetime.now(UTC) - timedelta(hours=5 * 24)).strftime("%Y-%m-%dT00:00:00Z")
+start = (datetime.now(UTC) - timedelta(hours=20 * 24)).strftime("%Y-%m-%dT00:00:00Z")
 
 # Specify the weather parameters
 parameters = "tmin,tmax"  # Example parameters: minimum and maximum temperature
