@@ -79,18 +79,18 @@ places = ["Helsinki", "Tampere"]
 
 # Select past five days
 
-end = (datetime.now(UTC) - timedelta(hours=24)).strftime("%Y-%m-%dT00:00:00Z")
-start = (datetime.now(UTC) - timedelta(hours=5 * 24)).strftime("%Y-%m-%dT00:00:00Z")
+#end = (datetime.now(UTC) - timedelta(hours=24)).strftime("%Y-%m-%dT00:00:00Z")
+#start = (datetime.now(UTC) - timedelta(hours=5 * 24)).strftime("%Y-%m-%dT00:00:00Z")
 
 # Get the data
 
-places = "&".join(["place={}".format(place) for place in places])
-parameters = ",".join(parameters)
+#places = "&".join(["place={}".format(place) for place in places])
+#parameters = ",".join(parameters)
 
-stored_query = "fmi::observations::weather::daily::timevaluepair"
-url = "http://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=getFeature&storedquery_id={}&{}&starttime={}&endtime={}&parameters={}&timestep=720&".format(
-    stored_query, places, start, end, parameters
-)
+#stored_query = "fmi::observations::weather::daily::timevaluepair"
+#url = "http://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=getFeature&storedquery_id={}&{}&starttime={}&endtime={}&parameters={}&timestep=720&".format(
+#    stored_query, places, start, end, parameters
+#)
 
 ########################
 
@@ -101,9 +101,9 @@ bbox = "bbox=22.2,60.3,23.0,60.7"  # Smaller bbox around Turku
 
 bbox = "bbox=19.0,59.5,31.6,70.2" #entire finland
 
-# Select past ten days
+# Select past 40 days
 end = (datetime.now(UTC) - timedelta(hours=24)).strftime("%Y-%m-%dT00:00:00Z")
-start = (datetime.now(UTC) - timedelta(hours=20 * 24)).strftime("%Y-%m-%dT00:00:00Z")
+start = (datetime.now(UTC) - timedelta(hours=40 * 24)).strftime("%Y-%m-%dT00:00:00Z")
 
 # Specify the weather parameters
 parameters = "tmin,tmax"  # Example parameters: minimum and maximum temperature
@@ -118,7 +118,6 @@ url = (
     f"parameters={parameters}&timestep=720"
 )
 
-print(url)
 
 
 print(url)
