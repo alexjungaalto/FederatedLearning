@@ -1,0 +1,197 @@
+% !TeX spellcheck = en_GB
+% Template for Federated Learning Course Project Report
+% Based on the ICASSP 2026 conference template (spconf.sty)
+
+\documentclass{article}
+\usepackage{spconf,amsmath,graphicx,hyperref}
+\usepackage{bm,amsfonts,amssymb,amsbsy}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{cleveref}
+\usepackage{algorithm, algorithmic}
+\usepackage{subcaption, adjustbox}
+\usepackage{listings}
+\usepackage{qrcode}
+
+\input{ml_macros.tex}
+
+% Minimalistic hint environment
+\newenvironment{hint}{%
+	\par\medskip\noindent
+	\begin{minipage}[t]{\dimexpr\columnwidth-8mm}%
+	\raggedright\itshape
+	\textbf{Hint (remove before submission):}\space
+}{%
+	\end{minipage}\par\medskip
+}
+
+% Title
+\title{Template for a Federated Learning Project Report}
+\name{No Name (to make peer grading double-blind!)}
+\address{}
+
+\begin{document}
+
+\maketitle
+
+\begin{hint}
+	All hints in this template are instructions for drafting and must be
+	removed before final submission. Not every hint corresponds to a
+	separate grading criterion; however, ignoring hints typically leads to unclear
+	problem formulations, weak experiments, or low review scores.
+\end{hint}
+
+\begin{abstract}
+	\begin{hint}
+The abstract provides a concise summary of the project, including the FL application,
+empirical graph modelling, variation minimisation approach, and the FL algorithms used.
+Do not include detailed numerical results. Instead, focus on problem, method, and evaluation setup.
+	\end{hint}
+\end{abstract}
+
+\begin{keywords}
+Federated learning, networks, personalised machine learning, trustworthy artificial intelligence
+\end{keywords}
+
+\begin{hint}
+	Your report must adhere to the following formatting and length requirements:
+\begin{itemize}
+	\item Do not include any information (GitHub usernames, repository links, or dataset paths)
+	           in the report that could be used to identify you.
+	\item Use the \LaTeX\ settings as defined in this file without changing margins or font sizes.
+	\item You must not modify the number or titles of sections in this template.
+	\item The report must not exceed 5 pages in total. The 5\textsuperscript{th} page must
+	contain only the references.
+\end{itemize}
+\end{hint}
+
+\begin{hint}
+You are encouraged to use terminology and notation consistent with the
+Aalto Dictionary of Machine Learning \cite{AaltoDictML}.
+The file \texttt{ml\_macros.tex} (included in this template) provides
+macros such as \texttt{\textbackslash featurevec} for the feature vector,
+\texttt{\textbackslash localparams\{i\}} for local model parameters at node $i$, etc.
+Using these macros is not mandatory, but consistent notation
+improves readability and peer review scores.
+The dictionary repository also contains 300+ reusable TikZ figures
+(FL networks, graphs, loss landscapes, etc.) that you can copy into your report.
+\qrcode[height=1cm]{https://github.com/AaltoDictionaryofML/AaltoDictionaryofML.github.io}
+\end{hint}
+
+
+\section{Introduction}
+
+\begin{hint}
+	Describe the application scenario, motivation, and learning objective of your
+	federated learning (FL) system.
+\end{hint}
+
+
+\section{Problem Formulation}
+\label{sec:pf}
+\begin{hint}
+	All projects use the same raw data source and node definition:
+	\begin{itemize}
+		\item \textbf{Raw data:} Finnish Meteorological Institute (FMI) Open Data
+		(\url{https://en.ilmatieteenlaitos.fi/open-data}).
+		\item \textbf{Nodes (fixed):} each node in the FL network is one FMI weather station.
+	\end{itemize}
+	A Python script for fetching FMI data is available here:
+	\qrcode[height=1cm]{https://github.com/alexjungaalto/FederatedLearning/blob/main/Edition2026/assets/GetFMIData.py}
+
+	\medskip
+	Everything else is \textbf{your design choice}. You must clearly
+	describe and justify:
+	\begin{itemize}
+		\item which stations you selected and why,
+		\item how edges between stations are defined and how edge weights are set
+		(e.g., geographic proximity, data similarity);
+		see \cite[Ch.~7]{Jung2025} for data-driven methods,
+		\item how local data points are derived from raw FMI measurements
+		(choice of features and labels),
+		\item what model is trained locally at each station,
+		\item how the local loss functions are defined.
+	\end{itemize}
+\end{hint}
+
+
+\section{Methodology}
+\label{sec:meth}
+\begin{hint}
+The project requires you to apply GTVMin-based methods to
+the FL application modelled in Section~\ref{sec:pf}. In this section
+you need to clearly state and explain:
+\begin{itemize}
+	\item Your choice of variation measure, e.g., $\gtvpenalty(\localparams{\nodeidx}-\localparams{\nodeidx'})$
+	for parametric models.
+	\item Your choice of FL algorithm (i.e., optimisation method for solving
+	GTVMin) and its message passing implementation.
+\end{itemize}
+You are not expected to propose novel FL algorithms; correct implementation and
+analysis of existing GTVMin-based methods is sufficient.
+\end{hint}
+
+
+\section{Numerical Experiments}
+\label{sec:experiments}
+
+\begin{hint}
+	Present quantitative results (training, validation, and test losses for each node of the FL network),
+	comparisons, and figures.
+	At a minimum, you must evaluate and compare \textbf{two distinct FL systems}.
+	These systems should differ in a \emph{meaningful design choice}, such as:
+	\begin{itemize}
+		\item different hyper-parameters of the optimisation method (e.g., regularisation strength, step size),
+		\item different graph constructions or edge weights,
+		\item different local model classes or model capacities.
+	\end{itemize}
+	Clearly explain evaluation metrics (e.g., which loss function has been used
+	for training, validation, and final evaluation on the test set) and experimental
+	settings (e.g., how data is split into train/validation/test sets and how hyper-parameters
+	are selected).
+\end{hint}
+
+\begin{hint}
+	\textbf{Figures and tables.}
+	Figures should be designed to communicate quantitative results clearly and efficiently.
+	Avoid decorative elements that do not convey information (e.g., excessive colours, 3D effects,
+	or chart junk). Axes, legends, and captions must be self-contained and precise.
+	Whenever possible, embed numerical values directly into figures or tables rather
+	than relying on verbose textual explanations. For general principles of effective
+	quantitative graphics, see \cite{TufteVDQI}.
+\end{hint}
+
+\begin{hint}
+Your submission must include a zip archive containing a single Python script along with any
+necessary data files. The script must be executable on \url{https://jupyter.cs.aalto.fi/}
+and reproduce the reported results. Minimise the use of non-standard Python packages to
+ensure ease of execution and reproducibility.
+\end{hint}
+
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+\begin{hint}
+Interpret the numerical results from Sec.~\ref{sec:experiments}.
+In particular,
+\begin{itemize}
+	\item Discuss whether the obtained results solve the problem satisfactorily.
+	\item Identify limitations of the studied FL methods and suggest potential improvements (e.g.,
+	collecting more data points or using larger local models at some nodes).
+\end{itemize}
+You can find some guidance on how to diagnose ML models in \cite[Sec.~6.6]{Jung2022}.
+\end{hint}
+
+
+
+\begin{thebibliography}{9}
+	\bibitem{Jung2025} A.~Jung, \textit{Federated Learning: From Theory to Practice}, Springer, 2026. Arxiv Preprint: \url{https://arxiv.org/abs/2505.19183}.
+	\bibitem{Jung2022} A.~Jung, \textit{Machine Learning: The Basics}, Springer, 2022. Available via Aalto Library. Preprint: \url{https://github.com/alexjungaalto/MachineLearningTheBasics/}.
+	\bibitem{AaltoDictML} A.~Jung (Editor), \textit{Aalto Dictionary of Machine Learning}, \url{https://aaltodictionaryofml.github.io/}, 2026.
+	\bibitem{TufteVDQI}
+	E.~R.~Tufte,
+	\emph{The Visual Display of Quantitative Information},
+	2nd edition, Graphics Press, 2001.
+\end{thebibliography}
+
+\end{document}
