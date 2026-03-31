@@ -124,7 +124,7 @@ you need to clearly state and explain:
 	\item Your choice of variation measure, e.g., $\gtvpenalty(\localparams{\nodeidx}-\localparams{\nodeidx'})$
 	for parametric models.
 	\item Your choice of FL algorithm (i.e., optimisation method for solving
-	GTVMin) and its message passing implementation.
+	GTVMin) and its synchronous message passing implementation.
 \end{itemize}
 You are not expected to propose novel FL algorithms; correct implementation and
 analysis of existing GTVMin-based methods is sufficient.
@@ -161,10 +161,14 @@ analysis of existing GTVMin-based methods is sufficient.
 \end{hint}
 
 \begin{hint}
-Your submission must include a zip archive containing a single Python script along with any
-necessary data files. The script must be executable on \url{https://jupyter.cs.aalto.fi/}
-and reproduce the reported results. Minimise the use of non-standard Python packages to
-ensure ease of execution and reproducibility.
+\textbf{No Python source code is required for submission.}
+Instead, the report itself must provide sufficient detail on the data source
+(e.g., which FMI stations, time range, variables), feature/label construction,
+model specification, loss functions, and algorithm hyper-parameters so that the
+numerical experiments can be \textbf{reproduced using a large language model (LLM)}
+such as Mistral Le Chat or Aleph Alpha. In particular, a reader should be able to paste the
+relevant sections of your report into an LLM and obtain code that reproduces your
+results.
 \end{hint}
 
 
