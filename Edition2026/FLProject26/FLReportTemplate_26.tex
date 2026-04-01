@@ -43,13 +43,13 @@
 \begin{abstract}
 	\begin{hint}
 The abstract provides a concise summary of the project, including the FL application,
-empirical graph modelling, variation minimisation approach, and the FL algorithms used.
+empirical graph modelling, variation minimization approach, and the FL algorithms used.
 Do not include detailed numerical results. Instead, focus on problem, method, and evaluation setup.
 	\end{hint}
 \end{abstract}
 
 \begin{keywords}
-Federated learning, networks, personalised machine learning, trustworthy artificial intelligence
+Federated learning, networks, personalized machine learning, trustworthy artificial intelligence
 \end{keywords}
 
 \begin{hint}
@@ -83,6 +83,12 @@ The dictionary repository also contains 300+ reusable TikZ figures
 \begin{hint}
 	Describe the application scenario, motivation, and learning objective of your
 	federated learning (FL) system.
+	Your introduction should include:
+	\begin{itemize}
+		\item a clear \textbf{motivation} for why FL is suitable for your application,
+		\item sufficient \textbf{background} on the problem domain and related work,
+		\item a concise \textbf{outline} of the report structure (one sentence per section).
+	\end{itemize}
 \end{hint}
 
 
@@ -123,7 +129,7 @@ you need to clearly state and explain:
 \begin{itemize}
 	\item Your choice of variation measure, e.g., $\gtvpenalty(\localparams{\nodeidx}-\localparams{\nodeidx'})$
 	for parametric models.
-	\item Your choice of FL algorithm (i.e., optimisation method for solving
+	\item Your choice of FL algorithm (i.e., optimization method for solving
 	GTVMin) and its synchronous message passing implementation.
 \end{itemize}
 You are not expected to propose novel FL algorithms; correct implementation and
@@ -138,12 +144,14 @@ analysis of existing GTVMin-based methods is sufficient.
 	Present quantitative results (training, validation, and test losses for each node of the FL network),
 	comparisons, and figures.
 	At a minimum, you must evaluate and compare \textbf{two distinct FL systems}.
-	These systems should differ in a \emph{meaningful design choice}, such as:
+	These systems must differ in a \emph{structural design choice}, such as:
 	\begin{itemize}
-		\item different hyper-parameters of the optimisation method (e.g., regularisation strength, step size),
 		\item different graph constructions or edge weights,
-		\item different local model classes or model capacities.
+		\item different local model classes or model capacities,
+		\item different local loss functions.
 	\end{itemize}
+	Varying only hyper-parameters (e.g., regularization strength or step size)
+	does \textbf{not} count as a distinct FL system.
 	Clearly explain evaluation metrics (e.g., which loss function has been used
 	for training, validation, and final evaluation on the test set) and experimental
 	settings (e.g., how data is split into train/validation/test sets and how hyper-parameters
@@ -166,7 +174,7 @@ Instead, the report itself must provide sufficient detail on the data source
 (e.g., which FMI stations, time range, variables), feature/label construction,
 model specification, loss functions, and algorithm hyper-parameters so that the
 numerical experiments can be \textbf{reproduced using a large language model (LLM)}
-such as Mistral Le Chat or Aleph Alpha. In particular, a reader should be able to paste the
+such as Mistral Le Chat, Aleph Alpha, or DeepSeek via Ollama. In particular, a reader should be able to paste the
 relevant sections of your report into an LLM and obtain code that reproduces your
 results.
 \end{hint}
