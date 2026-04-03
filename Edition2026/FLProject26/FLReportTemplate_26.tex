@@ -141,7 +141,7 @@ analysis of existing GTVMin-based methods is sufficient.
 \label{sec:experiments}
 
 \begin{hint}
-	Present quantitative results (training, validation, and test losses for each node of the FL network),
+	Present quantitative results (training, validation, and test losses),
 	comparisons, and figures.
 	At a minimum, you must evaluate and compare \textbf{two distinct FL systems}.
 	These systems must differ in a \emph{structural design choice}, such as:
@@ -155,7 +155,9 @@ analysis of existing GTVMin-based methods is sufficient.
 	Clearly explain evaluation metrics (e.g., which loss function has been used
 	for training, validation, and final evaluation on the test set) and experimental
 	settings (e.g., how data is split into train/validation/test sets and how hyper-parameters
-	are selected).
+	are selected). Briefly explain how the nature of the data points was taken into
+	account when choosing the splitting strategy (e.g., chronological splitting
+	for time-series data).
 \end{hint}
 
 \begin{hint}
@@ -170,13 +172,19 @@ analysis of existing GTVMin-based methods is sufficient.
 
 \begin{hint}
 \textbf{No Python source code is required for submission.}
-Instead, the report itself must provide sufficient detail on the data source
-(e.g., which FMI stations, time range, variables), feature/label construction,
-model specification, loss functions, and algorithm hyper-parameters so that the
-numerical experiments can be \textbf{reproduced using a large language model (LLM)}
-such as Mistral Le Chat, Aleph Alpha, or DeepSeek via Ollama. In particular, a reader should be able to paste the
-relevant sections of your report into an LLM and obtain code that reproduces your
-results.
+Instead, the report itself must provide sufficient detail so that the
+FL algorithm can be \textbf{reimplemented using a large language model (LLM)}
+such as Mistral Le Chat, Aleph Alpha, or DeepSeek via Ollama.
+In particular, a reader should be able to paste the relevant sections
+into an LLM and obtain working code. Ensure you specify:
+\begin{itemize}
+	\item \textbf{Data:} exact FMI station IDs (or names), time range, measured
+	variables, and how features/labels are derived from raw measurements.
+	\item \textbf{FL network:} which stations are connected and how edge weights
+	are computed (with enough detail to recompute them).
+	\item \textbf{Algorithm:} the update equation, learning rate, number of
+	iterations, regularization parameter, and initialization.
+\end{itemize}
 \end{hint}
 
 
