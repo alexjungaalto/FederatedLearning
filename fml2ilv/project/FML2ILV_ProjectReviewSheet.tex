@@ -1,0 +1,162 @@
+% !TeX spellcheck = en_GB
+\documentclass{article}
+\usepackage{spconf,amsmath,bm,graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}   
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{pdfplots}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{shapes}
+\usepackage{fontawesome5}
+\usetikzlibrary{shadows}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{enumitem}
+
+\title{Review Questions for Project Reports}
+\name{FML2ILV -- Federated Machine Learning}
+\address{}
+
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		This document contains the peer review questions for evaluating project reports in the FML2ILV Federated Machine Learning course. The evaluation criteria ensure that the project report aligns with the provided instructions and guidelines.
+	\end{abstract}
+	
+	\section{Review Questions}
+	
+	\textbf{Instructions:} The following review questions assess the quality and completeness of the project report. Each question follows a clear grading criterion based on the project report instructions.
+	
+	\subsection{Title and Introduction}
+	\begin{enumerate}
+		\item \textbf{Is the title informative and specific?}  
+		\begin{itemize}
+			\item 1p – The title clearly describes the project’s focus.
+			\item 0p – The title is vague or misleading.
+		\end{itemize}
+		
+		\item \textbf{Does the introduction present a clear motivation for the FL application?}  
+		\begin{itemize}
+			\item 1p – The introduction defines the FL application in a real-world scenario with networked devices training personalized models.
+			\item 0p – The introduction lacks clear motivation or background.
+		\end{itemize}
+		
+		\item \textbf{Does the introduction present sufficient background for the FL application?}  
+		\begin{itemize}
+			\item 1p – The introduction provides sufficient background, including a discussion of (lack of) existing 
+			work on this application. 
+			\item 0p – The introduction provides too little background. 
+		\end{itemize}
+		
+		\item \textbf{Does the introduction provide a concise outline of the report structure?}  
+		\begin{itemize}
+			\item 1p – The report outline is clearly stated.
+			\item 0p – The structure is unclear or missing.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{Problem Formulation}
+   		\begin{enumerate}[resume]
+		\item \textbf{Does the report clearly define the nodes and (weighted) edges of the FL network, and justify the choice of station subset?}
+		\begin{itemize}
+			\item 2p – Nodes (including a justification of which stations were selected and why), edges, and their weights are clearly explained and justified.
+			\item 1p – Some parts of the FL network are described but justification of the station subset or edge weights is missing.
+			\item 0p – Description of FL network is insufficient.
+		\end{itemize}
+
+		\item \textbf{Does the report describe and justify the choice of features and labels?}
+		\begin{itemize}
+			\item 2p – Features and labels are clearly defined \emph{and} their choice is explicitly justified (e.g.\ why these measurements, what prediction target, which time window).
+			\item 1p – Features and labels are stated but the choice is not justified.
+			\item 0p – Features or labels are unclear or missing.
+		\end{itemize}
+
+		\item \textbf{Are the local models properly described?}
+		\begin{itemize}
+			\item 1p – The report specifies the local models.
+			\item 0p – The description of models is unclear or missing.
+		\end{itemize}
+
+		\item \textbf{Are the local loss functions properly described and justified?}
+		\begin{itemize}
+			\item 2p – The report specifies the loss function \emph{and} justifies the choice (e.g.\ why MSE vs.\ MAE).
+			\item 1p – The loss function is stated but the choice is not justified.
+			\item 0p – The description of loss functions is unclear or missing.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{Methods}
+		\begin{enumerate}[resume]
+		\item \textbf{Does the report justify the choice of the variation measure for FL?}  
+		\begin{itemize}
+			\item 2p – The variation measure is clearly explained and justified.
+			\item 1p – The measure is mentioned but lacks justification.
+			\item 0p – The variation measure is unclear or missing.
+		\end{itemize}
+		
+		\item \textbf{Does the report specify and motivate the federated learning algorithm?}  
+		\begin{itemize}
+			\item 2p – The algorithm is well described, including message passing implementation.
+			\item 1p – The algorithm is stated but lacks motivation.
+			\item 0p – The algorithm description is missing or unclear.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{Numerical Experiments}
+		\begin{enumerate}[resume]
+		\item \textbf{Does the report explain the data source used for the experiments?}  
+		\begin{itemize}
+			\item 1p – Yes, the reports clearly states the data source so that I would be able 
+			to reproduce the data gathering myself.
+			\item 0p –No, the description of data source is absent or lacking. 
+		\end{itemize}
+		
+		\item \textbf{Does the report explain model validation and selection?}  
+		\begin{itemize}
+			\item 2p – Model validation strategies are clearly explained (e.g., cross-validation).
+			\item 1p – Some validation is discussed but lacks clarity.
+			\item 0p – Model validation is missing.
+		\end{itemize}
+		
+		\item \textbf{Are the training, validation, and test losses reported and discussed?}  
+		\begin{itemize}
+			\item 2p – The report presents loss values for training, validation, and test sets with analysis.
+			\item 1p – Loss values are provided but lack discussion.
+			\item 0p – Loss reporting is unclear or missing.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{Conclusion and Reproducibility}
+\begin{enumerate}[resume]
+		\item \textbf{Does the conclusion summarize key findings and suggest improvements?}  
+		\begin{itemize}
+			\item 2p – The conclusion summarizes key results and suggests future improvements.
+			\item 1p – The conclusion is present but lacks depth.
+			\item 0p – The conclusion is unclear or missing.
+		\end{itemize}
+		
+		\item \textbf{Is the report accompanied by a reproducible Python notebook?}  
+		\begin{itemize}
+			\item 2p – The notebook is included and allows full reproducibility on \url{https://jupyter.cs.aalto.fi/}.
+			\item 1p – Some results are reproducible, but details are missing.
+			\item 0p – The notebook is missing or insufficient for reproduction.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{Plagiarism Check}
+     \begin{enumerate}[resume]
+		\item \textbf{Does the report contain existing material without proper citation?}  
+		\begin{itemize}
+			\item 1p – No signs of plagiarism; all sources are correctly cited.
+			\item -100p – Yes, there is suspected plagiarism (please report to the course staff for investigation).
+		\end{itemize}
+	\end{enumerate}
+	
+\end{document}

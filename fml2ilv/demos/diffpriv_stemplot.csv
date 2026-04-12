@@ -1,0 +1,24 @@
+idx,station,tmax,tmax_noisy
+1,Jomala Jomalaby,5.9,6.814151239263294
+2,Hammarland Märket,2.5,-0.6199523187214866
+3,Kokkola Santahaka,2.1,4.351353587419371
+4,Rauma Pyynpää,1.9,4.721694149173642
+5,Espoo Tapiola,1.7,-4.153105565961509
+6,Sipoo Itätoukki,1.6,-2.306538520586954
+7,Kouvola Anjala,1.5,1.883521209501856
+8,Vantaa Helsinki-Vantaan lentoasema,1.3,0.3512722229692534
+9,Kaarina Yltöinen,1.2,1.1495965274871336
+10,Alajärvi Möksy,1.0,-1.55913178272074
+11,Lappeenranta Konnunsuo,0.9,3.5381939245884855
+12,Puumala kirkonkylä,0.8,3.1333758062868453
+13,Pyhäjärvi Ojakylä,0.6,0.7980920926836481
+14,Ilomantsi Mekrijärvi,0.5,3.881723620904099
+15,Hämeenlinna Lammi Pappila,0.4,1.802528026756137
+16,Hailuoto Keskikylä,0.1,-2.4778773886497145
+17,Kemi Kemi-Tornio lentoasema,-0.1,1.0062523522474964
+18,Taivalkoski kirkonkylä,-0.6,-3.4766478024869967
+19,Kuusamo Juuma,-1.3,1.3353509039218177
+20,Kittilä Lompolonvuoma,-2.3,-2.4497777329587587
+21,Kittilä Matorova,-3.0,-3.5545870906357817
+22,Inari Saariselkä matkailukeskus,-4.3,-6.342788633211824
+23,Utsjoki Kevo,-6.1,-2.432375983977909

@@ -1,0 +1,200 @@
+idx,station,tmax,tmax_noisy
+1,Jomala Jomalaby,5.9,6.814151239263294
+2,Jomala Maarianhamina lentoasema,5.2,2.0800476812785136
+3,Lumparland Långnäs satama,5.1,7.351353587419371
+4,Kumlinge kirkonkylä,4.2,7.0216941491736415
+5,Kaskinen Sälgrund,3.9,-1.953105565961509
+6,Maarianhamina Länsisatama,3.4,-0.5065385205869544
+7,Seinäjoki Pelmaa,2.9,3.283521209501856
+8,Pyhtää lentokenttä,2.8,1.851272222969253
+9,Kustavi Isokari,2.7,2.649596527487134
+10,Hammarland Märket,2.5,-0.059131782720740045
+11,Vaasa Klemettilä,2.5,5.138193924588485
+12,Pori rautatieasema,2.4,4.733375806286845
+13,Vaasa lentoasema,2.4,2.598092092683648
+14,Pori Tahkoluoto satama,2.3,5.681723620904099
+15,Pori lentoasema,2.3,3.702528026756137
+16,Kauhajoki Kuja-Kokko,2.2,-0.37787738864971443
+17,Porvoo Kilpilahti satama,2.2,3.3062523522474967
+18,Lemland Nyhamn,2.1,-0.7766478024869965
+19,Kokkola Santahaka,2.1,4.735350903921818
+20,Rauma Kylmäpihlaja,2.1,1.9502222670412415
+21,Kauhava lentokenttä,2.1,1.5454129093642184
+22,Helsinki Kaisaniemi,2.0,-0.042788633211824134
+23,Kruunupyy Kokkola-Pietarsaari lentoasema,2.0,5.66762401602209
+24,Loviisa Orrengrund,2.0,1.5364115537935934
+25,Hanko Russarö,2.0,0.7150165335106784
+26,Porvoo Harabacka,1.9,0.843599348535311
+27,Kemiönsaari Vänö,1.9,3.496927556660046
+28,Rauma Pyynpää,1.9,2.996332193092235
+29,Kristiinankaupunki Majakka,1.9,3.138197834787965
+30,Helsinki Vuosaari satama,1.9,3.192463009023648
+31,Hanko Tvärminne,1.9,8.324942802611384
+32,Maalahti Strömmingsbådan,1.8,0.5807549508461534
+33,Helsinki Kumpula,1.8,0.26327181278538814
+34,Kokemäki Tulkkila,1.8,-0.6413181847436331
+35,Hanko Tulliniemi,1.8,3.647938267726487
+36,Salo Kärkkä,1.8,5.186916878162675
+37,Espoo Tapiola,1.7,1.3581576270353748
+38,Helsinki Malmi lentokenttä,1.7,-0.8204694308875842
+39,Raasepori Jussarö,1.7,-0.7734436470737187
+40,Helsinki Harmaja,1.7,3.6517783634741035
+41,Kökar Bogskär,1.7,3.929762513610327
+42,Kotka Haapasaari,1.7,3.329462804915585
+43,Porvoo Kalbådagrund,1.7,-0.2965291218660828
+44,Ilmajoki Seinäjoki lentoasema,1.7,2.396483969200159
+45,Virolahti Koivuniemi,1.6,1.9500574274221847
+46,Sipoo Itätoukki,1.6,2.256065790187039
+47,Savonlinna lentoasema,1.6,4.214286333844569
+48,Rantasalmi Rukkasluoto,1.6,2.270786646324047
+49,Inkoo Jakobramsjö,1.6,3.6367406892156846
+50,Parainen Utö,1.6,1.8027372084666744
+51,Kemiönsaari Kemiö,1.6,2.4673581960699527
+52,Kokkola Tankar,1.6,3.4938646775156212
+53,Kirkkonummi Mäkiluoto,1.5,-2.8714674595669996
+54,Inkoo Bågaskär,1.5,0.540986350928096
+55,Kouvola Anjala,1.5,0.08888203712161347
+56,Kotka Rankki,1.5,-0.4166335447300258
+57,Varkaus Kosulanniemi,1.5,0.6745732463199487
+58,Vihti Maasoja,1.4,5.8848239337031885
+59,Lohja Porla,1.4,-1.1974933470797295
+60,Juuka Niemelä,1.4,4.304835063774442
+61,Parikkala Koitsanlahti,1.4,-3.648609314847415
+62,Liperi Joensuu lentoasema,1.4,0.39534491004267536
+63,Korsnäs Bredskäret,1.4,1.8882591953150167
+64,Vantaa Helsinki-Vantaan lentoasema,1.3,3.058666994077835
+65,Viitasaari Haapaniemi,1.3,3.433679739378565
+66,Porvoo Emäsalo,1.3,3.680041705599776
+67,Savonlinna Punkaharju Laukansaari,1.3,0.2538247832546874
+68,Siilinjärvi Kuopio lentoasema,1.3,-0.08705537799370133
+69,Liperi Tuiskavanluoto,1.2,3.7739276437714615
+70,Kuopio Savilahti,1.2,0.6260870253551553
+71,Mustasaari Valassaaret,1.2,-2.627058970013765
+72,Ylivieska lentokenttä,1.2,-2.1998616420104415
+73,Kaarina Yltöinen,1.2,-1.558356858004834
+74,Jokioinen Ilmala,1.2,2.691482232161292
+75,Joensuu Linnunlahti,1.2,1.6272772082116957
+76,Toholampi Laitala,1.2,3.2714560622033044
+77,Helsinki Helsingin majakka,1.2,-0.08175793900960282
+78,Mäntsälä Hirvihaara,1.2,1.6756190732301426
+79,Kuopio Ritoniemi,1.1,2.97677118190201
+80,Tohmajärvi Kemie,1.0,0.0719603808392848
+81,Turku Artukainen,1.0,2.3703257126722344
+82,Alajärvi Möksy,1.0,-0.9857778231999537
+83,Raahe Lapaluoto satama,1.0,-0.08916153969521545
+84,Pietarsaari Kallan,1.0,-0.1452136819949872
+85,Parainen Fagerholm,1.0,-2.587518936767119
+86,Siikajoki Ruukki,0.9,2.3609174423567456
+87,Lappeenranta Hiekkapakka,0.9,-0.5082070206081716
+88,Turku Rajakari,0.9,0.9374823561830623
+89,Oulu lentoasema,0.9,2.342239976717727
+90,Tampere Siilinkari,0.9,2.239593528089832
+91,Lappeenranta Konnunsuo,0.9,2.896155326918359
+92,Kalajoki Ulkokalla,0.9,0.6045435464717293
+93,Kouvola Utti lentoasema,0.9,-0.36989493613246116
+94,Jyväskylä lentoasema AWOS,0.9,0.6608453672808029
+95,Juva Partala,0.9,-4.162003301874089
+96,Oulu Vihreäsaari satama,0.8,-3.541337417269262
+97,Turku lentoasema,0.8,-3.168098837063207
+98,Kajaani lentoasema,0.8,-2.1917404828044456
+99,Hyvinkää Hyvinkäänkylä,0.8,1.99932268017031
+100,Puumala kirkonkylä,0.8,-1.9164371660801824
+101,Nurmes Valtimo,0.8,-0.33448766211816916
+102,Vesanto kirkonkylä,0.8,4.697684893358196
+103,Oulu Kaukovainio,0.8,-0.26879191318427775
+104,Hämeenlinna Katinen,0.7,2.91254670540126
+105,Tampere Härmälä,0.7,-2.100853040029631
+106,Kajaani Petäisenniska,0.7,0.08368732639710985
+107,Salo Kiikala lentokenttä,0.7,-2.1500661647317436
+108,Lieksa Lampela,0.6,-0.4170992277016875
+109,Pyhäjärvi Ojakylä,0.6,3.1209244123721867
+110,Lappeenranta lentoasema,0.6,-4.581961269577047
+111,Raahe Nahkiainen,0.6,1.903270930637572
+112,Lahti Sopenkorpi,0.6,1.3132068069968337
+113,Pirkkala Tampere-Pirkkala lentoasema,0.6,-1.1824498670903831
+114,Sotkamo Tuhkakylä,0.6,-3.7381735631653634
+115,Heinola Asemantaus,0.5,0.7163885231416085
+116,Rovaniemi rautatieasema,0.5,-1.0884781271914072
+117,Karvia Alkkia,0.5,1.1980286340641118
+118,Ilomantsi Mekrijärvi,0.5,0.5655564365703286
+119,Haapavesi Mustikkamäki,0.5,5.3053366739627466
+120,Hattula Lepaa,0.5,-0.2180668824190728
+121,Virrat Äijänneva,0.5,-2.570492477865595
+122,Kuopio Maaninka,0.5,1.0378269048689486
+123,Asikkala Pulkkilanharju,0.5,1.1599900519152955
+124,Espoo Nuuksio,0.5,4.577562725721309
+125,Luhanka Judinsalo,0.5,3.0053337377437357
+126,Jämsä Halli lentoasema,0.4,1.470613177448528
+127,Hämeenlinna Lammi Pappila,0.4,4.789908673658686
+128,Sotkamo Kuolaniemi,0.4,-3.166289162968553
+129,Ähtäri Inha,0.4,-1.5192545982492431
+130,Halsua Purola,0.4,-2.379727824216575
+131,Kankaanpää Niinisalo lentokenttä,0.4,-0.7694294094673039
+132,Mikkeli Lentoasema AWOS,0.3,-3.8300584426689266
+133,Tervola Loue,0.3,2.205452840443213
+134,Rautavaara Ylä-Luosta,0.2,-0.4666680912963201
+135,Hailuoto Marjaniemi,0.1,-4.3124188835079735
+136,Hailuoto Keskikylä,0.1,-2.9467372436226245
+137,Juupajoki Hyytiälä,0.1,1.040541542350586
+138,Multia Karhila,0.1,2.6143797036831433
+139,Somero Salkola,0.1,6.090192675075359
+140,Rovaniemi Apukka,0.1,8.841587398021987
+141,Vaala Pelso,0.0,1.243228299827989
+142,Kemi Ajos,-0.1,-3.0686143600955926
+143,Ilomantsi Pötsönvaara,-0.1,-6.496138842193927
+144,Kuhmo Kalliojoki,-0.1,0.7031343870315074
+145,Kemi Kemi-Tornio lentoasema,-0.1,-2.538823285930978
+146,Joutsa Savenaho,-0.1,-1.346071780539056
+147,Kemi I majakka,-0.2,-2.036290397179424
+148,Pello kirkonkylä,-0.3,-0.7223726592491557
+149,Kuusamo Kiutaköngäs,-0.4,2.7979406923629306
+150,Tornio Kaakkuri,-0.4,0.07114570233603384
+151,Vieremä Kaarakkala,-0.5,-0.9759045111160649
+152,Pudasjärvi lentokenttä,-0.5,-3.606961258477435
+153,Ylitornio Meltosjärvi,-0.5,-5.524048834113071
+154,Taivalkoski kirkonkylä,-0.6,-2.0589237272199927
+155,Suomussalmi Pesiö,-0.6,-0.7613476524549614
+156,Kuusamo lentoasema,-0.6,4.70378974073965
+157,Rovaniemi lentoasema AWOS,-0.6,-0.20917643558134247
+158,Ranua lentokenttä,-0.8,2.1482185330691728
+159,Kemijärvi lentokenttä,-1.0,-2.497886795617456
+160,Kuusamo Ruka Talvijärvi,-1.1,-4.654831299251073
+161,Salla kirkonkylä,-1.1,-3.9953502866971156
+162,Sodankylä Tähtelä,-1.2,-3.3756781936072597
+163,Kuusamo Juuma,-1.3,5.085409197305494
+164,Puolanka Paljakka,-1.4,-3.8641600376731584
+165,Kittilä Pakatti,-1.6,0.9154676112090345
+166,Kittilä lentoasema,-1.7,-4.408781534261079
+167,Salla Naruska,-1.7,1.0947190386227323
+168,Savukoski kirkonkylä,-1.9,-0.7451471016824105
+169,Inari Nellim,-2.0,-2.4699136929742713
+170,Muonio Oustajärvi,-2.0,-2.122287578406302
+171,Savukoski Tulppio,-2.1,-4.0643630862881714
+172,Kittilä Lompolonvuoma,-2.3,-0.9617833955537582
+173,Kuusamo Rukatunturi,-2.4,-3.76495044102234
+174,Inari Ivalo lentoasema,-2.8,-6.476817291301744
+175,Pelkosenniemi Pyhätunturi,-2.9,-6.733812722958858
+176,Salla Värriötunturi,-2.9,-2.3822362468336413
+177,Inari Raja-Jooseppi Kontiojärvi,-2.9,1.8372737692313046
+178,Enontekiö lentoasema,-3.0,-2.5200251592796854
+179,Kittilä Pokka,-3.0,-3.355914978329648
+180,Sodankylä Lokka,-3.0,-2.1425215811923715
+181,Kittilä Matorova,-3.0,0.9180052251204742
+182,Kittilä Kenttärova,-3.0,-2.341852495908431
+183,Inari Raja-Jooseppi,-3.3,-4.532781692501212
+184,Enontekiö Näkkälä,-3.9,-0.5811338698203334
+185,Sodankylä Vuotso,-3.9,-2.6137306846151596
+186,Muonio Sammaltunturi,-4.1,0.5072679759879763
+187,Enontekiö Kilpisjärvi kyläkeskus,-4.1,-3.5502966883342815
+188,Inari Kirakkajärvi,-4.1,-7.773407095161501
+189,Inari Angeli Lintupuoliselkä,-4.2,-8.304477597736994
+190,Inari Saariselkä matkailukeskus,-4.3,0.6527837966937486
+191,Inari Seitalaassa,-4.6,0.570997162349892
+192,Inari Kaamanen,-4.7,-5.238557639847802
+193,Inari Väylä,-4.7,-5.849561963407964
+194,Inari Saariselkä Kaunispää,-5.2,-0.8156671232733936
+195,Muonio Laukukero,-5.2,-8.521137046130464
+196,Enontekiö Kilpisjärvi Saana,-5.5,-8.18418105686748
+197,Utsjoki Kevo Kevojärvi,-5.7,-3.770019615932867
+198,Utsjoki Nuorgam,-6.1,-7.283815368578768
+199,Utsjoki Kevo,-6.1,-6.115365600160214

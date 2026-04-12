@@ -1,0 +1,176 @@
+% !TeX spellcheck = en_GB
+% Sample Project Report – Federated Learning with FMI Weather Data
+
+\documentclass[9pt]{article}
+\usepackage{spconf,amsmath,bm,graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref, cleveref, tcolorbox}
+\usepackage{algorithm, algorithmic}
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{subcaption, adjustbox}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\title{Personalized Federated Learning for Temperature Prediction Using FMI Weather Stations}
+\name{Fistname Lastname}
+\address{Aalto University}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		We study a federated learning (FL) application for short-term temperature prediction
+		using weather observations from the Finnish Meteorological Institute (FMI).
+		Each weather station is modeled as a node in an FL network and learns a local regression
+		model from its own measurements.
+		To exploit spatial correlations between nearby stations while preserving data locality,
+		we employ a generalized total variation minimization (GTVMin) approach that promotes
+		similarity between models of neighboring nodes.
+		We implement a message-passing algorithm to solve the resulting optimization problem
+		and evaluate its performance on real FMI data.
+		Our results show that the proposed FL method improves prediction accuracy compared
+		to purely local training, while allowing for location-specific personalization.
+	\end{abstract}
+	
+	\textbf{Keywords:} federated learning, weather prediction, FMI data, personalized models, GTVMin
+	
+	\section{Introduction}
+	\label{sec:intro}
+	
+	Accurate short-term weather prediction is essential for applications such as agriculture,
+	energy management, and transportation.
+	In practice, weather data are collected by geographically distributed stations that operate
+	independently and may not be able or willing to share raw measurements.
+	This setting naturally motivates the use of federated learning (FL), where models are trained
+	collaboratively without centralizing data.
+	
+	In this project, we consider temperature prediction using data from the Finnish Meteorological
+	Institute (FMI).
+	Each weather station collects local observations such as temperature, humidity, and wind speed.
+	While nearby stations are expected to exhibit similar weather patterns, local effects
+	(e.g., coastal proximity or elevation) lead to station-specific behavior.
+	This makes personalized FL methods particularly suitable for the task.
+	
+	Previous work on FL has focused on global models trained via parameter averaging.
+	More recent approaches model FL systems as networks and incorporate graph-based regularization
+	to balance collaboration and personalization.
+	In this report, we adopt the GTVMin framework to couple local models through an empirical graph
+	constructed from station locations.
+	
+	The remainder of this report is structured as follows.
+	Section~\ref{sec:pf} formulates the FL problem.
+	Section~\ref{sec:methods} describes the proposed method and algorithm.
+	Section~\ref{sec:experiments} presents numerical results.
+	Section~\ref{sec:conclusion} concludes the report.
+	
+	\section{Problem Formulation}
+	\label{sec:pf}
+	
+	We model the application as an FL network with $N$ nodes.
+	
+	{\bf Nodes.}
+	Each node represents one FMI weather station. 
+	The node holds historical observations collected at that station only.
+	
+	{\bf Local models.}
+	At node $i$, we train a linear regression model
+	\[
+	\hat{y}^{(i)} = \mathbf{w}^{(i)\top} \mathbf{x},
+	\]
+	where $\mathbf{x}$ contains features such as past temperature, humidity, and wind speed,
+	and $\hat{y}^{(i)}$ is the predicted temperature at the next time step.
+	
+   {\bf Loss functions.}
+	Each node uses a local mean squared error (MSE) loss
+	\[
+	f_i(\mathbf{w}^{(i)}) =
+	\frac{1}{|\mathcal{D}_i|}
+	\sum_{(\mathbf{x},y)\in \mathcal{D}_i}
+	\bigl(y - \mathbf{w}^{(i)\top}\mathbf{x}\bigr)^2,
+	\]
+	where $\mathcal{D}_i$ denotes the local dataset at node $i$.
+	
+	{\bf Edges.}
+	Edges between nodes are defined based on geographical proximity.
+	We connect each station to its $k$ nearest neighboring stations using Euclidean distance
+	between coordinates.
+	Edge weights are chosen as a decreasing function of distance, assigning larger weights
+	to closer stations.
+	
+	\section{Methods}
+	\label{sec:methods}
+	
+	We apply a GTVMin-based formulation to jointly learn personalized local models.
+	The optimization problem is given by
+	\[
+	\min_{\{\mathbf{w}^{(i)}\}}
+	\sum_{i=1}^N f_i(\mathbf{w}^{(i)})
+	+ \lambda \sum_{(i,i')\in \mathcal{E}}
+	\phi\!\left(\mathbf{w}^{(i)} - \mathbf{w}^{(i')}\right),
+	\]
+	where $\mathcal{E}$ denotes the set of edges in the FL network.
+	
+	{\bf Variation measure.}
+	We choose the squared $\ell_2$ norm
+	\[
+	\phi(\mathbf{w}^{(i)} - \mathbf{w}^{(i')})
+	= \|\mathbf{w}^{(i)} - \mathbf{w}^{(i')}\|_2^2,
+	\]
+	which encourages smooth variation of model parameters across neighboring stations.
+	
+	{\bf FL algorithm.}
+	The problem is solved using a message-passing algorithm derived from gradient-based
+	optimization.
+	Each node alternates between a local gradient step on its loss function and an
+	aggregation step where it exchanges parameter information with neighboring nodes.
+	This implementation avoids sharing raw weather data and only communicates model updates.
+	
+	\section{Numerical Experiments}
+	\label{sec:experiments}
+	
+	{\bf Data.}
+	We use publicly available FMI open data, including hourly measurements of temperature,
+	humidity, and wind speed from multiple weather stations across Finland.
+	The dataset is split into training, validation, and test sets in chronological order.
+	
+	{\bf Model selection and validation.}
+	The regularization parameter $\lambda$ and the number of neighbors $k$ are selected using
+	validation data.
+	We monitor training and validation losses to detect overfitting.
+	
+	{\bf Results.}
+	Compared to purely local training, the proposed FL method achieves lower test MSE at most
+	stations.
+	Stations with limited local data benefit most from collaboration, while the method still
+	preserves station-specific differences in coastal and inland regions.
+	
+	\section{Conclusion}
+	\label{sec:conclusion}
+	
+	We investigated a personalized FL approach for temperature prediction using FMI weather data.
+	By modeling weather stations as nodes in an FL network and applying GTVMin-based regularization,
+	we successfully leveraged spatial correlations while maintaining local autonomy.
+	
+	The results demonstrate improved predictive performance compared to local-only models.
+	Limitations of this study include the use of simple linear models and static graph
+	construction.
+	Future work could explore nonlinear models, adaptive graphs, and additional meteorological
+	variables.
+	
+	\begin{thebibliography}{9}
+		\bibitem{Jung2025}
+		A. Jung,
+		\textit{Federated Learning: From Theory to Practice},
+		Aalto, 2025.
+		Available:
+		\url{https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FLBook.pdf}.
+		
+		\bibitem{Jung2022}
+		A. Jung,
+		\textit{Machine Learning: The Basics},
+		Springer, 2022.
+	\end{thebibliography}
+	
+\end{document}

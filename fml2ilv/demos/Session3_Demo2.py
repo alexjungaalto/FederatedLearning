@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Session3_Demo1.py
+Session3_Demo2.py
 -----------------
-Single-device gradient descent demo: predict tmax from tmin using a linear
-model  tmax ≈ w1 + w2 * tmin  trained on Helsinki daily temperature data.
+Same as Session3_Demo1.py but with feature normalization (z-score).
+Demonstrates how standardizing tmin reduces the condition number κ
+and the contraction rate, making GD converge much faster.
 
 Two plots are updated after every key press:
   Left  — scatter of data with the current hypothesis line
@@ -107,9 +108,15 @@ def fetch_or_load():
 tmin, tmax = fetch_or_load()
 m = len(tmin)
 
-# Build design matrix (no normalisation — use raw tmin)
-X = np.column_stack([np.ones(m), tmin])   # (m, 2)
-y = tmax                                   # (m,)
+# Feature normalization (z-score): x̃ = (x - μ) / σ
+# This makes X^T X ≈ m I, so κ ≈ 1 and GD converges fast.
+tmin_mean  = tmin.mean()
+tmin_std   = tmin.std()
+tmin_norm  = (tmin - tmin_mean) / tmin_std      # zero mean, unit variance
+
+# Build design matrix with normalized feature
+X = np.column_stack([np.ones(m), tmin_norm])    # (m, 2) — column of 1s for intercept
+y = tmax                                         # (m,) — target vector
 
 # ── Learning rate from the spectrum of X^T X ─────────────────────────────────
 # The Hessian of L is  H = (2/m) X^T X.
@@ -152,11 +159,11 @@ def gd_step(w):
 # Grid in weight space, centred on the optimum.
 
 GRID_N     = 120
-w1_margin  = 4 * abs(w_star[0])  + 2.0    # how far from w* to extend the grid
+w1_margin  = 4 * abs(w_star[0])  + 2.0
 w2_margin  = 4 * abs(w_star[1])  + 1.0
 w1_grid    = np.linspace(w_star[0] - w1_margin, w_star[0] + w1_margin, GRID_N)
 w2_grid    = np.linspace(w_star[1] - w2_margin, w_star[1] + w2_margin, GRID_N)
-W1g, W2g   = np.meshgrid(w1_grid, w2_grid)  # 2D coordinate matrices for contourf
+W1g, W2g   = np.meshgrid(w1_grid, w2_grid)
 L_grid     = np.array([[loss(np.array([a, b])) for a in w1_grid] for b in w2_grid])
 
 # ── Initialisation ────────────────────────────────────────────────────────────
@@ -169,23 +176,24 @@ trajectory = [w.copy()]
 
 plt.ion()
 fig, (ax_data, ax_param) = plt.subplots(1, 2, figsize=(13, 5))
-fig.suptitle("Gradient Descent — Single Device (Helsinki)", fontsize=12, fontweight="bold")
+fig.suptitle("Gradient Descent — Single Device (Helsinki, normalized)", fontsize=12, fontweight="bold")
 plt.tight_layout(rect=[0, 0, 1, 0.93])
 
-# Range for hypothesis line
+# Range for hypothesis line (original tmin space)
 tmin_line = np.linspace(tmin.min() - 2, tmin.max() + 2, 200)
+tmin_line_norm = (tmin_line - tmin_mean) / tmin_std
 
 def draw(step_idx):
     """Redraw both panels for the current weight vector w."""
 
-    # ── Left: data + hypothesis ───────────────────────────────────────────
+    # ── Left: data + hypothesis (original tmin space) ────────────────────
     ax_data.cla()
     ax_data.scatter(tmin, tmax, color="#1f77b4", alpha=0.5, s=20, zorder=3,
                     label=f"Helsinki 2024  (m={m})")
-    ax_data.plot(tmin_line, w[0] + w[1] * tmin_line,
+    ax_data.plot(tmin_line, w[0] + w[1] * tmin_line_norm,
                  color="crimson", lw=2, zorder=4,
                  label=f"$w_1={w[0]:.2f},\\; w_2={w[1]:.2f}$")
-    ax_data.plot(tmin_line, w_star[0] + w_star[1] * tmin_line,
+    ax_data.plot(tmin_line, w_star[0] + w_star[1] * tmin_line_norm,
                  color="grey", lw=1.2, linestyle="--", alpha=0.6,
                  label=f"Optimal ($L^*={L_star:.2f}$)")
     ax_data.set_xlabel("tmin (°C)")
@@ -251,13 +259,13 @@ while True:
             restart = True
             break
 
-        w = gd_step(w)                    # w := w - η ∇L(w)
+        w = gd_step(w)
         trajectory.append(w.copy())
         draw(step)
 
-        g_norm = np.linalg.norm(grad(w))   # ||∇L|| → 0 means we're near w*
+        g_norm = np.linalg.norm(grad(w))
         print(f"  w1={w[0]:.4f}  w2={w[1]:.4f}  L={loss(w):.4f}  ||∇L||={g_norm:.4f}")
-        if g_norm < 1e-4:                  # convergence check
+        if g_norm < 1e-4:
             print("  Converged.  (r + Enter to restart, Enter to quit)")
             try:
                 restart = input("  → ").strip().lower() == "r"
@@ -276,7 +284,7 @@ while True:
 
 # ── Save final figure ─────────────────────────────────────────────────────────
 
-out = os.path.join(DEMO_DIR, "Session3_Demo1.png")
+out = os.path.join(DEMO_DIR, "Session3_Demo2.png")
 fig.savefig(out, dpi=150, bbox_inches="tight")
 print(f"\nFigure saved → {out}")
 plt.ioff()

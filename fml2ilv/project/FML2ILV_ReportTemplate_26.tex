@@ -1,0 +1,204 @@
+% !TeX spellcheck = en_GB
+% Template for Federated Learning Course Project Report
+
+\documentclass[9pt]{article}
+\usepackage{spconf,amsmath,bm,graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref, cleveref, tcolorbox}
+\usepackage{algorithm, algorithmic}
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{subcaption, adjustbox}
+\usepackage{listings}
+\usepackage{qrcode}
+
+
+\newtcolorbox{hintbox}{
+	colback=blue!5,
+	colframe=blue!60!black,
+	boxrule=0.8pt,
+	arc=2mm,
+	left=1mm,
+	right=2mm,
+	top=1mm,
+	bottom=1mm,
+	title=\textbf{Hint (remove before submission)}
+}
+
+
+
+% Title
+\title{Template for a Federated Learning Project Report}
+\name{Your Name}
+\address{}
+
+\begin{document}
+	
+
+
+	\maketitle
+	
+	\begin{hintbox}
+		All hint boxes in this template are \emph{instructions for drafting} and must be
+		\textbf{removed before final submission}. Not every hint corresponds to a
+		separate grading criterion; however, ignoring hints typically leads to unclear
+		problem formulations, weak experiments, or low review scores.
+	\end{hintbox}
+	
+\begin{abstract}
+	\begin{hintbox}
+The abstract provides a concise summary of the project, including the FL application, 
+empirical graph modeling, variation minimization approach, and the FL algorithms used. 
+Do not include detailed numerical results. Instead, focus on problem, method, and evaluation setup.
+\end{hintbox}
+\end{abstract}
+	
+\textbf{Keywords:} Federated learning, networks, personalized machine learning, trustworthy artificial intelligence
+	
+\begin{hintbox}
+	Your report must adhere to the following formatting and length requirements:
+	\noindent
+\begin{itemize}
+	\item Do not include any information (GitHub usernames, repository links, or dataset paths) 
+	           in the report that could be used to identify you. 
+	\item Use the \LaTeX\ settings as defined in this file without changing margins or font sizes.
+	\item You must not modify the number or titles of sections in this template. 
+	\item The report must not exceed 5 pages in total. The 5\textsuperscript{th} page must 
+	contain only the references.
+		\end{itemize}
+\end{hintbox}
+
+\begin{hintbox}
+Students are strongly encouraged to use terminology consistent with the
+Aalto Dictionary of Machine Learning \cite{AaltoDictML}.
+\end{hintbox}
+
+
+\section{Introduction}
+
+\begin{hintbox}
+	Describe the application scenario, motivation, and learning objective of your 
+	federated learning (FL) system.
+\end{hintbox}
+
+	
+\section{Problem Formulation}
+\label{sec:pf}
+\begin{hintbox}
+	Clearly define the components of your federated learning (FL) network.
+	In particular, specify:
+	\begin{itemize}
+		\item what constitutes a \emph{node} (client) in your system,
+		\item how edges between nodes are obtained and how edge weights are defined
+		(e.g., geographical proximity, data similarity, or a given communication graph),
+		\item See \cite[Ch. 7]{Jung2025} for data-driven methods to choose the edges of an FL network. 
+		\item what data each node holds locally (local datasets),
+		\item what model is trained locally at each node,
+		\item and how the local loss functions are defined.
+	\end{itemize}
+\end{hintbox}
+
+\begin{hintbox}
+	To ensures comparability and fair peer review, all projects must 
+	use the same primary data source: the
+	\textbf{Finnish Meteorological Institute (FMI) Open Data service}
+	(\url{https://en.ilmatieteenlaitos.fi/open-data}). 
+	You can find a Python script that demonstrates how to use this data service here: \qrcode{https://github.com/alexjungaalto/FederatedLearning/blob/main/Edition2026/assets/GetFMIData.py}
+	
+\end{hintbox}
+
+	
+\section{Methodology}
+\label{sec_meth} 
+\begin{hintbox}
+The project requires you to apply GTVMin-based methods to 
+the FL application modelled in Section \ref{sec:pf}. In this section 
+you need to clearly state and explain:
+\begin{itemize}
+	\item Your choice of variation measure, e.g., $\mathrm{GTV}(\mathbf{w}^{(i)}-\mathbf{w}^{(j)})$
+	for parametric models.
+	\item Your choice of FL algorithm (i.e., optimization method for solving 
+	GTVMin) and its message passing implementation.
+\end{itemize}
+\end{hintbox}
+
+\begin{hintbox}
+You are not expected to propose novel FL algorithms; correct implementation and analysis of existing GTVMin-based methods is sufficient.
+\end{hintbox}
+	
+\section{Numerical Experiments}
+\label{sec:experiments}
+
+\begin{hintbox}
+	Present quantitative results (training, validation, and test losses for each node of the FL network), 
+	comparisons, and figures.
+	At a minimum, you must evaluate and compare \textbf{two distinct FL systems}. 
+	These systems should differ in a \emph{meaningful design choice}, such as:
+	\begin{itemize}
+		\item different hyper-parameters of the optimisation method (e.g., regularisation strength, step size),
+		\item different graph constructions or edge weights,
+		\item different local model classes or model capacities.
+	\end{itemize}
+	Clearly explain evaluation metrics (e.g., which loss function has been used 
+	for training, validation, and final evaluation on the test set) and experimental 
+	settings (e.g., how data is split into train/validation/test sets and how hyper-parameters 
+	are selected).
+\end{hintbox}
+
+\begin{hintbox}
+	\textbf{Figures and tables.} 
+	Figures should be designed to communicate quantitative results clearly and efficiently.
+	Avoid decorative elements that do not convey information (e.g., excessive colours, 3D effects, 
+	or chart junk). Axes, legends, and captions must be self-contained and precise. 
+	Whenever possible, embed numerical values directly into figures or tables rather 
+	than relying on verbose textual explanations. For general principles of effective 
+	quantitative graphics, see \cite{TufteVDQI}.
+\end{hintbox}
+
+
+
+\begin{hintbox}
+\textbf{Figures and tables.} 
+Figures should be designed to communicate quantitative results clearly and efficiently.
+Avoid decorative elements that do not convey information (e.g., excessive colours, 3D effects, 
+or chart junk). Axes, legends, and captions must be self-contained and precise. 
+Whenever possible, embed numerical values directly into figures or tables rather 
+than relying on verbose textual explanations. For general principles of effective 
+quantitative graphics, see \cite{TufteVDQI}
+\end{hintbox}
+
+\begin{hintbox} 
+Your submission must include a zip archive containing a single Python script along with any 
+necessary data files. Minimize the use of non-standard Python packages to ensure ease of 
+execution and reproducibility.
+\end{hintbox} 
+
+
+	
+\section{Conclusion}
+	\label{sec:conclusion}
+\begin{hintbox}
+Interpret the numerical results from Sec. \ref{sec:experiments}. 
+In particular, 
+\begin{itemize}
+	\item Discuss whether the obtained results solve the problem satisfactorily.
+	\item Identify limitations of the studied FL methods and suggest potential improvements (e.g., 
+	collecting more data points or using larger local models at some nodes).
+\end{itemize}
+You can find some guidance on how to diagnose ML models in \cite[Sec.~6.6]{Jung2022}.
+\end{hintbox}
+
+
+
+%	\section*{References}
+	\begin{thebibliography}{9}
+		\bibitem{Jung2025} A. Jung, \textit{Federated Learning: From Theory to Practice}, Springer, 2026. Arxiv Preprint: \url{https://arxiv.org/abs/2505.19183}.
+		\bibitem{Jung2022} A. Jung, \textit{Machine Learning: The Basics}, Springer, 2022. Available via Aalto Library. Preprint: \url{https://github.com/alexjungaalto/MachineLearningTheBasics/}. 
+		\bibitem{AaltoDictML} A. Jung (Editor),  \textit{Aalto Dictionary of Machine Learning}, \url{https://aaltodictionaryofml.github.io/}, 2026.
+		\bibitem{TufteVDQI}
+		E.~R.~Tufte,
+		\emph{The Visual Display of Quantitative Information},
+		2nd edition, Graphics Press, 2001.
+	\end{thebibliography}
+	
+\end{document}
