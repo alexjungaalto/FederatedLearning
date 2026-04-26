@@ -1,0 +1,399 @@
+\documentclass[11pt,onecolumn]{IEEEtran}
+%% \documentclass[twoside,11pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath,amsfonts,amssymb,amsxtra,bm}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{xspace}
+
+
+\topmargin      -12.0mm
+\oddsidemargin  -7.0mm
+\evensidemargin -7.0mm
+\textheight     233.0mm
+\textwidth      173.0mm
+\columnsep        4.1mm
+\parindent        1.5em
+\headsep          6.3mm
+\headheight        12pt
+\lineskip           1pt
+\normallineskip     1pt
+\def\baselinestretch{1.1}
+\newcommand{\freqbin}{f}
+\newcommand{\samplesize}{N}
+\newcommand{\gsf}[1]{S_{#1}^{(\alpha)}(\tau,\nu)}
+\newcommand{\C}{{\bf P}}
+\renewcommand{\vec}[1]{\text{\bf{#1}}}
+\newcommand{\mat}  [1]{\boldsymbol{#1}}
+\newcommand{\CRBfull}{{C}ram\'{e}r--{R}ao bound\xspace}
+\DeclareMathOperator{\linspan}{span}
+\DeclareMathOperator{\closure}{cl}
+\def\ML_est{\hat{\mathbf{x}}_{\text{ML}}}
+\newcommand{\minachievevar}{M_{\mathcal{M}}}
+\newcommand{\minachievvar}{M}
+\newcommand{\genericfuncbound}{u}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\minvarproblem}{\big( \mathcal{E}, \mathbf{c}(\cdot),\mathbf{x}_{0} \big)}
+\newcommand{\minvarproblemscalar}{\big( \mathcal{E},c(\cdot),\mathbf{x}_{0} \big)}
+\newcommand{\RKHSSLGM}{\mathcal{H}_{\text{SLGM},\mathbf{x}_{0}}}
+\newcommand{\RKHSSSNM}{\mathcal{H}_{\text{SSNM},\mathbf{x}_{0}}}
+\newcommand{\SLGMMinAchVar}{M_{\text{SLGM}}(c(\cdot),\mathbf{x}_{0})}
+\newcommand{\SLGMMinAchVarprime}{M_{\text{SLGM}}(c(\cdot),\mathbf{x})}
+\newcommand{\SSNMMinAchVar}{M_{\text{SSNM}}(c(\cdot),\mathbf{x}_{0})}
+\newcommand{\SSNMMinAchVark}{M_{\emph{SSNM}}(c(\cdot),\mathbf{x}_{0})}
+\newcommand{\slgm}{\big( \mathcal{X}_{S}, f_{\mathbf{H}}(\mathbf{y}; \mathbf{x}), g(\mathbf{x})  \big)}
+\newcommand{\slgmvec}{\big( \mathcal{X}_{S}, f_{\mathbf{H}}(\mathbf{y}; \mathbf{x}), \mathbf{g}(\cdot)  \big)}
+\newcommand{\ssnm}{\big( \mathcal{X}_{S}, f_{\mathbf{H}=\mathbf{I}}(\mathbf{y}; \mathbf{x}), g(\mathbf{x}) \!=\! x_{k} \big)}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ist}{\hspace*{.2mm}}
+\newcommand{\rmv}{\hspace*{-.2mm}}
+
+\newcommand{\rem}{\hspace*{-.3mm}}
+\newcommand{\ins}{\hspace*{.3mm}}
+\newcommand\seednodescluster[1]{\mathcal{S}_{#1}}
+
+\newcommand{\eq}{\,=\,}
+\newcommand{\pinv}[1]{  {#1}^{ \dagger } } % Pseudoinverse
+\newcommand{\inv}[1]{  {#1}^{ -1 } } % Inverse of a matrix
+\newcommand{\conj}[1]{ {#1}^* } % complex conjungate of a matrix
+\newcommand{\herm}[1]{{#1}^H} % conjungate transpose of a matrix
+\newcommand{\transp}[1]{{#1}^T} % transpose of a matrix
+\def \expect {\mathsf{E} }
+\def \Prob {{\rm P} }
+\def\llr{\rho_{\mathcal{E}\rmv,\mathbf{x}_{0}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{postulate}[theorem]{Postulate}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\def \expect {{\rm E} }
+\def \prob {{\rm P} }
+\def \twiddle[#1] {e^{-j \frac{2 \pi}{N}  #1 }}
+\def \twiddleneg[#1] {e^{j \frac{2 \pi}{N}  #1 }}
+%% \def \discretePSD{S^{(N)}_{X}}
+\def \discretePSD{S_{X}}
+%% \def \discreteRHS{\bar{R}_{X}^{(N)}}
+\def \discreteRHS{\bar{R}_{X}}
+%% \def \discretePSDMVU{\hat{S}^{(N)}_{X,\text{MVU}}}
+\def \discretePSDMVU{\hat{R}_{X,\text{MVU}}}
+
+\newcommand\defeq{:=}
+\newcommand\defeqrev{=:}
+
+\newcommand{\vbed}{\bm \beta} % I substituted the \vbe' by \bm beta, so there are not double superscripts,
+\newcommand{\Tnorm}{}
+\newcommand\norm[2][\Tnorm]{\ensuremath{{\|#2\|}_{#1}}}
+
+
+\newcommand{\vnu}{ {\bm \nu}} 
+\newcommand{\vth}{ {\bm \theta}} 
+\newcommand{\vla}{ {\bm \lambda}} 
+\newcommand{\vep}{\bm \varepsilon}
+\newcommand{\vbe}{\bm \beta}
+\newcommand{\mSi}{\bm \Sigma}
+\newcommand{\vsi}{\bm \sigma}
+\newcommand{\mTh}{\bm \Theta}
+\newcommand{\mPh}{\bm \Phi}
+\newcommand{\lagvar}{m}
+
+\newcommand\vect[1]{\mathbf #1}
+
+\newcommand{\va}{\vect{a}}  
+\newcommand{\vb}{\vect{b}}
+\newcommand{\vc}{\vect{c}}  
+\newcommand{\vd}{\vect{d}}  
+\newcommand{\ve}{\vect{e}}
+\newcommand{\vf}{\vect{f}}  
+\newcommand{\vg}{\vect{g}}  
+\newcommand{\vh}{\vect{h}}
+\newcommand{\vi}{\vect{i}}  
+\newcommand{\vj}{\vect{j}}  
+\newcommand{\vk}{\vect{k}}
+\newcommand{\vl}{\vect{l}}  
+\newcommand{\vm}{\vect{m}}  
+\newcommand{\vn}{\vect{n}}
+\newcommand{\vo}{\vect{o}}  
+\newcommand{\vp}{\vect{p}}  
+\newcommand{\vq}{\vect{q}}
+\newcommand{\vr}{\vect{r}}  
+\newcommand{\vs}{\vect{s}}  
+\newcommand{\vt}{\vect{t}}
+\newcommand{\cluster}[1]{\mathcal{C}_{#1}}
+\newcommand{\vu}{\vect{u}}  
+\newcommand{\vv}{\vect{v}}  
+\newcommand{\vw}{\vect{w}}
+\newcommand{\vx}{\vect{x}}  
+\newcommand{\vy}{\vect{y}}  
+\newcommand{\vz}{\vect{z}}
+
+
+\newcommand{\mA}{\vect{A}}  
+\newcommand{\mB}{\vect{B}} 
+\newcommand{\mC}{\mathbb{C}} 
+\newcommand{\mD}{\vect{D}}
+\newcommand{\mE}{\vect{E}}
+\newcommand{\mF}{\vect{F}}
+\newcommand{\mG}{\vect{G}}
+\newcommand{\mH}{\vect{H}}
+\newcommand{\mI}{\vect{I}}
+\newcommand{\mJ}{\vect{J}}
+\newcommand{\mK}{\vect{K}}
+\newcommand{\mL}{\vect{L}}
+\newcommand{\mM}{\vect{M}}
+\newcommand{\mN}{\vect{N}}
+\newcommand{\mO}{\vect{O}}
+\newcommand{\mP}{\vect{P}}
+\newcommand{\mQ}{\vect{Q}}
+\newcommand{\mR}{\vect{R}}
+\newcommand{\mS}{\vect{S}}
+\newcommand{\mT}{\vect{T}}
+\newcommand{\mU}{\vect{U}}
+\newcommand{\mV}{\vect{V}}
+\newcommand{\mW}{\vect{W}}
+\newcommand{\mX}{\vect{X}}
+\newcommand{\mY}{\vect{Y}}
+\newcommand{\mZ}{\vect{Z}}
+\newcommand{\nrtasks}{F}
+\newcommand{\taskidx}{f}
+\newcommand{\coefflen}{p}
+\newcommand{\measlen}{p}
+\newcommand{\task}{f}
+\newcommand{\sparsity}{s_{\text{max}}}
+\newcommand{\mLA}{ {\bm \Lambda}} 
+\newcommand{\mSI}{ \bm \Sigma }
+
+\renewcommand{\S}{\mathcal S}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\gsupp}{gsupp}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\spark}{spark}
+\DeclareMathOperator*{\rank}{rank}
+%\DeclareMathOperator*{\vec}{vec}
+\DeclareMathOperator*{\vectorizesymb}{vec}
+\DeclareMathOperator*{\Ker}{\mathcal{K}}
+\DeclareMathOperator*{\minimize}{min}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\arginf}{arginf}
+%\newcommand{\argmin}{\mathop{\mathrm{argmin}}}
+\DeclareMathOperator*{\trace}{Tr}
+\DeclareMathOperator*{\deto}{det}
+\DeclareMathOperator*{\diag}{diag}
+\DeclareMathOperator*{\EX}{E}
+\DeclareMathOperator*{\PR}{P}
+\DeclareMathOperator*{\spn}{span}
+%\DeclareMathOperator*{\circ}{circ}
+\DeclareMathOperator*{\DFT}{DFT}
+\newcommand{\ACF}{\mathbf{R}_{x}} 
+\newcommand{\cig}{\mathcal{G}_{x}}
+\newcommand{\specdensmatrix}{\mathbf{S}_{x}}  % ohne x finde ich besser; wir haben eh so viele subscripts 
+\newcommand{\SDM}{\mathbf{S}_{x}}  % ohne x finde ich besser; wir haben eh so viele subscripts 
+\newcommand{\ESDM}{\widehat{\mathbf{S}}_{x}}  
+\newcommand{\EACF}{\widehat{\mathbf{R}}_{x}}
+\newcommand{\phimin}{\phi_{\text{min}}}
+\newcommand{\phimax}{\phi_{\text{max}}}
+\newcommand{\smax}{s_{\text{max}}}
+\newcommand{\maxdegree}{s_{\text{max}}}
+
+
+ \newcommand{\complexset}{\mathbb C}
+ \newcommand{\J}{J}
+ \newcommand{\mc}{\mathcal}
+
+
+%\newcommand{\span}{\rm{span}}
+%\newcommand{\dim}{\rm{dim}}
+\newcommand{\entryop}[2]{\left[ #1 \right]_{#2}}
+\newcommand\comp[1]{ {#1}^c}
+\newcommand{\autocovfunc}{\mathbf{R}_{x}} 
+\newcommand{\timeidx}{n}
+
+
+
+\newcommand{\bbeta}{\bm{\beta}\hspace*{-2.74mm}\bm{\beta}}
+\newcommand{\vecestproblem}{\left(  \mathcal{X}, f(\mathbf{y};\mathbf{x}), \mathbf{g}(\cdot) \right)}
+\newcommand{\scalarestproblem}{\big(  \mathcal{X}, f(\mathbf{y};\mathbf{x}),g(\cdot) \big)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Manuscript ID IT-13-0343 titled "Minimum Variance Estimation of a Sparse Vector within the Linear Gaussian Model: An RKHS Approach"
+
+\begin{center}
+{\bf\Large Response to the Reviewer Comments on Manuscript}\\[2mm]
+{\bf\Large ``Local Graph Clustering with Network Lasso''}\\[7mm]
+%{\bf\Large Selection for Vector-Valued Stationary Random}\\[2mm]
+%{\bf\large Systems: Leakage Effects and Sparsity-Improving Processing''}\\[7mm]
+{\em\large corresponding author: Alexander Jung (first.last (at) aalto.fi)}\\[6.0mm]
+\today
+\end{center}
+
+
+
+\vspace{7mm}
+
+We express our sincere gratitude for the insightful and constructive comments and suggestions 
+provided by the reviewers. We have tried to address all these comments 
+to the extent possible. In the revised manuscript, modifications and amendments are highlighted 
+in red (the parts that have been removed are not visible in the revised manuscript, though).
+
+Major modifications we implemented in the revised manuscript include the following:
+
+\vspace{2mm}
+
+\begin{itemize}
+
+\item We have significantly revised the introduction in Section ?? to more transparently position our work relative to 
+existing local graph clustering methods.  \\[1mm]
+
+\item  We now dedicate \ldots \\[1mm]
+
+\item  We now define \ldots \\[1mm]
+
+\item  We have added a numerical experiment \ldots \\[1mm]
+
+
+\end{itemize}
+
+In the following, we respond to the reviewer comments in a point-by-point manner. Section, page, equation, 
+and reference numbers in the copied action editor and reviewer comments (typeset in italic print) refer to the 
+original manuscript whereas those in our response (typeset in upright print) refer to the revised manuscript 
+unless indicated otherwise.
+
+\vspace{5mm}
+
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\bf\large Comments of Reviewer \#1}
+\vspace{1mm}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{enumerate}
+
+
+\item[1.1] {\em The author should emphasize the contributions of this work in the end of the section 1, more
+clearly. What the advantages and differences between this method and the existed ones? More
+fast or more efficient using the proposed methods? It is still unclear for readers.
+}
+
+
+\vspace*{2mm}
+We have revised the introduction in Section I to better clarify the contributions made 
+relative to prior work (including our own work). 
+\vspace*{4mm}
+
+\item [1.2] {\em Authors should provide more clear and detailed explanations of Fig.1 i.e., such as the
+meaning of the rain drop, and the color of nodes, on the caption of this figure.
+}
+
+\vspace*{2mm}
+We have expanded the caption of Figure 1 to clarify the meaning of the water drops and 
+the node shading. 
+\vspace*{4mm}
+
+
+\item [1.3] {\em  Please improve language presentation carefully.}
+
+\vspace*{2mm}
+We have carefully revised the manuscript and tried to improve the use of language and clarity of presentation. 
+\vspace*{3mm}
+
+
+
+
+
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\bf\large Comments of Reviewer \#2}
+\vspace{1mm}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+
+\item[2.1] {\em The paper does well to contrast with spectral methods. Please elaborate on 
+	the drawbacks of the Laplacian quadratic minimization and elaborate on why total variation 
+	is a better conceptualization for local clusters.}
+
+\vspace*{2mm}
+We now compare spectral methods with our flow-based approach in Section ?? to demonstrate 
+how our method is able to recover the ground-truth cluster while spectral methods fail. 
+\vspace*{3mm} 
+
+
+\item[2.2] {\em Fig 1 is highly informative, yet its caption does little to help understand what’s happening.
+Expand caption to highlight the meaning convey by the figure.
+}
+
+\vspace*{2mm}
+We have expanded the caption of Figure 1 to improve its clarity. 
+\vspace*{3mm} 
+
+
+
+\end{enumerate} 
+
+\begin{center}
+{\bf\large Comments of Reviewer \#3}
+\vspace{1mm}
+\end{center}
+\begin{enumerate}
+
+\item[3.1] {\em Why give Eq. (3) suddenly? Where is it original from? who did define it? It needs a reference?}
+
+\vspace*{2mm}
+We have reformulated the end of Section ?? and the beginning of Section ?? to better motivate 
+using nLasso (??) as a model for local graph clustering. In particular, we point out the relation to 
+our recent paper at p. ??: 
+
+\vspace*{3mm} 
+
+\item[3.2] {\em Eq. (4) is somehow similar to the objective of spectral clustering, only the metric is changed
+to street distance. So your means the seeds are designed for semi-supervised learning?}
+
+\vspace*{2mm}
+We try to make the relation between our approach and spectral method more explicit in the introduction Section ?? 
+of the revised manuscript. Moreover, we have added the following after we define the nLasso problem on page ??, 
+\vspace*{3mm} 
+
+\item[3.3] {\em Since Eq. (5,6, and 7) are the dual problem of Eq. (3)., you give a solution. Then, what is
+different the paper from your [7] and [8]? }
+
+\vspace*{2mm}
+We now point out the difference between this approach and our previous work more explicitly in the 
+revised manuscript after Eq (??). 
+\vspace*{3mm} 
+
+\end{enumerate} 
+
+
+%\end{enumerate}
+
+\vspace{5mm}
+
+
+%% \vspace{2mm}
+% \bibliographystyle{ieeetr}
+%\bibliography{/Users/ajung/Work/LitAJ_ITC.bib,/Users/ajung/work/tf-zentral}
+%% \bibliography{LitAJ_ITC.bib,tf-zentral}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
