@@ -1,6 +1,6 @@
 The course CS-E4740 offers the possibility to extend the basic variant (**worth five credits**) to **ten credits** by completing an individual 
-student project. The project requires you to formulate an application of your choice as an instance of GTVMin (see Sec. 3 of <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf"> lecture notes </a>) 
-and solve it using some of the FL Algorithms taught in this course (see Sec. 4 of <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/material/FL_LectureNotes.pdf"> lecture notes </a>). 
+student project. The project requires you to formulate an application of your choice as an instance of GTVMin (see Sec. 3 of <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/Edition2024/FL_LectureNotes.pdf"> lecture notes </a>) 
+and solve it using some of the FL Algorithms taught in this course (see Sec. 4 of <a href="https://github.com/alexjungaalto/FederatedLearning/blob/main/Edition2024/FL_LectureNotes.pdf"> lecture notes </a>). 
 
 **Project Report.** The main deliverable of the student project is a report, similar in scope and style to a 
 conference paper. You must use the structure (section titles) as outlined in the template (report template <a href="FederatedLearningPaper.pdf"> **pdf** </a>,  <a href="FederatedLearningPaper.tex"> **Latex source** </a>). 
