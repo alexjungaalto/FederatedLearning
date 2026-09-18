@@ -5,7 +5,7 @@ This course introduces the foundations and applications of **Federated Learning 
 approach to training machine learning models on distributed data.
 
 > 📘 Lecture notes are published as a Springer textbook:  
-> **Alexander Jung, _Federated Learning: From Theory to Practice_ (Springer, 2025)**, [arxiv preprint](https://arxiv.org/abs/2505.19183)
+> **Alexander Jung, _Federated Learning: From Theory to Practice_ (Springer, 2026)**, ISBN 978-981-95-1009-2 — [Springer](https://link.springer.com/book/10.1007/978-981-95-1009-2) · [arXiv preprint](https://arxiv.org/abs/2505.19183)
 
 ---
 
