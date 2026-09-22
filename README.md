@@ -71,7 +71,20 @@ Anyone can follow the course as open educational content. Subscribe to the [cour
 
 ## 📜 License
 
-All content is released under the **MIT License** unless otherwise specified. Lecture slides and textbook excerpts follow publisher usage policy.
+Different parts of this repository carry different terms, because not all of it
+is ours to license:
+
+| Material | Terms |
+|----------|-------|
+| Lecture slides, written material, project templates and review sheets | **CC BY 4.0** |
+| Notebooks, Python demos and scripts | **MIT** |
+| `FLBook.pdf` | CC BY 4.0. Aalto University edition; the Springer edition (ISBN 978-981-95-1009-2) is separately copyrighted |
+| Guest lectures (`guesttalk/`, `GuestTalks/`) | © the respective speakers — **all rights reserved**, reproduced here with permission for course use |
+| Student project samples (`FLProject_Sample*.pdf`, `FLReportSample.pdf`) | © the respective student authors |
+| `Edition2024/ADictML.pdf` | CC BY 4.0 — see [10.5281/zenodo.21569296](https://doi.org/10.5281/zenodo.21569296) |
+
+Datasets redistributed with the assignments come from the
+[Finnish Meteorological Institute](https://en.ilmatieteenlaitos.fi/open-data).
 
 ---
 
